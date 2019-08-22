@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Emrah Cimren"
-  avatar           : /assets/images/Emrah.JPG
+  avatar           : "/assets/images/Emrah.JPG"
   bio              : "Data Science/Operations Research Explorer"
   location         : "Seattle, WA"
   email            : "cimren.1@gmail.com"
