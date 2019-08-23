@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Weighted Clustering with Minimum-Maximum Cluster Sizes&#58 Bluefield Analysis
+title: Weighted Clustering with Minimum-Maximum Cluster Sizes: Bluefield Analysis
 tags: [bluefield analysis, weighted clustering]
 --- 
 
