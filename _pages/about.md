@@ -4,6 +4,8 @@ permalink: /about/
 date:
 ---
 
+{% include base_path %}
+
 ## About Me
 
 > Hi, I am Emrah Cimren, Lead Data Scientist at Starbucks. I am leading a network optimization team in the Starbuck's Global Supply Chain.
