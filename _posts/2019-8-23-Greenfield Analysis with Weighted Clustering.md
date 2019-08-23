@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Weighted Clustering with Minimum-Maximum Cluster Sizes&#58 Greenfield Analysis
+title: "Weighted Clustering with Minimum-Maximum Cluster Sizes&#58 Greenfield Analysis"
 categories:
   - greenfield analysis
 tags:
   - greenfield analysis
   - weighted clustering
-author_profile: true
 --- 
 
 This post provides a center of gravity based algorithm for a greenfield analysis. 
