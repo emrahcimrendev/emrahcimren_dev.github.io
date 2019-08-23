@@ -8,8 +8,6 @@ author_profile: true
 
 {% include base_path %}
 
-## About Me
-
 > Hi, I am Emrah Cimren, Lead Data Scientist at Starbucks. I am leading a network optimization team in the Starbuck's Global Supply Chain.
 
 > My current work includes long term manufacturing and supply network design and last mile routing. 
