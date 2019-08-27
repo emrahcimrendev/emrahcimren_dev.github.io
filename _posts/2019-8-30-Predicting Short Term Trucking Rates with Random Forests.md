@@ -16,7 +16,7 @@ tags:
 
 In this post, we present a random forest model to predict short term trucking rates.
 
-![_config.yml]({{ site.baseurl }}/images/cry_van.jpg)
+![_config.yml]({{ site.baseurl }}/images/dry_van.jpg)
 
 Transportation rates are driven by different modes of transportation (air, road, rail, and ocean). 
 In this work, we focus on trucking related transportation modes, Full Truckload (FTL) and Less than Truckload (LTL).
@@ -29,7 +29,7 @@ Capacity of a truck can be measured in total weight, total cube, or total number
 Various truck types are used such as regular dry van, refrigerated, flatbed, tanker, and 48- and 53-foot trailers. 
 An FTL carrier may hold 45,000 pounds of product.
 
-** Less than Truckload (LTL):** Companies use LTL when they have a small load to ship to a destination. 
+**Less than Truckload (LTL):** Companies use LTL when they have a small load to ship to a destination. 
 In this case, hiring an entire truck to make the delivery is not economical. 
 Trucking company picks up the load, combines it with other companies’ pickup or deliveries, 
 and makes the trip to complete a route of deliveries to customer locations. An LTL carrier may 
