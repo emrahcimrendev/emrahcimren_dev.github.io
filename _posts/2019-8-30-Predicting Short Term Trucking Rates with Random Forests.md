@@ -49,3 +49,6 @@ rate is not accepted).
 
 ## Problem
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
+|:--:| 
+| *Figure 1: Distribution centers and customers* |
