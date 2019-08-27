@@ -47,3 +47,5 @@ which consists of origin/destination, service requirement, volume and any other 
 Spot market is used to obtain a rate when there is no availability in the contract market (lane does not exists or 
 rate is not accepted).  
 
+## Problem
+
