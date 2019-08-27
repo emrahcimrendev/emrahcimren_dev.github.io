@@ -36,10 +36,10 @@ and makes the trip to complete a route of deliveries to customer locations. An L
 hold up to 15,000 pounds of product.
 
 Different trailer types carry different products. 
-The main types include dry van, flatbed, refrigerated/temperature-controlled trailer and tank. 
-Dry van is the most popular one. The flatbed trailer does not have a side wall or ceiling and used to carry 
-construction materials or large machinery. Food and medicines are normally hauled by temperature-controlled. 
-Tanks, which are used to haul refined oil products or chemicals in the liquid form.
+The main types include *dry van*, *flatbed*, *refrigerated/temperature-controlled trailer* and *tank*. 
+*Dry van* is the most popular one. The *flatbed trailer* does not have a side wall or ceiling and used to carry 
+construction materials or large machinery. Food and medicines are normally hauled by *temperature-controlled*. 
+*Tanks* are used to haul refined oil products or chemicals in the liquid form.
 
 Two types of services exists to cover freight transportation requirements, through long-term contracts or 
 on the spot market. Contract carriers is used most frequently. The contract is typically a one-year commitment, 
