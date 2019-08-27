@@ -56,6 +56,12 @@ Products are delivered to each customer from distribution centers using trucks.
 |:--:| 
 | *Figure 1: Distribution centers and customers* |
 
-Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
+> Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
 ## Data 
+
+The initial dataset consists of the US nationwide weekly long-haul Truckload data, including
+origin region, destination region, year, week, model type (LHDV for long-haul dry van and
+LHTC for long-haul temperature controlled), rate type (contract or spot), volume, average cost
+37
+per load (CPL) and average distance during the period of week 40, 2012 to week 9, 2017
