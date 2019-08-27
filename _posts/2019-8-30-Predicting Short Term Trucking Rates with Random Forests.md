@@ -16,7 +16,7 @@ tags:
 
 In this post, we present a random forest model to predict short term trucking rates.
 
-![_config.yml]({{ site.baseurl }}/images/dry_van.jpg)
+![image-center](/images/dry_van.jpg){: .align-center}
 
 Transportation rates are driven by different modes of transportation (air, road, rail, and ocean). 
 In this work, we focus on trucking related transportation modes, Full Truckload (FTL) and Less than Truckload (LTL).
