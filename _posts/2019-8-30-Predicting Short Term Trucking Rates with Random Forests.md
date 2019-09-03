@@ -14,7 +14,7 @@ tags:
   - plot.ly
 --- 
 
-In this post, we present a random forest model to predict short term trucking rates.
+In this post, we present a random forest model to predict short term trucking rates using Python.
 
 ![image-center](/images/dry_van.jpg){: .align-center}
 
@@ -68,7 +68,22 @@ and trailer type (see Figure 2).
 |:--:| 
 | *Figure 2: Transportation data set* |
 
-Figure 3 shows the transportation data profiling.  
+Figure 3 shows the transportation data profiling by distance miles, average shipment per truck, 
+transportation cost per truck, mode, and trailer type. We provide statistics by number of data points, 
+minimum value, 25% quantile, mean, median, 75% quantile, and maximum. The following Python code 
+can be used to generate those statistics.
+
+{% highlight python %}
+
+def quantile_25pct(x):
+    return x.quantile(0.25)
+
+def quantile_75pct(x):
+    return x.quantile(0.75)
+
+trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False).agg({'VALUE': ['count', 'min', quantile_25pct, 'mean', 'median', quantile_75pct, 'max']})
+
+{% endhighlight %}
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
 |:--:| 
