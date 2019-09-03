@@ -101,7 +101,7 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 |:--:| 
 | *Figure 3: Transportation data set profile* |
 
-We fist analyze relationships between distance miles, shipment weight per truck, 
+We fist analyze relationships between distance miles, shipment weight per truck, and
 transportation cost per truck for each mode and trailer. Then, we identify and remove outliers
 from the data set. We use 
 
@@ -152,9 +152,16 @@ trailers are more expensive than the shipments in dry van (Figure 5).
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl_trailer.png) | 
 |:--:| 
-| *Figure 5: FTL shipments by trailer type * |
+| *Figure 5: FTL shipments by trailer type* |
 
 There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
 We consider those points as outliers and remove from the data set. 
 
+Figure 5 shows relationships between distance miles, shipment weight per truck, and
+transportation cost per truck for LTL. 
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
+|:--:| 
+| *Figure 6: LTL profiles* |
