@@ -144,6 +144,9 @@ and transportation cost per truck. It means the FTL rate is the same whether the
 and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
 trailers are more expensive than the shipments in dry van (Figure 5).
 
+There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
+We consider those points as outliers and remove from the data set. 
+
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ftl.png) | 
@@ -154,11 +157,8 @@ trailers are more expensive than the shipments in dry van (Figure 5).
 |:--:| 
 | *Figure 5: FTL shipments by trailer type* |
 
-There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
-We consider those points as outliers and remove from the data set. 
-
-Figure 5 shows relationships between distance miles, shipment weight per truck, and
-transportation cost per truck for LTL. 
+Figure 6 shows relationships between distance miles, shipment weight per truck, and
+transportation cost per truck for LTL. There is no clear relationship between any of the variables. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
