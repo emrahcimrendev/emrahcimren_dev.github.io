@@ -88,3 +88,14 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
 |:--:| 
 | *Figure 3: Transportation data set profile* |
+
+We now analyze relationships between distance miles, average shipment per truck, 
+transportation cost per truck for each mode and trailer. 
+
+Figure 4 shows relationships for FTL.
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter.png) | 
+|:--:| 
+| *Figure 4: FTL profile* |
+
+
