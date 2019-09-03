@@ -68,4 +68,8 @@ and trailer type (see Figure 2).
 |:--:| 
 | *Figure 2: Transportation data set* |
 
+Figure 3 shows the transportation data profiling.  
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
+|:--:| 
+| *Figure 3: Transportation data set profile* |
