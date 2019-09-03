@@ -101,20 +101,25 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 |:--:| 
 | *Figure 3: Transportation data set profile* |
 
-We fist analyze relationships between distance miles, shipment weight per truck, and
-transportation cost per truck for each mode and trailer. Then, we identify and remove outliers
-from the data set. We use 
+We fist analyze relationships between distance miles, shipment weight per truck, 
+transportation cost per truck, and transportation cost per truck per mile 
+for each mode and trailer. Then, we identify and remove outliers
+from the data set. [The interquartile range (IQR)](https://en.wikipedia.org/wiki/Interquartile_range) 
+rule is applied to be able to detect outliers. 
 
 The following python functions
-are used to generate plots and detect outliers.
+are used to generate plots and to detect outliers.
 
 {% highlight python %}
 import seaborn as sns
 
-def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_column, fig_width, fig_height, font_scale):
+def plot_scatter(figure_data, x_axis_column, y_axis_column, legend_column, fig_width, fig_height, font_scale, grid_column, grid_row=None):
     sns.set(font_scale=font_scale)
     sns.set_style("white")
-    g = sns.FacetGrid(figure_data, col=grid_column, hue=legend_column)
+    if grid_row is None:
+        g = sns.FacetGrid(figure_data, col=grid_column, hue=legend_column)
+    else:
+        g = sns.FacetGrid(figure_data, col=grid_column, row=grid_row, hue=legend_column)
     g = (g.map(sns.scatterplot, x_axis_column, y_axis_column, edgecolor="w").add_legend())
     g.fig.set_size_inches(fig_width, fig_height)
 
@@ -130,7 +135,6 @@ def detect_outlier(data):
     Q3 = data.quantile(0.75)
     IQR = Q3 - Q1
     
-    # get outliers #
     outliers = np.full(len(data), False)
     outliers[data < (Q1 - 1.5 * IQR)] = True
     outliers[data > (Q3 + 1.5 * IQR)] = True
@@ -144,9 +148,6 @@ and transportation cost per truck. It means the FTL rate is the same whether the
 and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
 trailers are $0.7 more expensive than the shipments in dry van (Figure 5). 
 
-There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
-We consider those points as outliers and remove from the data set. 
-
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ftl.png) | 
@@ -158,12 +159,22 @@ We consider those points as outliers and remove from the data set.
 |:--:| 
 | *Figure 5: FTL shipments by trailer type* |
 
-Figure 6 shows relationships between distance miles, shipment weight per truck, and
-transportation cost per truck for LTL. There is no clear relationship between any of the variables. 
+There are FTL shipments where shipment weight per truck is less than 10,000 LBS. We also identified points with a large 
+transportation cost per truck per mile using the IQR rule. 
+We consider those points as outliers and remove from the data set (see Figure 6). 
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers_cleaned.png) | 
+|:--:| 
+| *Figure 6: FTL outliers* |
+
+Figure 7 shows relationships between distance miles, shipment weight per truck,
+transportation cost per truck, and transportation cost per truck per mile for LTL. 
+There is no clear relationship between any of the variables. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl.png) |
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
 |:--:| 
-| *Figure 6: LTL profiles* |
+| *Figure 7: LTL profiles* |
