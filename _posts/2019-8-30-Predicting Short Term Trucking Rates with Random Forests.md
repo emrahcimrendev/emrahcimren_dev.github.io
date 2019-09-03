@@ -141,14 +141,20 @@ def detect_outlier(data):
 
 Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
 and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
-and changes depending on where the shipment starts and ends. 
-
-There are shipments where shipment weight per truck is less than 10,000 LBS. 
-We consider those points as outliers and remove from the data set. 
+and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
+trailers are more expensive than the shipments in dry van (Figure 5).
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ftl.png) | 
 |:--:| 
-| *Figure 4: FTL profile* |
+| *Figure 4: FTL profiles* |
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl_trailer.png) | 
+|:--:| 
+| *Figure 5: FTL shipments by trailer type * |
+
+There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
+We consider those points as outliers and remove from the data set. 
+
 
