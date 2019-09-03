@@ -58,7 +58,7 @@ Products are delivered to each customer from distribution centers using trucks.
 
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
-## Analysis
+## Analysis Steps
 
 The following are the steps in the analysis. 
 
@@ -70,7 +70,7 @@ The following are the steps in the analysis.
 6. Put model into production
 7. Use model for prediction
 
-## Data Set Cleanup
+## 1. Data Set Cleanup
 
 The dataset consists of the European long-haul Truckload data, including
 mode, distance covered per shipment, average shipment weight per truck, average shipment cost per truck,
@@ -103,9 +103,7 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 
 We fist analyze relationships between distance miles, shipment weight per truck, 
 transportation cost per truck for each mode and trailer. Then, we identify and remove outliers
-from the data set. 
-
-
+from the data set. We use 
 
 The following python functions
 are used to generate plots and detect outliers.
@@ -124,14 +122,30 @@ def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_
 
 {% highlight python %}
 
+import numpy as np
+
+def detect_outlier(data):
+    
+    Q1 = data.quantile(0.25)
+    Q3 = data.quantile(0.75)
+    IQR = Q3 - Q1
+    
+    # get outliers #
+    outliers = np.full(len(data), False)
+    outliers[data < (Q1 - 1.5 * IQR)] = True
+    outliers[data > (Q3 + 1.5 * IQR)] = True
+    
+    return outliers
 
 {% endhighlight %}
 
 Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance travelled
 and transportation cost per truck. There are shipments where shipment weight per truck is less than 10,000 LBS. 
+We consider those points as outliers and remove from the data set. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance.png) | 
 |:--:| 
 | *Figure 4: FTL profile* |
+
