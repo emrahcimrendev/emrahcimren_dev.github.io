@@ -58,7 +58,19 @@ Products are delivered to each customer from distribution centers using trucks.
 
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
-## Data and Insights
+## Analysis
+
+The following are the steps in the analysis. 
+
+1. Data set cleanup (remove outliers)
+2. Feature engineering
+3. Create train and test data
+4. Develop model baseline
+5. Fit model
+6. Put model into production
+7. Use model for prediction
+
+## Data Set Cleanup
 
 The dataset consists of the European long-haul Truckload data, including
 mode, distance covered per shipment, average shipment weight per truck, average shipment cost per truck,
@@ -89,9 +101,14 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 |:--:| 
 | *Figure 3: Transportation data set profile* |
 
-We now analyze relationships between distance miles, average shipment per truck, 
-transportation cost per truck for each mode and trailer. The following python function
-is used to generate plots.
+We fist analyze relationships between distance miles, shipment weight per truck, 
+transportation cost per truck for each mode and trailer. Then, we identify and remove outliers
+from the data set. 
+
+
+
+The following python functions
+are used to generate plots and detect outliers.
 
 {% highlight python %}
 import seaborn as sns
@@ -105,7 +122,13 @@ def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_
 
 {% endhighlight %}
 
-Figure 4 shows relationships for FTL. 
+{% highlight python %}
+
+
+{% endhighlight %}
+
+Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance travelled
+and transportation cost per truck. There are shipments where shipment weight per truck is less than 10,000 LBS. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost.png) | 
