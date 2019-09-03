@@ -105,8 +105,10 @@ def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_
 
 {% endhighlight %}
 
-Figure 4 shows relationships for FTL.
+Figure 4 shows relationships for FTL. 
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter.png) | 
 |:--:| 
 | *Figure 4: FTL profile* |
