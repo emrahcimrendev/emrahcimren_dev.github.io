@@ -139,11 +139,14 @@ def detect_outlier(data):
 
 {% endhighlight %}
 
-Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance travelled
-and transportation cost per truck. There are shipments where shipment weight per truck is less than 10,000 LBS. 
+Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
+and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
+and changes depending on where the shipment starts and ends. 
+
+There are shipments where shipment weight per truck is less than 10,000 LBS. 
 We consider those points as outliers and remove from the data set. 
 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance.png) | 
 |:--:| 
