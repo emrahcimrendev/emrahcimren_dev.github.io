@@ -90,7 +90,20 @@ trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False)
 | *Figure 3: Transportation data set profile* |
 
 We now analyze relationships between distance miles, average shipment per truck, 
-transportation cost per truck for each mode and trailer. 
+transportation cost per truck for each mode and trailer. The following python function
+is used to generate plots.
+
+{% highlight python %}
+import seaborn as sns
+
+def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_column, fig_width, fig_height, font_scale):
+    sns.set(font_scale=font_scale)
+    sns.set_style("white")
+    g = sns.FacetGrid(trans_cost_by_mode_by_trailer, col=grid_column, hue=legend_column)
+    g = (g.map(sns.scatterplot, x_axis_column, y_axis_column, edgecolor="w").add_legend())
+    g.fig.set_size_inches(fig_width, fig_height)
+
+{% endhighlight %}
 
 Figure 4 shows relationships for FTL.
 
