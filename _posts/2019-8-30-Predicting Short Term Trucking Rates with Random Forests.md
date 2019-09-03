@@ -114,7 +114,7 @@ import seaborn as sns
 def plot_scatter(figure_data, x_axis_column, y_axis_column, grid_column, legend_column, fig_width, fig_height, font_scale):
     sns.set(font_scale=font_scale)
     sns.set_style("white")
-    g = sns.FacetGrid(trans_cost_by_mode_by_trailer, col=grid_column, hue=legend_column)
+    g = sns.FacetGrid(figure_data, col=grid_column, hue=legend_column)
     g = (g.map(sns.scatterplot, x_axis_column, y_axis_column, edgecolor="w").add_legend())
     g.fig.set_size_inches(fig_width, fig_height)
 
@@ -142,7 +142,7 @@ def detect_outlier(data):
 Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
 and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
 and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
-trailers are more expensive than the shipments in dry van (Figure 5).
+trailers are $0.7 more expensive than the shipments in dry van (Figure 5). 
 
 There are FTL shipments where shipment weight per truck is less than 10,000 LBS. 
 We consider those points as outliers and remove from the data set. 
@@ -162,6 +162,7 @@ Figure 6 shows relationships between distance miles, shipment weight per truck, 
 transportation cost per truck for LTL. There is no clear relationship between any of the variables. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl.png) |
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
 |:--:| 
