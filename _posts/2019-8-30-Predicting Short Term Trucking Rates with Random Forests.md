@@ -146,7 +146,7 @@ def detect_outlier(data):
 Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
 and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
 and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
-trailers are $0.7 more expensive than the shipments in dry van (Figure 5). 
+trailers are $0.7 more expensive than the shipments in dry van (Figure 3). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl.png) | 
@@ -155,26 +155,22 @@ trailers are $0.7 more expensive than the shipments in dry van (Figure 5).
 |:--:| 
 | *Figure 4: FTL profiles* |
 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl_trailer.png) | 
-|:--:| 
-| *Figure 5: FTL shipments by trailer type* |
-
 There are FTL shipments where shipment weight per truck is less than 10,000 LBS. We also identified points with a large 
 transportation cost per truck per mile using the IQR rule. 
-We consider those points as outliers and remove from the data set (see Figure 6). 
+We consider those points as outliers and remove from the data set (see Figure 5). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers_cleaned.png) | 
 |:--:| 
-| *Figure 6: FTL outliers* |
+| *Figure 5: FTL outliers* |
 
-Figure 7 shows relationships between distance miles, shipment weight per truck,
+Figure 6 shows relationships between distance miles, shipment weight per truck,
 transportation cost per truck, and transportation cost per truck per mile for LTL. 
-There is no clear relationship between any of the variables. 
+There is no clear distinct relationship between any of those variables. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl.png) |
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
 |:--:| 
-| *Figure 7: LTL profiles* |
+| *Figure 6: LTL profiles* |
