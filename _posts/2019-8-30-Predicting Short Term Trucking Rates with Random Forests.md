@@ -201,8 +201,8 @@ create features that make machine learning algorithms work.
 We use one-hot encoding to convert categorical data into to a numerical format without losing any information.
 Figure 9 shows how FTL data is transformed as an example. We also provide Python code below for one-hot encoding.
 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_model_data.png) | 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_one_hot_model_data.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_model_data.jpg) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_one_hot_model_data.jpg) | 
 |:--:| 
 | *Figure 9: FTL one-hot encoding* |
 
@@ -243,3 +243,4 @@ If the model can not improve the baseline, we need to try a new model.
 
 In our problem, the baseline prediction is the average transportation cost 
 per mile by mode and trailer type.
+
