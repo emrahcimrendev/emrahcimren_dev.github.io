@@ -192,3 +192,24 @@ those outliers (see Figure 8).
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl_outliers_cleaned.png) | 
 |:--:| 
 | *Figure 8: LTL outliers* |
+
+## 2. Feature Engineering
+
+Feature engineering is the process of using domain knowledge of the data to 
+create features that make machine learning algorithms work.
+
+We use one-hot encoding to convert categorical data into to a numerical format without losing any information.
+Figure 9 shows how FTL data is transformed as an example. We also provide Python code below for one-hot encoding.
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_model_data.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_one_hot_model_data.png) | 
+|:--:| 
+| *Figure 9: FTL one-hot encoding* |
+
+{% highlight python %}
+
+import pandas as pd
+
+trans_cost_ftl_with_one_hot = pd.get_dummies(trans_cost_ftl.drop(['MODE', 'OUTLIER', 'TRANS_COST_PER_TRUCK_USD_PER_MILE'], 1))
+
+{% endhighlight %}
