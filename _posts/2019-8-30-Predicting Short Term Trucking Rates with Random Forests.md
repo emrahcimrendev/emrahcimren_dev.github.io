@@ -167,7 +167,7 @@ We consider those points as outliers and remove from the data set (see Figure 5)
 Figure 6 shows relationships between distance miles, shipment weight per truck,
 transportation cost per truck, and transportation cost per truck per mile for LTL. 
 There is no clear distinct relationship between any of those variables. We treat shipments
-more than 5000 mile distance as outliers since firms prefer FTL shipments for long distance
+more than 5,000 mile distance as outliers since firms prefer FTL shipments for long distance
 since it is more economical comparing to LTL.  
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
@@ -177,4 +177,11 @@ since it is more economical comparing to LTL.
 |:--:| 
 | *Figure 6: LTL profiles* |
 
-After removing outlier points, we see a clear relationship between distance miles and transportation cost per truck for LTL.
+After removing outlier points, we see a clear relationship between distance miles and transportation 
+cost per truck for LTL (Figure 7).
+
+Similar in FTL, there exists shipments with a large transportation cost. We use the IQR rule to detect 
+those outliers (see Figure 8). 
+
+
+
