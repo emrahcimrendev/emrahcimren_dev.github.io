@@ -241,9 +241,5 @@ def create_train_test_splits(labels_data, features_data, test_size):
 Before making predictions, we need to develop a model baseline to level set performance of the model. 
 If the model can not improve the baseline, we need to try a new model. 
 
-In our problem, the baseline prediction is the average transportation costs per mile by mode and . 
-
-Before we can make and evaluate predictions, we need to establish a baseline, a sensible measure that we hope to beat with our model. 
-If our model cannot improve upon the baseline, then it will be a failure and we should try a 
-different model or admit that machine learning is not right for our problem. 
-The baseline prediction for our case can be the historical max temperature averages. In other words, our baseline is the error we would get if we simply predicted the average max temperature for all days.
+In our problem, the baseline prediction is the average transportation cost 
+per mile by mode and trailer type.
