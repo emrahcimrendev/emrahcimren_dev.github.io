@@ -213,3 +213,37 @@ import pandas as pd
 trans_cost_ftl_with_one_hot = pd.get_dummies(trans_cost_ftl.drop(['MODE', 'OUTLIER', 'TRANS_COST_PER_TRUCK_USD_PER_MILE'], 1))
 
 {% endhighlight %}
+
+
+## 3. Create Train and Test Data
+
+At this step, we split data into training and testing sets to evaluate performance of the model. 
+We randomly select 75% of the data for training and 25% of data for testing using the following Python function.
+
+{% highlight python %}
+
+from sklearn.model_selection import train_test_split
+
+def create_train_test_splits(labels_data, features_data, test_size):
+    
+    labels = np.array(labels_data)
+    features_list = list(features_data.columns)
+    features = np.array(features_data)
+
+    train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size = test_size, random_state = 42)
+
+    return train_features, test_features, train_labels, test_labels
+
+{% endhighlight %}
+
+## 4. Develop Model Baseline
+
+Before making predictions, we need to develop a model baseline to level set performance of the model. 
+If the model can not improve the baseline, we need to try a new model. 
+
+In our problem, the baseline prediction is the average transportation costs per mile by mode and . 
+
+Before we can make and evaluate predictions, we need to establish a baseline, a sensible measure that we hope to beat with our model. 
+If our model cannot improve upon the baseline, then it will be a failure and we should try a 
+different model or admit that machine learning is not right for our problem. 
+The baseline prediction for our case can be the historical max temperature averages. In other words, our baseline is the error we would get if we simply predicted the average max temperature for all days.
