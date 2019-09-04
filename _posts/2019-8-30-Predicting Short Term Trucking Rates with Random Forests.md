@@ -164,13 +164,14 @@ We consider those points as outliers and remove from the data set (see Figure 5)
 |:--:| 
 | *Figure 5: FTL outliers* |
 
-Figure 6 shows relationships between distance miles, shipment weight per truck,
-transportation cost per truck, and transportation cost per truck per mile for LTL. 
-There is no clear distinct relationship between any of those variables. 
+Figure 6 shows relationships between distance miles and transportation cost per truck for LTL. 
+There is no clear distinct relationship between any of those variables. We treat shipments
+more than 5,000 mile distance as outliers since firms prefer FTL shipments for long distance
+since it is more economical comparing to LTL.  
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ltl.png) | 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl.png) |
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
 |:--:| 
-| *Figure 6: LTL profiles* |
+| *Figure 6: LTL profile for distance miles and transportation cost* |
+
+After removing outlier points, we see a clear relationship between distance miles and transportation cost per truck for LTL.
+
