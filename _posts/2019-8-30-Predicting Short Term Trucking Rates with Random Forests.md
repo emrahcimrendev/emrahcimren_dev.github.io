@@ -281,13 +281,13 @@ Those provide us goals which is model performance should be better than baseline
 
 | | FTL Baseline | LTL Baseline|
 |-------|-------|--------|
-| MAE | 434.46 | 352.96 | 
-| MAPE | 12.38% | 66.9% | 
-| Accuracy | 87.62% | 33.1% |
+| **MAE** | 434.46 | 352.96 | 
+| **MAPE** | 12.38% | 66.9% | 
+| **Accuracy** | 87.62% | 33.1% |
 
 ## 5. Fit Model
 
-We use Scikit-learn Python library to fit the model using the following functions. 
+We use Scikit-learn Python library to fit the random forest model using the following functions. 
 
 {% highlight python %} 
 from sklearn.ensemble import RandomForestRegressor
@@ -310,9 +310,9 @@ def prediction_metrics(predictions, test_labels):
 
 | | FTL Baseline | LTL Baseline| FTL Random Forest Model | LTL Random Forest Model |
 |-------|-------|--------|--------|--------|
-| MAE | 434.46 | 352.96 | | |
-| MAPE | 12.38% | 66.9% | | |
-| Accuracy | 87.62% | 33.1% | | |
+| **MAE** | 434.46 | 352.96 | | |
+| **MAPE** | 12.38% | 66.9% | | |
+| **Accuracy** | 87.62% | 33.1% | | |
 
 
 
