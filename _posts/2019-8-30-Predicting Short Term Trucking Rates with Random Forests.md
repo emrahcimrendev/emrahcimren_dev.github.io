@@ -247,7 +247,7 @@ and accuracy as performance metrics.
 
 We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value for $$i=1, \dots, n$$. 
 
-$$MAE = 
+$$MAE = \frac{\sum_{i=1}^n|y_i-x_i|}{n}$$
 
 
 The following Python code is used to calculate baseline and
