@@ -367,12 +367,17 @@ Figure 10 shows one of the random forest trees in the model.
 
 Figure 11 is one of the random forest trees in the model where we limit maximum depth to be 3. Let's
 assume that we want to predict FTL transportation cost per shipment for a Dry Van with 17,404 LBS weight
-load to a location 341 miles away. 
+load to a location 341 miles away. We follow the path in Figure 12 and predicted value is $1,277.
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
 |:--:| 
 | *Figure 11: Random forest tree where maximum depth = 3* |
 
+| ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5_level0.png) | 
+|:--:| 
+| *Figure 12: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight* |
+
+**Understanding Feature Importance of Variables**
 
 
 
