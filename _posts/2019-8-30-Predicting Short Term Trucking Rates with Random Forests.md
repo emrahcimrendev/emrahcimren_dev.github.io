@@ -67,6 +67,7 @@ The following are the steps in the analysis.
 3. Create train and test data
 4. Develop model baseline
 5. Fit model
+6. Interpret Model and Report Results
 
 ## 1. Data Set Cleanup
 
@@ -314,12 +315,22 @@ def prediction_and_metrics(random_forest, test_features, test_labels):
 
 The following table provides baseline and random forest model performance metrics for FTL and LTL.
 
-
 | | FTL Baseline | LTL Baseline| FTL Random Forest Model | LTL Random Forest Model |
 |-------|-------|--------|--------|--------|
 | **MAE** | 434.46 | 352.96 | 188.0 | 123.0 |
 | **MAPE** | 12.38% | 66.9% | 7.12 | 33.10 |
 | **Accuracy** | 87.62% | 33.1% | 92.88 | 66.90 |
+
+Both FLT and LTL models beat the baseline prediction. 
+FTL model prediction has 94% accuracy. However,  
+LTL model's accuracy is 67% which is lower than FTL model. 
+
+One way to improve LTL model's performance is hyperparameter tuning 
+where the model settings id adjusted to improve performance. Another way is to add more features to the
+data set to capture behavior better. 
+
+## 6.Interpret Model and Report Results
+
 
 
 
