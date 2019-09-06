@@ -281,7 +281,7 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
 The performance metrics for FTL and LTL is as follows. 
 Those provide us goals which is model performance should be better than baseline performance.
 
-| | FTL | LTL |
+| | FTL Baseline | LTL Baseline|
 |-------|-------|--------|
 | MAE | 434.46 | 352.96 | 
 | MAPE | 12.38% | 66.9% | 
@@ -289,7 +289,26 @@ Those provide us goals which is model performance should be better than baseline
 
 ## 5. Fit Model
 
+We use Scikit-learn Python library to fit the model using the following functions. 
 
+{% highlight python %} 
+from sklearn.ensemble import RandomForestRegressor
+
+def fit_random_forest_model(train_features, train_labels, test_features):
+    
+    random_forest = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+    random_forest.fit(train_features, train_labels)
+    predictions = random_forest.predict(test_features)
+    return random_forest, predictions
+
+def prediction_metrics(predictions, test_labels):
+    
+    mae = round(np.mean(abs(predictions - test_labels)))
+    mape = 100 * (mae / test_labels)
+    accuracy = 100 - np.mean(mape)
+    
+    return mae, mape, accuracy
+{% endhighlight %}
 
 
 
