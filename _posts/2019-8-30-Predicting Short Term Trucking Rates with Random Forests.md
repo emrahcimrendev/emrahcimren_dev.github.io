@@ -242,7 +242,13 @@ Before making predictions, we need to develop a model baseline to level set perf
 If the model can not improve the baseline, we need to try a new model. 
 
 In our problem, the baseline prediction is the average transportation cost 
-per mile by mode and trailer type. The following Python code is used to calculate baseline and
+per mile by mode and trailer type. We calculate Mean Absolute Error (MAE), Mean Percentage Error (MAPE),
+and accuracy as performance metrics. 
+
+Let $$y_i$$ be the prediction and $$x_i$$ be the actual value. 
+
+
+The following Python code is used to calculate baseline and
 accuracy metrics.
 
 {% highlight python %} 
@@ -270,13 +276,16 @@ def apply_baseline(trans_cost_with_one_hot, test_features, features_list, test_l
 {% endhighlight %}
 
 {| class="wikitable"
-|+ style="text-align: left;" | Data reported for 2014–2015, by region
+|+ The table's caption
+! Column header 1
+! Column header 2
+! Column header 3
 |-
-! scope="col" | Year !! scope="col" | Africa !! scope="col" | Americas !! scope="col" | Asia & Pacific !! scope="col" | Europe
+! scope=row | Row header 1
+| Cell 2 || Cell 3
 |-
-! scope="row" | 2014 
-| 2,300 || 8,950 || ''9,325'' || 4,200
-|-
-! scope="row" | 2015
-| 2,725 || ''9,200'' || 8,850 || 4,775
+! scope=row | Row header A
+| Cell B
+| Cell C
 |}
+
