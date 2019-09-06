@@ -336,7 +336,41 @@ We can use two methods to be able to understand how model calculates the values,
 1. Visualizing a random forest tree
 2. Understanding feature importance of variables
 
-** Visualizing A Random Forest Tree **
+**Visualizing A Random Forest Tree**
+
+The following Python code is used to visualize one of the random forest trees in the model. 
+
+{% highlight python %} 
+from IPython.display import SVG
+from graphviz import Source
+from sklearn.tree import export_graphviz 
+
+def create_random_forest_tree_image(random_forest_model, tree_number, features_list, tree_file_name):
+
+    tree_in_forest = random_forest_model.estimators_[tree_number]
+    graph = Source(export_graphviz(tree_in_forest, out_file=None
+       , feature_names=features_list
+       , filled = True))
+
+    png_bytes = graph.pipe(format='png')
+    with open('{}.png'.format(tree_file_name),'wb') as f:
+        f.write(png_bytes)
+        
+    return 'tree is created'
+{% endhighlight %}
+
+Figure 10 shows one of the random forest trees in the model. 
+
+| ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_whole_tree_5.png) | 
+|:--:| 
+| *Figure 10: Random forest tree* |
+
+Figure 11 is one of the random forest trees in the model where we limit max depth to be 3. 
+
+| ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
+|:--:| 
+| *Figure 11: Random forest tree* |
+
 
 
 
