@@ -365,11 +365,15 @@ Figure 10 shows one of the random forest trees in the model.
 |:--:| 
 | *Figure 10: Random forest tree* |
 
-Figure 11 is one of the random forest trees in the model where we limit max depth to be 3. 
+Figure 11 is one of the random forest trees in the model where we limit maximum depth to be 3. 
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
 |:--:| 
-| *Figure 11: Random forest tree* |
+| *Figure 11: Random forest tree where maximum depth = 3* |
+
+| ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
+|:--:| 
+| *Figure 12: Random forest tree where maximum depth = 3* |
 
 
 
