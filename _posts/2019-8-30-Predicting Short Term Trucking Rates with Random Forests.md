@@ -247,10 +247,11 @@ and accuracy as performance metrics.
 
 We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value for $$i=1, \dots, n$$. 
 
-$$MAE = \frac{\sum_{i=1}^n|y_i-x_i|}{n}$$
+$$MAE = \frac{1}{n}\sum_{i=1}^n|y_i-x_i|$$
 
 $$MAPE = 100\frac{1}{n}\sum_{i=1}^n\frac{|y_i-x_i|}{x_i}$$
 
+$$Accuracy = 100 - MAPE $$
 
 The following Python code is used to calculate baseline and
 accuracy metrics.
@@ -276,6 +277,8 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
     
     return baseline_costs, mean_absolute_error, accuracy
 {% endhighlight %}
+
+The performance metrics for LTL and FTL is as follows.
 
 | Priority apples | Second priority | Third priority |
 |-------|--------|---------|
