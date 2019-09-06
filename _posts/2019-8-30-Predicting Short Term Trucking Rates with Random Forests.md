@@ -242,5 +242,41 @@ Before making predictions, we need to develop a model baseline to level set perf
 If the model can not improve the baseline, we need to try a new model. 
 
 In our problem, the baseline prediction is the average transportation cost 
-per mile by mode and trailer type.
+per mile by mode and trailer type. The following Python code is used to calculate baseline and
+accuracy metrics.
 
+{% highlight python %} 
+
+def apply_baseline(trans_cost_with_one_hot, test_features, features_list, test_labels):
+    
+    baseline = trans_cost_with_one_hot.groupby(['MODE', 'TRAILER_TYPE_DRY VAN', 'TRAILER_TYPE_TEMPERATURE CONTROLLED'], as_index=False).agg({'TRANS_COST_PER_TRUCK_USD': 'sum', 'DISTANCE_MILES': 'sum'})
+    baseline['TRANS_COST_PER_TRUCK_USD_PER_MILE'] = baseline['TRANS_COST_PER_TRUCK_USD'] / baseline['DISTANCE_MILES']
+    baseline.drop(['DISTANCE_MILES'], 1, inplace=True)
+    
+    baseline_costs = pd.DataFrame(test_features)
+    baseline_costs.columns = features_list
+    
+    baseline_costs = baseline_costs.merge(baseline, how='left', on=['TRAILER_TYPE_DRY VAN', 'TRAILER_TYPE_TEMPERATURE CONTROLLED'])
+    baseline_costs['BASELINE_TRANS_COST_PER_TRUCK_USD'] = baseline_costs['DISTANCE_MILES'] * baseline_costs['TRANS_COST_PER_TRUCK_USD_PER_MILE']
+    baseline_costs['ACTUAL_TRANS_COST_PER_TRUCK_USD'] = test_labels
+    baseline_costs['ABSOLUTE_ERROR'] = abs(baseline_costs['BASELINE_TRANS_COST_PER_TRUCK_USD'] - baseline_costs['ACTUAL_TRANS_COST_PER_TRUCK_USD'])
+    baseline_costs['MAPE_PCT'] = 100 * (baseline_costs['ABSOLUTE_ERROR'] / baseline_costs['ACTUAL_TRANS_COST_PER_TRUCK_USD'])
+    
+    mean_absolute_error = round(np.mean(baseline_costs['ABSOLUTE_ERROR']), 2)
+    accuracy = round(100 - np.mean(baseline_costs['MAPE_PCT']), 2)
+    
+    return baseline_costs, mean_absolute_error, accuracy
+    
+{% endhighlight %}
+
+{| class="wikitable"
+|+ style="text-align: left;" | Data reported for 2014–2015, by region
+|-
+! scope="col" | Year !! scope="col" | Africa !! scope="col" | Americas !! scope="col" | Asia & Pacific !! scope="col" | Europe
+|-
+! scope="row" | 2014 
+| 2,300 || 8,950 || ''9,325'' || 4,200
+|-
+! scope="row" | 2015
+| 2,725 || ''9,200'' || 8,850 || 4,775
+|}
