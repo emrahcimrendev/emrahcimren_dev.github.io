@@ -365,7 +365,9 @@ Figure 10 shows one of the random forest trees in the model.
 |:--:| 
 | *Figure 10: Random forest tree* |
 
-Figure 11 is one of the random forest trees in the model where we limit maximum depth to be 3. 
+Figure 11 is one of the random forest trees in the model where we limit maximum depth to be 3. Let's
+assume that we want to predict FTL transportation cost per shipment for a Dry Van with 17,404 LBS weight
+load to a location 341 miles away. 
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
 |:--:| 
