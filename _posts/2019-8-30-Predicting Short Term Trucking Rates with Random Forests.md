@@ -318,8 +318,8 @@ The following table provides baseline and random forest model performance metric
 | | FTL Baseline | LTL Baseline| FTL Random Forest Model | LTL Random Forest Model |
 |-------|-------|--------|--------|--------|
 | **MAE** | 434.46 | 352.96 | 188.0 | 123.0 |
-| **MAPE** | 12.38% | 66.9% | 7.12 | 33.10 |
-| **Accuracy** | 87.62% | 33.1% | 92.88 | 66.90 |
+| **MAPE** | 12.38% | 66.9% | 7.12% | 33.10% |
+| **Accuracy** | 87.62% | 33.1% | 92.88% | 66.90% |
 
 Both FLT and LTL models beat the baseline prediction. 
 FTL model prediction has 94% accuracy. However,  
