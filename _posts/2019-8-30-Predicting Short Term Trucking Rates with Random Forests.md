@@ -68,6 +68,7 @@ The following are the steps in the analysis.
 4. Develop model baseline
 5. Fit model
 6. Interpret Model and Report Results
+7. Model Persistance
 
 ## 1. Data Set Cleanup
 
@@ -329,7 +330,7 @@ One way to improve LTL model's performance is hyperparameter tuning
 where the model settings are adjusted to improve performance. Another way is to add more features to the
 data set to capture behavior better. 
 
-## 6.Interpret Model and Report Results
+## 6. Interpret Model and Report Results
 
 We can use two methods to be able to understand how model calculates the values, 
 
@@ -409,4 +410,4 @@ def calculate_feature_importance(random_forest_model, feature_list):
 
 
 
-
+## 7. Model Persistance
