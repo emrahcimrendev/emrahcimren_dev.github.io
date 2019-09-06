@@ -67,8 +67,6 @@ The following are the steps in the analysis.
 3. Create train and test data
 4. Develop model baseline
 5. Fit model
-6. Put model into production
-7. Use model for prediction
 
 ## 1. Data Set Cleanup
 
@@ -309,6 +307,12 @@ def prediction_metrics(predictions, test_labels):
     
     return mae, mape, accuracy
 {% endhighlight %}
+
+| | FTL Baseline | LTL Baseline| FTL Random Forest Model | LTL Random Forest Model |
+|-------|-------|--------|--------|--------|
+| MAE | 434.46 | 352.96 | | |
+| MAPE | 12.38% | 66.9% | | |
+| Accuracy | 87.62% | 33.1% | | |
 
 
 
