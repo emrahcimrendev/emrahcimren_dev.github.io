@@ -245,7 +245,7 @@ In our problem, the baseline prediction is the average transportation cost
 per mile by mode and trailer type. We calculate Mean Absolute Error (MAE), Mean Percentage Error (MAPE),
 and accuracy as performance metrics. 
 
-We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value. 
+We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value for $$i=1, \dots, n$$. 
 
 $$MAE = 
 
