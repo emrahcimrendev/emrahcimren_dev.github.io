@@ -326,10 +326,12 @@ FTL model prediction has 94% accuracy. However,
 LTL model's accuracy is 67% which is lower than FTL model. 
 
 One way to improve LTL model's performance is hyperparameter tuning 
-where the model settings id adjusted to improve performance. Another way is to add more features to the
+where the model settings are adjusted to improve performance. Another way is to add more features to the
 data set to capture behavior better. 
 
 ## 6.Interpret Model and Report Results
+
+
 
 
 
