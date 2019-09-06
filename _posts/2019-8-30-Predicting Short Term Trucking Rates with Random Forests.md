@@ -376,15 +376,35 @@ FTL transportation cost per shipment as $1,277.
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5_level0.png) | 
 |:--:| 
-| *Figure 12: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight* |
+| *Figure 12: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight 
+with the model where maximum depth = 3* |
 
 **Understanding Feature Importance of Variables**
 
+The relative importances of the variables help us to quantify the usefulness of all the variables which is
+how much including a particular variable improves the prediction.
 
+We use the following code to calculate importance of model variables.
 
+{% highlight python %} 
 
+def calculate_feature_importance(random_forest_model, feature_list):
+    
+    importances = list(random_forest_model.feature_importances_)
+    feature_importances = [(feature, round(importance, 2)) for feature, importance in zip(feature_list, importances)]
+    feature_importances = sorted(feature_importances, key = lambda x: x[1], reverse = True)
+    
+    feature_importances = pd.DataFrame(feature_importances)
+    feature_importances.columns = ['FEATURE', 'IMPORTANCE']
+    
+    return feature_importances
+    
+{% endhighlight %}
 
-
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_feature_importance.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ltl_feature_importance.png) | 
+|:--:| 
+| *Figure 13: Feature importances for FLT and LTL* |
 
 
 
