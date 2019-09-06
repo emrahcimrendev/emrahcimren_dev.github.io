@@ -278,11 +278,14 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
     return baseline_costs, mean_absolute_error, accuracy
 {% endhighlight %}
 
-The performance metrics for LTL and FTL is as follows.
+The performance metrics for FTL and LTL is as follows. 
+Those provide us goals which is model performance should be better than baseline performance.
 
 | | FTL | LTL |
 |-------|-------|--------|
-| MAE | ambrosia | gala | 
-| MAPE | pink lady | jazz | 
-| Accuracy | honeycrisp | granny smith |
+| MAE | 434.46 | 352.96 | 
+| MAPE | 12.38 | 66.9 | 
+| Accuracy | 87.62 | 33.1 |
+
+
 
