@@ -331,6 +331,14 @@ data set to capture behavior better.
 
 ## 6.Interpret Model and Report Results
 
+We can use two methods to be able to understand how model calculates the values, 
+
+1. Visualizing a random forest tree
+2. Understanding feature importance of variables
+
+** Visualizing A Random Forest Tree **
+
+
 
 
 
