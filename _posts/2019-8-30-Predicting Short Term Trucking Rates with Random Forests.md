@@ -249,6 +249,8 @@ We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$
 
 $$MAE = \frac{\sum_{i=1}^n|y_i-x_i|}{n}$$
 
+$$MAPE = 100\frac{1}{n}\sum_{i=1}^n\frac{|y_i-x_i|}{x_i}$$
+
 
 The following Python code is used to calculate baseline and
 accuracy metrics.
