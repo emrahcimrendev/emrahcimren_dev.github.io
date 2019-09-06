@@ -284,8 +284,9 @@ Those provide us goals which is model performance should be better than baseline
 | | FTL | LTL |
 |-------|-------|--------|
 | MAE | 434.46 | 352.96 | 
-| MAPE | 12.38 | 66.9 | 
-| Accuracy | 87.62 | 33.1 |
+| MAPE | 12.38% | 66.9% | 
+| Accuracy | 87.62% | 33.1% |
+
 
 
 
