@@ -281,13 +281,16 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
 The performance metrics for FTL and LTL is as follows. 
 Those provide us goals which is model performance should be better than baseline performance.
 
-<center>
 | | FTL | LTL |
 |-------|-------|--------|
 | MAE | 434.46 | 352.96 | 
 | MAPE | 12.38% | 66.9% | 
 | Accuracy | 87.62% | 33.1% |
-</center>
+
+## 5. Fit Model
+
+
+
 
 
 
