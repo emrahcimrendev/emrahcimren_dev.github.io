@@ -287,32 +287,39 @@ Those provide us goals which is model performance should be better than baseline
 
 ## 5. Fit Model
 
-We use Scikit-learn Python library to fit the random forest model using the following functions. 
+We use the train data to fit the random forest model and the test data to measure model performance. We calculate
+MAE, MAPE, and Accuracy similar to the baseline analysis.
+
+The following functions are used to fit the random forest model and measure the model performance.
 
 {% highlight python %} 
 from sklearn.ensemble import RandomForestRegressor
 
-def fit_random_forest_model(train_features, train_labels, test_features):
+def fit_random_forest_model(train_features, train_labels):
     
     random_forest = RandomForestRegressor(n_estimators = 1000, random_state = 42)
     random_forest.fit(train_features, train_labels)
-    predictions = random_forest.predict(test_features)
-    return random_forest, predictions
+    return random_forest
 
-def prediction_metrics(predictions, test_labels):
+def prediction_and_metrics(random_forest, test_features, test_labels):
+    
+    predictions = random_forest.predict(test_features)
     
     mae = round(np.mean(abs(predictions - test_labels)))
-    mape = 100 * (mae / test_labels)
+    mape = np.mean(100 * (mae / test_labels))
     accuracy = 100 - np.mean(mape)
     
-    return mae, mape, accuracy
+    return predictions, mae, mape, accuracy
 {% endhighlight %}
+
+The following table provides baseline and random forest model performance metrics for FTL and LTL.
+
 
 | | FTL Baseline | LTL Baseline| FTL Random Forest Model | LTL Random Forest Model |
 |-------|-------|--------|--------|--------|
-| **MAE** | 434.46 | 352.96 | | |
-| **MAPE** | 12.38% | 66.9% | | |
-| **Accuracy** | 87.62% | 33.1% | | |
+| **MAE** | 434.46 | 352.96 | 188.0 | 123.0 |
+| **MAPE** | 12.38% | 66.9% | 7.12 | 33.10 |
+| **Accuracy** | 87.62% | 33.1% | 92.88 | 66.90 |
 
 
 
