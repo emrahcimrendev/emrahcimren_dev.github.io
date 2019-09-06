@@ -371,9 +371,6 @@ Figure 11 is one of the random forest trees in the model where we limit maximum 
 |:--:| 
 | *Figure 11: Random forest tree where maximum depth = 3* |
 
-| ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
-|:--:| 
-| *Figure 12: Random forest tree where maximum depth = 3* |
 
 
 
