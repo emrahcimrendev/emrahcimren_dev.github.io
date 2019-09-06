@@ -245,15 +245,16 @@ In our problem, the baseline prediction is the average transportation cost
 per mile by mode and trailer type. We calculate Mean Absolute Error (MAE), Mean Percentage Error (MAPE),
 and accuracy as performance metrics. 
 
-Let $$y_i$$ be the prediction and $$x_i$$ be the actual value. 
+We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value. 
+
+$$MAE = 
 
 
 The following Python code is used to calculate baseline and
 accuracy metrics.
 
 {% highlight python %} 
-
-def apply_baseline(trans_cost_with_one_hot, test_features, features_list, test_labels):
+def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_features, features_list, test_labels):
     
     baseline = trans_cost_with_one_hot.groupby(['MODE', 'TRAILER_TYPE_DRY VAN', 'TRAILER_TYPE_TEMPERATURE CONTROLLED'], as_index=False).agg({'TRANS_COST_PER_TRUCK_USD': 'sum', 'DISTANCE_MILES': 'sum'})
     baseline['TRANS_COST_PER_TRUCK_USD_PER_MILE'] = baseline['TRANS_COST_PER_TRUCK_USD'] / baseline['DISTANCE_MILES']
@@ -272,20 +273,10 @@ def apply_baseline(trans_cost_with_one_hot, test_features, features_list, test_l
     accuracy = round(100 - np.mean(baseline_costs['MAPE_PCT']), 2)
     
     return baseline_costs, mean_absolute_error, accuracy
-    
 {% endhighlight %}
 
-{| class="wikitable"
-|+ The table's caption
-! Column header 1
-! Column header 2
-! Column header 3
-|-
-! scope=row | Row header 1
-| Cell 2 || Cell 3
-|-
-! scope=row | Row header A
-| Cell B
-| Cell C
-|}
-
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
