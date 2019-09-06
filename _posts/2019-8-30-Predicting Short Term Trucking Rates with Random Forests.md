@@ -280,8 +280,9 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
 
 The performance metrics for LTL and FTL is as follows.
 
-| | Priority apples | Second priority | Third priority |
-|-------|-------|--------|---------|
-| A | ambrosia | gala | red delicious |
-| B | pink lady | jazz | macintosh |
-| C | honeycrisp | granny smith | fuji |
+| | FTL | LTL |
+|-------|-------|--------|
+| MAE | ambrosia | gala | 
+| MAPE | pink lady | jazz | 
+| Accuracy | honeycrisp | granny smith |
+
