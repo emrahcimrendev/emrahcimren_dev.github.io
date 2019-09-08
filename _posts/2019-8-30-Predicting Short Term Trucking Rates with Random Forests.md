@@ -160,17 +160,17 @@ def detect_outlier(data):
 
 {% endhighlight %}
 
-Figure 4 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
+Figure 5 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
 and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
 and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
-trailers are $0.7 more expensive than the shipments in dry van (Figure 3). 
+trailers are $0.7 more expensive than the shipments in dry van (Figure 4). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ftl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ftl.png) | 
 |:--:| 
-| *Figure 4: FTL profiles* |
+| *Figure 5: FTL profiles* |
 
 There are FTL shipments where shipment weight per truck is less than 10,000 LBS. We also identified points with a large 
 transportation cost per truck per mile using the IQR rule. 
