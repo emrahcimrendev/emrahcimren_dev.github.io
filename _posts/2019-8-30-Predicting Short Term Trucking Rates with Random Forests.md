@@ -50,7 +50,7 @@ rate is not accepted).
 ## Problem
 
 Consider a network of customers and distribution centers (see Figure 1). 
-Products are delivered to each customer from distribution centers using trucks. 
+Products are delivered from distribution centers to customers using trucks. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
 |:--:| 
@@ -58,7 +58,7 @@ Products are delivered to each customer from distribution centers using trucks.
 
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
-## Analysis Steps
+## Analysis
 
 The following are the steps in the analysis. Figure 2 summarizes the analysis steps.
 
