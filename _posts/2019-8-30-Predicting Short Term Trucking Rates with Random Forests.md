@@ -374,7 +374,9 @@ from graphviz import Source
 from sklearn.tree import export_graphviz 
 
 def create_random_forest_tree_image(random_forest_model, tree_number, features_list, tree_file_name):
-
+   '''
+   Create and save random forest tree image
+   '''
     tree_in_forest = random_forest_model.estimators_[tree_number]
     graph = Source(export_graphviz(tree_in_forest, out_file=None
        , feature_names=features_list
@@ -387,24 +389,24 @@ def create_random_forest_tree_image(random_forest_model, tree_number, features_l
     return 'tree is created'
 {% endhighlight %}
 
-Figure 10 shows one of the random forest trees in the model. 
+Figure 11 shows one of the random forest trees in the model. 
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_whole_tree_5.png) | 
 |:--:| 
-| *Figure 10: Random forest tree* |
+| *Figure 11: Random forest tree* |
 
-Figure 11 is one of the random forest trees in the model where we limit maximum depth to be 3. Let's
+Figure 12 is one of the random forest trees in the model where we limit maximum depth to be 3. Let's
 assume that we want to predict FTL transportation cost per shipment for a Dry Van with 17,404 LBS weight
-load to a location 341 miles away. We follow the path in Figure 12 and predict 
+load to a location 341 miles away. We follow the path in Figure 13 and predict 
 FTL transportation cost per shipment as $1,277. 
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
 |:--:| 
-| *Figure 11: Random forest tree where maximum depth = 3* |
+| *Figure 12: Random forest tree where maximum depth = 3* |
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5_level0.png) | 
 |:--:| 
-| *Figure 12: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight 
+| *Figure 13: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight 
 with the model where maximum depth = 3* |
 
 **Understanding Feature Importance of Variables**
