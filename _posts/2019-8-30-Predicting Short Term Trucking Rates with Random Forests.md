@@ -475,7 +475,7 @@ def persist_model(random_forest_model, feature_list, train_features, train_label
     return 'model saved to '.format(filename)
 {% endhighlight %}
 
-We load the saved model using the following function. 
+We load the saved model using the following Python function. 
 
 {% highlight python %} 
 def load_model(filename):
