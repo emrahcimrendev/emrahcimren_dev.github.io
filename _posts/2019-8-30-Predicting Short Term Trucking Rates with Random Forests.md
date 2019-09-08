@@ -418,15 +418,14 @@ with the model where maximum depth = 3* |
 
 **Understanding Feature Importance of Variables**
 
-The relative importances of the variables help us to quantify the usefulness of all the variables which is
-how much including a particular variable improves the prediction.
-
+The relative importance is defined as how much including a particular variable improves the prediction.
 We use the following code to calculate importance of model variables.
 
 {% highlight python %} 
-
 def calculate_feature_importance(random_forest_model, feature_list):
-    
+    '''
+    Calculate feature importance
+    '''
     importances = list(random_forest_model.feature_importances_)
     feature_importances = [(feature, round(importance, 2)) for feature, importance in zip(feature_list, importances)]
     feature_importances = sorted(feature_importances, key = lambda x: x[1], reverse = True)
@@ -435,7 +434,6 @@ def calculate_feature_importance(random_forest_model, feature_list):
     feature_importances.columns = ['FEATURE', 'IMPORTANCE']
     
     return feature_importances
-    
 {% endhighlight %}
 
 Figure 13 shows feature importance for FTL and LTL. For FTL, miles travelled is the most important
