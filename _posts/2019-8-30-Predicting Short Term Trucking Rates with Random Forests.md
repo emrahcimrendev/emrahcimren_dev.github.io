@@ -414,8 +414,7 @@ We follow the path in Figure 13 and predict FTL transportation cost per shipment
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5_level0.png) | 
 |:--:| 
-| *Figure 13: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight 
-with the model where maximum depth = 3* |
+| *Figure 13: Predicting for FTL rate for a Dry Van, 341 miles distance, and 17,404 LBS weight with the model where maximum depth = 3* |
 
 **Understanding Feature Importance of Variables**
 
