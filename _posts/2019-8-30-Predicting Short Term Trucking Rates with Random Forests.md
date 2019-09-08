@@ -241,11 +241,12 @@ At this step, we split data into training and testing sets to evaluate performan
 We randomly select 75% of the data for training and 25% of data for testing using the following Python function.
 
 {% highlight python %}
-
 from sklearn.model_selection import train_test_split
 
 def create_train_test_splits(labels_data, features_data, test_size):
-    
+    '''
+    Create train and test data
+    '''
     labels = np.array(labels_data)
     features_list = list(features_data.columns)
     features = np.array(features_data)
@@ -253,7 +254,6 @@ def create_train_test_splits(labels_data, features_data, test_size):
     train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size = test_size, random_state = 42)
 
     return train_features, test_features, train_labels, test_labels
-
 {% endhighlight %}
 
 ## 4. Develop Model Baseline
@@ -261,8 +261,9 @@ def create_train_test_splits(labels_data, features_data, test_size):
 Before making predictions, we need to develop a model baseline to level set performance of the model. 
 If the model can not improve the baseline, we need to try a new model. 
 
-In our problem, the baseline prediction is the average transportation cost 
-per mile by mode and trailer type. We calculate Mean Absolute Error (MAE), Mean Percentage Error (MAPE),
+In our problem, we set the baseline prediction as the average transportation cost 
+per mile by mode and trailer type. 
+We calculate Mean Absolute Error (MAE), Mean Percentage Error (MAPE),
 and accuracy as performance metrics. 
 
 We now define MAE, MAPE, and accuracy. Let $$y_i$$ be the prediction and $$x_i$$ be the actual value for $$i=1, \dots, n$$. 
@@ -278,7 +279,9 @@ accuracy metrics.
 
 {% highlight python %} 
 def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_features, features_list, test_labels):
-    
+    '''
+    Calculate baseline
+    '''
     baseline = trans_cost_with_one_hot.groupby(['MODE', 'TRAILER_TYPE_DRY VAN', 'TRAILER_TYPE_TEMPERATURE CONTROLLED'], as_index=False).agg({'TRANS_COST_PER_TRUCK_USD': 'sum', 'DISTANCE_MILES': 'sum'})
     baseline['TRANS_COST_PER_TRUCK_USD_PER_MILE'] = baseline['TRANS_COST_PER_TRUCK_USD'] / baseline['DISTANCE_MILES']
     baseline.drop(['DISTANCE_MILES'], 1, inplace=True)
@@ -298,7 +301,7 @@ def apply_baseline_and_calculate_performance(trans_cost_with_one_hot, test_featu
     return baseline_costs, mean_absolute_error, accuracy
 {% endhighlight %}
 
-The performance metrics for FTL and LTL is as follows. 
+We calculate baseline performance metrics for FTL and LTL is as follows. 
 Those provide us goals which is model performance should be better than baseline performance.
 
 | | FTL Baseline | LTL Baseline|
