@@ -77,23 +77,26 @@ The following are the steps in the analysis, summarized by Figure 2.
 
 We now explain each analysis step as follows.
 
-## 1. Data Set Cleanup
+## 1. Clean Data
 
 The dataset consists of the European long-haul Truckload data, including
 mode, distance covered per shipment, average shipment weight per truck, average shipment cost per truck,
-and trailer type (see Figure 2). 
+and trailer type (see Figure 3). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data.jpg) | 
 |:--:| 
-| *Figure 2: Transportation data set* |
+| *Figure 3: Transportation data set* |
 
-Figure 3 shows the transportation data profiling by distance miles, average shipment per truck, 
+Figure 4 shows the transportation data profiling by distance miles, average shipment per truck, 
 transportation cost per truck, mode, and trailer type. We provide statistics by number of data points, 
 minimum value, 25% quantile, mean, median, 75% quantile, and maximum. The following Python code 
 can be used to generate those statistics.
 
-{% highlight python %}
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
+|:--:| 
+| *Figure 3: Transportation data set profile* 
 
+{% highlight python %}
 def quantile_25pct(x):
     return x.quantile(0.25)
 
@@ -101,12 +104,7 @@ def quantile_75pct(x):
     return x.quantile(0.75)
 
 trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False).agg({'VALUE': ['count', 'min', quantile_25pct, 'mean', 'median', quantile_75pct, 'max']})
-
 {% endhighlight %}
-
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
-|:--:| 
-| *Figure 3: Transportation data set profile* |
 
 We fist analyze relationships between distance miles, shipment weight per truck, 
 transportation cost per truck, and transportation cost per truck per mile 
