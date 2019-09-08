@@ -60,7 +60,7 @@ Our objective is to determine FTL and LTL rates for each distribution center to 
 
 ## Analysis Steps
 
-The following are the steps in the analysis. 
+The following are the steps in the analysis. Figure 2 summarizes the analysis steps.
 
 1. Data set cleanup (remove outliers)
 2. Feature engineering
@@ -69,6 +69,10 @@ The following are the steps in the analysis.
 5. Fit model and measure performance
 6. Interpret model and report results
 7. Persist model
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_model_analysis.png) | 
+|:--:| 
+| *Figure 2: Analysis steps* |
 
 ## 1. Data Set Cleanup
 
@@ -430,7 +434,6 @@ steps to train the model (see Figure 14).
 We use the following Python code to persist the random forest model. 
 
 {% highlight python %} 
-
 import pickle
 
 def persist_model(random_forest_model, feature_list, train_features, train_labels, test_features, test_labels, filename):
@@ -443,7 +446,6 @@ def persist_model(random_forest_model, feature_list, train_features, train_label
 We load the saved model using the following function. 
 
 {% highlight python %} 
-
 def load_model(filename):
     random_forest_model, feature_list, train_features, train_labels, test_features, test_labels = pickle.load(open(filename, 'rb'))
     return random_forest_model, feature_list, train_features, train_labels, test_features, test_labels
