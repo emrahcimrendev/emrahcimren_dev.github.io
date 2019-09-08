@@ -436,30 +436,30 @@ def calculate_feature_importance(random_forest_model, feature_list):
     return feature_importances
 {% endhighlight %}
 
-Figure 13 shows feature importance for FTL and LTL. For FTL, miles travelled is the most important
+Figure 14 shows feature importance for FTL and LTL. For FTL, miles travelled is the most important
 factor for predicting transportation cost per shipment. 
-This is aligned with the observation we have before (see Figure 4). Miles travelled and weight per shipment
+This is aligned with the observation we have before (see Figure 5). Miles travelled and weight per shipment
 are the two most important variables affecting transportation cost per shipment for LTL. 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_feature_importance.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ltl_feature_importance.png) | 
 |:--:| 
-| *Figure 13: Feature importances for FLT and LTL* |
+| *Figure 14: Feature importance for FLT and LTL* |
 
 ## 7. Persist Model
 
-Model persistence is a technique where you take your trained model and write or persist it to the disk. 
+Model persistence is a technique where trained model is written or persisted to the disk. 
 And once you have your model saved on the disk, you can use it whenever you want. 
 After you read and load the file and get the trained model back that you can use for making predictions. 
 This is a very powerful technique because now you don't have to train the model every time by 
 executing different cells of the Jupyter Notebook in order to use the trained model. 
 You can persist your trained model once, and then you can use it later. 
 You can also share your training model with others without sharing the training data and all of the 
-steps to train the model (see Figure 14). 
+steps to train the model (see Figure 15). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_model_persistance.png) | 
 |:--:| 
-| *Figure 14: Model persistance* |
+| *Figure 15: Model persistence* |
 
 We use the following Python code to persist the random forest model. 
 
@@ -467,18 +467,22 @@ We use the following Python code to persist the random forest model.
 import pickle
 
 def persist_model(random_forest_model, feature_list, train_features, train_labels, test_features, test_labels, filename):
+    '''
+    Persist model
+    '''
     tuple_objects = (random_forest_model, feature_list, train_features, train_labels, test_features, test_labels)
     pickle.dump(tuple_objects, open(filename, 'wb'))
     return 'model saved to '.format(filename)
-
 {% endhighlight %}
 
 We load the saved model using the following function. 
 
 {% highlight python %} 
 def load_model(filename):
+    '''
+    Load persisted model
+    '''
     random_forest_model, feature_list, train_features, train_labels, test_features, test_labels = pickle.load(open(filename, 'rb'))
     return random_forest_model, feature_list, train_features, train_labels, test_features, test_labels
-
 {% endhighlight %}
 
