@@ -162,7 +162,7 @@ def detect_outlier(data):
 
 Figure 5 shows relationships for FTL. We observe that there is a linear relationship 
 between distance traveled
-and transportation cost per truck. It means the FTL rate is the same whether the truck 
+and transportation cost per truck which means that he FTL rate is the same whether the truck 
 is 100% full or 25% full
 and changes depending on where the shipment starts and ends. 
 We also see that FTL shipments in temperature controlled
