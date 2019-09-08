@@ -61,7 +61,7 @@ Our objective is to determine FTL and LTL rates for each distribution center to 
 
 ## Analysis
 
-The following are the steps in the analysis. Figure 2 summarizes the analysis steps.
+The following are the steps in the analysis, summarized by Figure 2.
 
 1. Clean data, remove outliers
 2. Create features (feature engineering)
