@@ -402,6 +402,11 @@ def calculate_feature_importance(random_forest_model, feature_list):
     
 {% endhighlight %}
 
+Figure 13 shows feature importance for FTL and LTL. For FTL, miles travelled is the most important
+factor for predicting transportation cost per shipment. 
+This is aligned with the observation we have before (see Figure 4). Miles travelled and weight per shipment
+are the two most important variables affecting transportation cost per shipment for LTL. 
+
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_feature_importance.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ltl_feature_importance.png) | 
 |:--:| 
