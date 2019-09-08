@@ -403,7 +403,7 @@ We limit maximum depth to be 3 to be able to visualize a tree (see Figure 12).
 | *Figure 12: Random forest tree where maximum depth = 3* |
 
 Let's
-assume that we want to predict transportation cost per shipment for the following
+assume that we want to predict transportation cost per shipment with the following
 shipment features. 
 
 | Mode | Trailer Type | Weight Load (LBS) | Shipment Distance (Miles)|
