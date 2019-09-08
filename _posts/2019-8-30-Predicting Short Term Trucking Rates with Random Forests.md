@@ -99,9 +99,15 @@ can be used to generate those statistics.
 
 {% highlight python %}
 def quantile_25pct(x):
+    '''
+    Function to get 25% quantile
+    '''
     return x.quantile(0.25)
 
 def quantile_75pct(x):
+    '''
+    Function to get 75% quantile
+    '''
     return x.quantile(0.75)
 
 trans_costs_melted.groupby(['VARIABLE', 'MODE', 'TRAILER_TYPE'], as_index=False).agg({'VALUE': ['count', 'min', quantile_25pct, 'mean', 'median', quantile_75pct, 'max']})
@@ -120,6 +126,9 @@ are used to generate plots and to detect outliers.
 import seaborn as sns
 
 def plot_scatter(figure_data, x_axis_column, y_axis_column, legend_column, fig_width, fig_height, font_scale, grid_column, grid_row=None):
+    '''
+    Function to create a scatter plot
+    '''
     sns.set(font_scale=font_scale)
     sns.set_style("white")
     if grid_row is None:
@@ -136,7 +145,9 @@ def plot_scatter(figure_data, x_axis_column, y_axis_column, legend_column, fig_w
 import numpy as np
 
 def detect_outlier(data):
-    
+    '''
+    Function to detect outliers using the IQR rule
+    '''
     Q1 = data.quantile(0.25)
     Q3 = data.quantile(0.75)
     IQR = Q3 - Q1
