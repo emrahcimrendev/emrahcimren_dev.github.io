@@ -177,14 +177,14 @@ trailers are $0.7 more expensive per mile than the shipments in dry van (Figure 
 
 There are FTL shipments where shipment weight per truck is less than 10,000 LBS. We also identified points with a large 
 transportation cost per truck per mile using the IQR rule. 
-We consider those points as outliers and remove from the data set (see Figure 5). 
+We consider those points as outliers and remove from the data set (see Figure 6). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ftl_outliers_cleaned.png) | 
 |:--:| 
-| *Figure 5: FTL outliers* |
+| *Figure 6: FTL outliers* |
 
-Figure 6 shows relationships between distance miles, shipment weight per truck,
+Figure 7 shows relationships between distance miles, shipment weight per truck,
 transportation cost per truck, and transportation cost per truck per mile for LTL. 
 There is no clear distinct relationship between any of those variables. 
 
@@ -193,7 +193,7 @@ There is no clear distinct relationship between any of those variables.
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_cost_ltl.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_weight_distance_ltl.png) | 
 |:--:| 
-| *Figure 6: LTL profiles* |
+| *Figure 7: LTL profiles* |
 
 We treat shipments
 more than 5,000 mile distance as outliers since firms prefer FTL shipments for long distance
