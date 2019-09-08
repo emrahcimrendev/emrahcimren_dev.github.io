@@ -52,9 +52,8 @@ rate is not accepted).
 Consider a network of customers and distribution centers (see Figure 1). 
 Products are delivered from distribution centers to customers using trucks. 
 
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
-|:--:| 
-| *Figure 1: Distribution centers and customers* |
+![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) 
+*Figure 1: Distribution centers and customers*
 
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
@@ -62,8 +61,8 @@ Our objective is to determine FTL and LTL rates for each distribution center to 
 
 The following are the steps in the analysis. Figure 2 summarizes the analysis steps.
 
-1. Data set cleanup (remove outliers)
-2. Feature engineering
+1. Clean data, remove outliers
+2. Create features (feature engineering)
 3. Create train and test data
 4. Develop model baseline
 5. Fit model and measure performance
@@ -197,7 +196,7 @@ those outliers (see Figure 8).
 |:--:| 
 | *Figure 8: LTL outliers* |
 
-## 2. Feature Engineering
+## 2. Create Features (Feature Engineering)
 
 Feature engineering is the process of using domain knowledge of the data to 
 create features that make machine learning algorithms work.
