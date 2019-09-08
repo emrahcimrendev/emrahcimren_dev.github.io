@@ -89,7 +89,8 @@ and trailer type (see Figure 3).
 
 Figure 4 shows the transportation data profiling by distance miles, average shipment per truck, 
 transportation cost per truck, mode, and trailer type. We provide statistics by number of data points, 
-minimum value, 25% quantile, mean, median, 75% quantile, and maximum. The following Python code 
+minimum value, 25% quantile, mean, median, 75% quantile, and maximum value. 
+The following Python code 
 can be used to generate those statistics.
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
