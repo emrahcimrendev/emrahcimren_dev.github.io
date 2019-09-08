@@ -398,10 +398,6 @@ Since the tree is very large, it is hard to visualize the relationships between 
 
 We limit maximum depth to be 3 to be able to visualize a tree (see Figure 12). 
 
-| Mode | Trailer Type | Weight Load (LBS) | Shipment Distance|
-|-------|-------|--------|
-| FTL | Dry Van | 17,404 | 341 |
-
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5.png) | 
 |:--:| 
 | *Figure 12: Random forest tree where maximum depth = 3* |
@@ -409,6 +405,11 @@ We limit maximum depth to be 3 to be able to visualize a tree (see Figure 12).
 Let's
 assume that we want to predict transportation cost per shipment for the following
 shipment features. 
+
+| Mode | Trailer Type | Weight Load (LBS) | Shipment Distance|
+|-------|-------|--------|
+| FTL | Dry Van | 17,404 | 341 |
+
 We follow the path in Figure 13 and predict FTL transportation cost per shipment as $1,277.
 
 | ![_config.yml]({{ site.baseurl }}/images/ftl_random_forest_small_tree_5_level0.png) | 
