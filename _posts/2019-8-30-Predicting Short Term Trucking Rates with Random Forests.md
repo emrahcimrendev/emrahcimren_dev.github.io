@@ -451,8 +451,8 @@ are the two most important variables affecting transportation cost per shipment 
 Model persistence is a technique where trained model is written or persisted to the disk. 
 And once you have your model saved on the disk, you can use it whenever you want. 
 After you read and load the file and get the trained model back that you can use for making predictions. 
-This is a very powerful technique because now you don't have to train the model every time by 
-executing different cells of the Jupyter Notebook in order to use the trained model. 
+This is a very powerful technique because now you don't have to train the model every time 
+in order to use the trained model. 
 You can persist your trained model once, and then you can use it later. 
 You can also share your training model with others without sharing the training data and all of the 
 steps to train the model (see Figure 15). 
