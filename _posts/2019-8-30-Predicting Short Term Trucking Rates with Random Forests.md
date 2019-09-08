@@ -66,9 +66,9 @@ The following are the steps in the analysis.
 2. Feature engineering
 3. Create train and test data
 4. Develop model baseline
-5. Fit model
-6. Interpret Model and Report Results
-7. Model Persistance
+5. Fit model and measure performance
+6. Interpret model and report results
+7. Persist model
 
 ## 1. Data Set Cleanup
 
@@ -287,7 +287,7 @@ Those provide us goals which is model performance should be better than baseline
 | **MAPE** | 12.38% | 66.9% | 
 | **Accuracy** | 87.62% | 33.1% |
 
-## 5. Fit Model
+## 5. Fit Model and Measure Performance
 
 We use the train data to fit the random forest model and the test data to measure model performance. We calculate
 MAE, MAPE, and Accuracy similar to the baseline analysis.
@@ -412,11 +412,11 @@ are the two most important variables affecting transportation cost per shipment 
 |:--:| 
 | *Figure 13: Feature importances for FLT and LTL* |
 
-## 7. Model Persistance
+## 7. Persist Model
 
 Model persistence is a technique where you take your trained model and write or persist it to the disk. 
-And once you have your model saved on the disk, you can use it whenever you want. S
-o simply read and load the file and get the trained model back that you can use for making predictions. 
+And once you have your model saved on the disk, you can use it whenever you want. 
+After you read and load the file and get the trained model back that you can use for making predictions. 
 This is a very powerful technique because now you don't have to train the model every time by 
 executing different cells of the Jupyter Notebook in order to use the trained model. 
 You can persist your trained model once, and then you can use it later. 
@@ -429,5 +429,24 @@ steps to train the model (see Figure 14).
 
 We use the following Python code to persist the random forest model. 
 
+{% highlight python %} 
 
+import pickle
+
+def persist_model(random_forest_model, feature_list, train_features, train_labels, test_features, test_labels, filename):
+    tuple_objects = (random_forest_model, feature_list, train_features, train_labels, test_features, test_labels)
+    pickle.dump(tuple_objects, open(filename, 'wb'))
+    return 'model saved to '.format(filename)
+
+{% endhighlight %}
+
+We load the saved model using the following function. 
+
+{% highlight python %} 
+
+def load_model(filename):
+    random_forest_model, feature_list, train_features, train_labels, test_features, test_labels = pickle.load(open(filename, 'rb'))
+    return random_forest_model, feature_list, train_features, train_labels, test_features, test_labels
+
+{% endhighlight %}
 
