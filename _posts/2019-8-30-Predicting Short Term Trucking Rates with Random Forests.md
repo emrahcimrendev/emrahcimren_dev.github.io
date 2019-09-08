@@ -160,9 +160,12 @@ def detect_outlier(data):
 
 {% endhighlight %}
 
-Figure 5 shows relationships for FTL. We observe that there is a linear relationship between distance traveled
-and transportation cost per truck. It means the FTL rate is the same whether the truck is 100% full or 25% full
-and changes depending on where the shipment starts and ends. We also see that FTL shipments in temperature controlled
+Figure 5 shows relationships for FTL. We observe that there is a linear relationship 
+between distance traveled
+and transportation cost per truck. It means the FTL rate is the same whether the truck 
+is 100% full or 25% full
+and changes depending on where the shipment starts and ends. 
+We also see that FTL shipments in temperature controlled
 trailers are $0.7 more expensive than the shipments in dry van (Figure 4). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_ftl.png) | 
