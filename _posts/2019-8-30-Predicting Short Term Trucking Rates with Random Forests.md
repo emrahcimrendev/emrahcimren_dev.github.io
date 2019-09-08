@@ -207,19 +207,19 @@ cost per truck for LTL (Figure 8).
 
 Similar in FTL, there exists LTL shipments with a large transportation cost per mile.
  We use the IQR rule to detect 
-those outliers (see Figure 8). 
+those outliers (see Figure 9). 
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl_outliers.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_flt_scatter_distance_cost_per_mile_ltl_outliers_cleaned.png) | 
 |:--:| 
-| *Figure 8: LTL outliers* |
+| *Figure 9: LTL outliers* |
 
 ## 2. Create Features (Feature Engineering)
 
 Feature engineering is the process of using domain knowledge of the data to 
-create features that make machine learning algorithms work.
+create features for machine learning algorithms.
 
-We use one-hot encoding to convert categorical data into to a numerical format without losing any information.
+We use one-hot encoding to convert categorical data into a numerical format without losing any information.
 Figure 9 shows how FTL data is transformed as an example. We also provide Python code below for one-hot encoding.
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_ftl_model_data.jpg) | 
