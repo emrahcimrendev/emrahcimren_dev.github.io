@@ -75,6 +75,8 @@ The following are the steps in the analysis, summarized by Figure 2.
 |:--:| 
 | *Figure 2: Analysis steps* |
 
+We now explain each analysis step as follows.
+
 ## 1. Data Set Cleanup
 
 The dataset consists of the European long-haul Truckload data, including
