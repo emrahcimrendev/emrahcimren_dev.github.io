@@ -406,7 +406,7 @@ Let's
 assume that we want to predict transportation cost per shipment for the following
 shipment features. 
 
-| Mode | Trailer Type | Weight Load (LBS) | Shipment Distance|
+| Mode | Trailer Type | Weight Load (LBS) | Shipment Distance (Miles)|
 |-------|-------|--------|
 | FTL | Dry Van | 17,404 | 341 |
 
