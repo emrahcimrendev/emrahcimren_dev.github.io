@@ -321,13 +321,17 @@ The following functions are used to fit the random forest model and measure the 
 from sklearn.ensemble import RandomForestRegressor
 
 def fit_random_forest_model(train_features, train_labels):
-    
+    '''
+    Fit a random forest model
+    '''
     random_forest = RandomForestRegressor(n_estimators = 1000, random_state = 42)
     random_forest.fit(train_features, train_labels)
     return random_forest
 
 def prediction_and_metrics(random_forest, test_features, test_labels):
-    
+    '''
+    Predict and measure the model performantce
+    '''
     predictions = random_forest.predict(test_features)
     
     mae = round(np.mean(abs(predictions - test_labels)))
