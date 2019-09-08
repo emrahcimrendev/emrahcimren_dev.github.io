@@ -52,8 +52,9 @@ rate is not accepted).
 Consider a network of customers and distribution centers (see Figure 1). 
 Products are delivered from distribution centers to customers using trucks. 
 
-![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) 
-*Figure 1: Distribution centers and customers*
+![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
+|:--:| 
+| *Figure 1: Distribution centers and customers* |
 
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
 
