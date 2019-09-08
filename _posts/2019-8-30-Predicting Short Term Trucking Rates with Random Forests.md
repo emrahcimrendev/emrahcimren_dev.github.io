@@ -95,7 +95,7 @@ can be used to generate those statistics.
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data_profiling.jpg) | 
 |:--:| 
-| *Figure 3: Transportation data set profile* 
+| *Figure 4: Transportation data set profile* 
 
 {% highlight python %}
 def quantile_25pct(x):
