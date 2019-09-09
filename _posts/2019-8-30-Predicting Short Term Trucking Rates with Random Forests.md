@@ -57,7 +57,8 @@ Products are delivered from distribution centers to customers using trucks.
 |:--:| 
 | *Figure 1: Distribution centers and customers* |
 
-Our objective is to determine FTL and LTL rates for each distribution center to each customer. 
+Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
+a model to predict transportation rates. 
 
 ## Analysis
 
