@@ -486,4 +486,3 @@ def load_model(filename):
     random_forest_model, feature_list, train_features, train_labels, test_features, test_labels = pickle.load(open(filename, 'rb'))
     return random_forest_model, feature_list, train_features, train_labels, test_features, test_labels
 {% endhighlight %}
-
