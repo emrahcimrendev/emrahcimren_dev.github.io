@@ -20,9 +20,8 @@ A brain neuron receives an input and based on that input and fires off an output
 Neurons interconnected to other neurons forms a network. 
 The neural network simulates this behavior in learning about collected data and then predicting outcomes.
 
-Neural networks can be read from left to right.
-Inputs are entered to the first layer. 
-Internal layers (hidden layers) perform calculations, 
+Neural Networks consist of the following components:
 
-
-and one last layer that contains all the possible outputs. Don’t bother with the “+1”s at the bottom of every columns. It is something called “bias” and we’ll talk about that later
+- An input layer, $$x$$
+- Hidden layers
+- An output layer, $$\hat{y}$$
