@@ -22,6 +22,9 @@ The neural network simulates this behavior in learning about collected data and 
 
 Neural Networks consist of the following components:
 
-- An input layer, $$x$$
-- Hidden layers
-- An output layer, $$\hat{y}$$
+- An input layer, $$x$$, 
+- Hidden layers, 
+- An output layer, $$\hat{y}$$,
+- A set of weights and biases between each layer, $$W$$ and $$b$$,
+- Activation function for each hidden layer, $$\sigma$$.
+
