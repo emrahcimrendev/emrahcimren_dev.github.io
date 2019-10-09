@@ -47,3 +47,23 @@ Each iteration of the training process consists of the following steps:
 
 - **Feedforward**: Calculating the predicted output, $$\hat{y}$$,
 - **Backpropagation**: Updating $$W$$ and $$b$$.
+
+## Algorithm
+
+The following are the steps to build the model:
+
+1. Define the network structure, i.e. number of input features.
+
+2. Initialize parameters.
+ - Number of iterations
+ - Number of layers $$L$$ in the neural network
+ - Size of the hidden layers
+ - Learning rate, $$\alpha$$
+ 
+3. For each iteration,
+ - Forward propagation (calculate current loss)
+ - Compute cost function
+ - Backward propagation (calculate current gradient)
+ - Update parameters (using parameters, and gradients from backpropagation)
+ 
+4. Use trained parameters to predict labels
