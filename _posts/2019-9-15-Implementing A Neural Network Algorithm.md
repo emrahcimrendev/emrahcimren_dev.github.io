@@ -28,12 +28,12 @@ Neural Networks consist of the following components:
 - A set of weights and biases between each layer, $$W$$ and $$b$$,
 - Activation function for each hidden layer, $$\sigma$$.
 
-A neuron computes a linear function 
-
-$$z = Wx + b = w_1x_1 + \dots + w_nx_n + b.$$
+A neuron computes a linear function
+$\begin{equation} 
+z = Wx + b = w_1x_1 + \dots + w_nx_n + b.
+\end{equation}$
 
 An output of a neuron is
-
 $$\hat{y} = \sigma(z) = \sigma(Wx + b).$$
 
 z = Wx + b)
