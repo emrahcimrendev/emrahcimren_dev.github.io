@@ -35,3 +35,9 @@ $$z = w_1x_1 + \dots + w_nx_n + b = Wx + b.$$
 An output of a neuron is
 
 $$\hat{y} = \sigma(z) = \sigma(Wx + b).$$
+
+The process of calculating $$W$$ and $$b$$ from the input data is known as training the Neural Network. 
+Each iteration of the training process consists of the following steps:
+
+- Feedforward: Calculating the predicted output, $$\hat{y}$$,
+- Backpropagation: Updating $$W$$ and $$b$$.
