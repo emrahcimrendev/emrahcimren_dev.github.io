@@ -24,9 +24,15 @@ Neural Networks consist of the following components:
 
 - An input layer, $$x$$, 
 - Hidden layers, 
-- An output layer, $$\hat{y}$$,
+- An output layer, $$\hat{y}$$, 
 - A set of weights and biases between each layer, $$W$$ and $$b$$,
 - Activation function for each hidden layer, $$\sigma$$.
+
+The number of nodes in the input layer is determined by 
+the dimensionality of our data, i.e.
+features we use in prediction. 
+The dimensionality (the number of nodes) of the hidden layer are given. 
+The number of nodes in the output layer is determined by the number of prediction classes.
 
 A neuron computes a linear function 
 
