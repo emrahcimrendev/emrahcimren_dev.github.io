@@ -9,7 +9,10 @@ tags:
 --- 
 
 In this post, we will implement a simple three-layer neural network from scratch to explain how neural
-networks work.
+networks work. We consider the 
+[Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
+and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
+
 
 ![image-center](/images/2019-9-15_neurons.jpg){: .align-center}
 
@@ -72,8 +75,6 @@ The following are the steps to build the model:
 
 ## Problem
 
-We consider the [Predicting Short Term Trucking Rates problem](https://https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
-and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
 
 ## 1. Define Network Structure
 
