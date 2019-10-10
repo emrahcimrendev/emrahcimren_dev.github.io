@@ -8,7 +8,7 @@ tags:
   - python
 --- 
 
-In this post, we will implement a simple three-layer neural network from scratch to explain how neural
+In this post, we will implement a simple two-layer neural network from scratch to explain how neural
 networks work. We consider the 
 [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
 and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
