@@ -88,7 +88,32 @@ We now build the neural network model by following algorithm steps.
 
 ## 1. Define Network Structure
 
+The dataset consists of the European long-haul Truckload data, including
+mode, distance covered per shipment, average shipment weight per truck, average shipment cost per truck,
+and trailer type (see Figure 2). 
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_input_data.jpg) | 
+|:--:| 
+| *Figure 2: Transportation data set* |
+
+
+'''latex {cmd=true hide=true}
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\begin{document}
+\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
+  {
+     F & B \\
+      & A \\};
+  \path[-stealth]
+    (m-1-1) edge node [above] {$\beta$} (m-1-2)
+    (m-1-2) edge node [right] {$\rho$} (m-2-2)
+    (m-1-1) edge node [left] {$\alpha$} (m-2-2);
+\end{tikzpicture}
+\end{document}
+'''
 
 ## 2. Initialize Parameters 
 
