@@ -84,6 +84,8 @@ and develop a neural network model to predict transportation rates using the the
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
 a model to predict transportation rates. 
 
+We now build the neural network model by following algorithm steps.
+
 ## 1. Define Network Structure
 
 
