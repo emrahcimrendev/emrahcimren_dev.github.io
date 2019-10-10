@@ -77,10 +77,16 @@ The following are the steps to build the model:
 We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
 and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
 
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
+|:--:| 
+| *Figure 1: Distribution centers and customers* |
+
 Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
 a model to predict transportation rates. 
 
 ## 1. Define Network Structure
+
+
 
 ## 2. Initialize Parameters 
 
