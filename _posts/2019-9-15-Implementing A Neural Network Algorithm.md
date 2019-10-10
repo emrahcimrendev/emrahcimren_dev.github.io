@@ -13,7 +13,6 @@ networks work. We consider the
 [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
 and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
 
-
 ![image-center](/images/2019-9-15_neurons.jpg){: .align-center}
 
 ## What is a Neural Network?
@@ -75,6 +74,11 @@ The following are the steps to build the model:
 
 ## Problem
 
+We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
+and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
+
+Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
+a model to predict transportation rates. 
 
 ## 1. Define Network Structure
 
