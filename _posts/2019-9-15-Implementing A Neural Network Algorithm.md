@@ -97,7 +97,7 @@ and trailer type (see Figure 2).
 | *Figure 2: Transportation data set* |
 
 
-'''latex {cmd=true hide=true}
+```latex {cmd=true hide=true}
 \documentclass{standalone}
 \usepackage{tikz}
 \usetikzlibrary{matrix}
@@ -113,7 +113,7 @@ and trailer type (see Figure 2).
     (m-1-1) edge node [left] {$\alpha$} (m-2-2);
 \end{tikzpicture}
 \end{document}
-'''
+```
 
 ## 2. Initialize Parameters 
 
