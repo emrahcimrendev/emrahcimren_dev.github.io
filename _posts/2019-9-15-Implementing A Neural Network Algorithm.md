@@ -125,13 +125,13 @@ Let $m$ be the size of the training set used for modeling.
 | L-1 | $$Z^{L-1}_{n^{L-1} \times m} = W^{L-1}_{n^{L-1}\times n^{L-2}} A^{L-2}_{n^{L-1}\times m} + b^{L-1}_{n^{L-1}\times 1}$$ | $$A^{L-1}_{n^{L-1}\times m} = g^{L-1}(Z^{L-1}_{n^{L-1} \times m})$$ |
 | L | $$Z^{L}_{n^{L} \times m} = W^{L}_{n^{L}\times n^{L-1}} A^{L}_{n^{L}\times m} + b^{L}_{n^{L}\times 1}$$ | $$A^{L}_{n^{L}\times m} = g^{L}(Z^{L}_{n^{L} \times m})$$ |
 
-
-For the transportation rates prediction problem, $$n^0=4$$ from features distance miles,
-lbs per truck,dry van indicator, and temperature controlled truck  indicator. 
-
 ## 2. Initialize Parameters 
 
-We now define 
+For the transportation rates prediction problem, $$L=\{0, 1, 2\}$$, $$n^0=4$$ from features distance miles,
+lbs per truck,dry van indicator, and temperature controlled truck  indicator,
+$$n^1 = 5$$, and $$n^2=1$$. 
+
+
 
 ## 3. Iterations
 
