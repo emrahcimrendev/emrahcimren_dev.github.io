@@ -125,14 +125,14 @@ $$n^1 = 5$$, and $$n^2=1$$. We define the structure of the nextwork as follows.
 | 2 | $$Z^1_{1 \times m} = W^2_{1\times 5} A^1_{5\times m} + b^2_{1\times 1}$$ |  $$A^2_{1\times m} = g^2(Z^2_{1 \times m})$$ |
 
 Common choices for activation functions are tanh, the sigmoid function, or ReLUs. 
-We use ReLUs function for $$g^1$$ and $$g2 as follows.
+We use ReLUs function for $$g^1$$ and $$g2$$ as follows.
 
 \begin{equation}
-x
+g^1(Z^1_{5 \times m}) = \max(0, Z^1_{5 \times m})
 \end{equation} 
 
 \begin{equation}
-x
+g^2(Z^2_{1 \times m}) = \max(0, Z^2_{1 \times m})
 \end{equation} 
 
 ## 3. Iterations
@@ -143,10 +143,12 @@ Each iteration of the training process consists of the following steps:
 - **Forward propagation**: Calculating the predicted output $$A$$,
 - **Backward propagation**: Updating $$W$$ and $$b$$.
 
-The Loss Function evaluates the goodness of predictions. Let $Y_{m\times 1}$$ be the observations from the train data. 
+The Loss Function evaluates the goodness of predictions. 
 Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
 
-We define the loss function 
+Let $$Y_{m\times 1}$$ be the observations from the train data. We define the loss function as follows.
+
+
 
 g^2(Z^2_{2 \times m}) = \max(0, Z^2_{1 \times m})
 
