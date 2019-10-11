@@ -167,7 +167,7 @@ $$
 where $$f_1(x)$$, $$f_2(x)$$, and $$f_3(x)$$ are functions.
 
 $$
-\frac{\partial f}{\partial x} = 
+\frac{\partial f}{\partial x} = \frac{\partial f_1}{\partial f_2} \frac{\partial f_2}{\partial f_3} \frac{\partial f_3}{\partial x}
 $$
 
 
