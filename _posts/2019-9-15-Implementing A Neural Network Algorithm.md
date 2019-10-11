@@ -166,6 +166,9 @@ $$
 
 where $$f_1(x)$$, $$f_2(x)$$, and $$f_3(x)$$ are functions.
 
+$$
+\frac{\partial f}{\partial x} = 
+$$
 
 
 
