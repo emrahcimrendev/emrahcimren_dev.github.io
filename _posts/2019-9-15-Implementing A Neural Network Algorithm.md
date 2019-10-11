@@ -124,18 +124,16 @@ $$n^1 = 5$$, and $$n^2=1$$. We define the structure of the nextwork as follows.
 | 1 | $$Z^1_{5 \times m} = W^1_{5\times 4} X_{4\times m} + b^1_{5\times 1}$$ |  $$A^1_{5\times m} = g^1(Z^1_{5 \times m})$$ |
 | 2 | $$Z^1_{1 \times m} = W^2_{1\times 5} A^1_{5\times m} + b^2_{1\times 1}$$ |  $$A^2_{1\times m} = g^2(Z^2_{1 \times m})$$ |
 
-Common choices for activation functions are tanh, the sigmoid function, or ReLUs. We use ReLUs function for $$g^1$$ and $$g2
-which are defined as follows.
+Common choices for activation functions are tanh, the sigmoid function, or ReLUs. 
+We use ReLUs function for $$g^1$$ and $$g2 as follows.
 
 \begin{equation}
-g^1(Z^1_{5 \times m}) = max(0, Z^1_{5 \times m})
-\end{equation}
+g^1(Z^1_{5 \times m}) = \max(0, Z^1_{5 \times m})
+\end{equation} 
 
 \begin{equation}
-g^2(Z^2_{2 \times m}) = max(0, Z^2_{1 \times m})
-\end{equation}
-
-
+g^2(Z^2_{2 \times m}) = \max(0, Z^2_{1 \times m})
+\end{equation} 
 
 ## 3. Iterations
 
