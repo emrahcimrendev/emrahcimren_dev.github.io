@@ -117,9 +117,9 @@ neuron $$a=g(z)$$ where $$g$$ is the activation function.
 We now define structure of each layer $$\ell \in \{0, 1, \dots,|L|\}$$ as follows. 
 Let $m$ be size of the training set used for modeling.
 
-| | Layer | Activation Function |
-|-------|-------|
-| 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0, m} + b^1_{n^1\times 1} $$ | 
+| Layer | Activation Function | Output | 
+|-------|-------|-------|
+| 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0\times m} + b^1_{n^1\times 1}$$ |  $$A^1_{n^1\times m} = g^1(Z^1_{n^1 \times m}) |
 
 
 
