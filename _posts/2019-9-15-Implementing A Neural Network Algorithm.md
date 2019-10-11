@@ -104,7 +104,11 @@ non-input layer $$\ell \in L$$ elements where $$A^{\ell}=\{a^{\ell}_1,\dots, a^{
 Note that $$A^{\ell}$$ is used to define hidden and output layer elements. 
 
 Let $$W^{\ell}$$ and $$b^{\ell}$$ be the set of weights and biases between layer $$\ell-1$$ and 
-$$\ell$$. 
+$$\ell$$. Let $$W$$ and $$b$$ denote weights and biases in general, respectively.
+A neuron computes a linear function $$z = w_1x+1 + \dots + w_nx_n = Wx + b$$. An output of a
+neuron $$a=g(z)$$ where $$g$$ is the activation function.
+ 
+ followed by an activation function. We generally say that the output of a neuron is a = g(Wx + b) where g is the activation
 
 
 
