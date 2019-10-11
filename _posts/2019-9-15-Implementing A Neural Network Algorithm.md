@@ -128,11 +128,11 @@ Common choices for activation functions are tanh, the sigmoid function, or ReLUs
 We use ReLUs function for $$g^1$$ and $$g^2$$ as follows.
 
 $$
-g^1(Z^1_{5 \times m}) = \max(Z^1_{5 \times m})
+g^1(Z^1_{5 \times m}) = \max(0, Z^1_{5 \times m})
 $$
 
 \begin{equation}
-g^2(Z^2_{1 \times m}) 
+g^2(Z^2_{1 \times m}) = \max(0, Z^2_{1 \times m})
 \end{equation} 
 
 ## 3. Iterations
@@ -151,7 +151,7 @@ Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes t
 Let $$Y = \{y_0, \dots, y_m\} $$ be the observations from the train data. We define the loss function as follows.
 
 $$
-Loss(A^L, Y) = -\frac{1}{m}\sum_{i=1}^my_i log(a^{\ell}_{n^{\ell}i})+(1-y_i)log(1-a^{\ell}_{n^{\ell}i})
+J(A^L, Y) = -\frac{1}{m}\sum_{i=1}^my_i log(a^{\ell}_{n^{\ell}i})+(1-y_i)log(1-a^{\ell}_{n^{\ell}i})
 $$
 
 ### Backward Propagation
