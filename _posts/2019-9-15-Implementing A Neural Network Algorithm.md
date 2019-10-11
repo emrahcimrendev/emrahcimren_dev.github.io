@@ -128,21 +128,23 @@ Common choices for activation functions are tanh, the sigmoid function, or ReLUs
 We use ReLUs function for $$g^1$$ and $$g^2$$ as follows.
 
 \begin{equation}
-g^1(Z^1_{5 \times m})
+g^1(Z^1_{5 \times m}) = 
 \end{equation} 
 
 \begin{equation}
-g^2(Z^2_{1 \times m})
+g^2(Z^2_{1 \times m}) = \max(0, Z^2_{1 \times m})
 \end{equation} 
 
 ## 3. Iterations
 
 The process of calculating $$W$$ and $$b$$ from the input data is known as training the Neural Network. 
-Each iteration of the training process consists of the following steps:
+Each iteration of the training process consists of the following steps.
 
-- **Forward propagation**: Calculating the predicted output $$A$$,
-- **Backward propagation**: Updating $$W$$ and $$b$$.
+### Forward Propagation  
+Given input from the previous layer, we first compute $$Z$$ and then apply selected activation function
+to calculate the predicted output $$A$$. 
 
+### Loss Function
 The Loss Function evaluates the goodness of predictions. 
 Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
 
@@ -153,9 +155,16 @@ Loss(A^L, Y) = -\frac{1}{m}\sum_{i=1}^m(y_i log(a^{\ell}_{n^{\ell}i}))+(1-y_i)lo
 $$
 
 
+### Backward Propagation
+
+Backward propagation is used to calculate the gradient of the loss function with respect to the parameters.
 
 
-g^2(Z^2_{2 \times m}) = \max(0, Z^2_{1 \times m})
+
+- **Backward propagation**: Updating $$W$$ and $$b$$.
+
+
+
 
 ## 4. Predict Labels
 
