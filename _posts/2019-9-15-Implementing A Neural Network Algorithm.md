@@ -148,9 +148,10 @@ Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes t
 
 Let $$Y = \{y_0, \dots, y_m\} $$ be the observations from the train data. We define the loss function as follows.
 
-\begin{equation}
+$$
 Loss(A^L, Y) = -\frac{1}{m}\sum_{i=1}^m(y_i log(a^{\ell}_{n^{\ell}i}))+(1-y_i)log(1-a^{\ell}_{n^{\ell}i})
-\end{equation} 
+$$
+
 
 
 
