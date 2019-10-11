@@ -36,22 +36,6 @@ features we use in prediction.
 The dimensionality (the number of nodes) of the hidden layer are given. 
 The number of nodes in the output layer is determined by the number of prediction classes.
 
-## A Neuron 
-
-A neuron computes a linear function 
-
-$$z = w_1x_1 + \dots + w_nx_n + b = Wx + b.$$ 
-
-An output of a neuron is
-
-$$\hat{y} = g(z) = g(Wx + b).$$
-
-The process of calculating $$W$$ and $$b$$ from the input data is known as training the Neural Network. 
-Each iteration of the training process consists of the following steps:
-
-- **Forward propagation**: Calculating the predicted output, $$\hat{y}$$,
-- **Backward propagation**: Updating $$W$$ and $$b$$.
-
 ## Algorithm
 
 The following are the steps to build the model:
@@ -108,9 +92,13 @@ $$\ell$$. Let $$W$$ and $$b$$ denote weights and biases in general, respectively
 
 A neuron computes a linear function 
 \begin{equation}
-z = w_1x+1 + \dots + w_nx_n, \\
+z = w_1x+1 + \dots + w_nx_n, 
+\end{equation} 
+
+\begin{equation}
 Z = WX + b.
 \end{equation} 
+
 An output of a
 neuron $$a=g(z)$$ where $$g$$ is the activation function.
  
@@ -122,8 +110,8 @@ Let $m$ be the size of the training set used for modeling.
 | 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0\times m} + b^1_{n^1\times 1}$$ |  $$A^1_{n^1\times m} = g^1(Z^1_{n^1 \times m})$$ |
 | 2 | $$Z^1_{n^2 \times m} = W^2_{n^2\times n^1} A^1_{n^1\times m} + b^2_{n^2\times 1}$$ |  $$A^2_{n^2\times m} = g^2(Z^2_{n^2 \times m})$$ |
 | $$\dots$$ | $$\dots$$ | $$\dots$$ |
-| L-1 | $$Z^{L-1}_{n^{L-1} \times m} = W^{L-1}_{n^{L-1}\times n^{L-2}} A^{L-2}_{n^{L-1}\times m} + b^{L-1}_{n^{L-1}\times 1}$$ | $$A^{L-1}_{n^{L-1}\times m} = g^{L-1}(Z^{L-1}_{n^{L-1} \times m})$$ |
-| L | $$Z^{L}_{n^{L} \times m} = W^{L}_{n^{L}\times n^{L-1}} A^{L}_{n^{L}\times m} + b^{L}_{n^{L}\times 1}$$ | $$A^{L}_{n^{L}\times m} = g^{L}(Z^{L}_{n^{L} \times m})$$ |
+| L-1 | $$Z^{L-1}_{n^{L-1} \times m} = W^{L-1}_{n^{L-1}\times n^{L-2}} A^{L-2}_{n^{L-2}\times m} + b^{L-1}_{n^{L-1}\times 1}$$ | $$A^{L-1}_{n^{L-1}\times m} = g^{L-1}(Z^{L-1}_{n^{L-1} \times m})$$ |
+| L | $$Z^{L}_{n^{L} \times m} = W^{L}_{n^{L}\times n^{L-1}} A^{L-1}_{n^{L-1}\times m} + b^{L}_{n^{L}\times 1}$$ | $$A^{L}_{n^{L}\times m} = g^{L}(Z^{L}_{n^{L} \times m})$$ |
 
 ## 2. Initialize Parameters 
 
@@ -131,17 +119,21 @@ For the transportation rates prediction problem, $$L=\{0, 1, 2\}$$, $$n^0=4$$ fr
 lbs per truck,dry van indicator, and temperature controlled truck  indicator,
 $$n^1 = 5$$, and $$n^2=1$$. 
 
+### Activation functions 
 
+Common choices for activation functions are tanh, the sigmoid function, or ReLUs. 
 
 ## 3. Iterations
 
-### Forward Propagation
+The process of calculating $$W$$ and $$b$$ from the input data is known as training the Neural Network. 
+Each iteration of the training process consists of the following steps:
 
-### Loss function
+- **Forward propagation**: Calculating the predicted output $$A$$,
+- **Backward propagation**: Updating $$W$$ and $$b$$.
 
-### Backward Propagation
+We define the loss function 
 
-### Activation Functions 
+Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
 
 ## 4. Predict Labels
 
