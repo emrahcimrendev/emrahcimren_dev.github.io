@@ -99,7 +99,7 @@ and trailer type (see Figure 2).
 ** ADD NETWORK DIAGRAM HERE
 
 Let $$L$$ be the set of layers. Let $$n^{\ell}$$ be the number of elements at layer $$\ell \in L$$. 
-Let $$X$$ be the set of input layer where $$X=\{x_1, \dots, x_m\}$$. Let $$A^{\ell}$$ be set of 
+Let $$X$$ be the set of input layer where $$X=\{x_1, \dots, x_n^0\}$$. Let $$A^{\ell}$$ be set of 
 non-input layer $$\ell \in L$$ elements where $$A^{\ell}=\{a^{\ell}_1,\dots, a^{\ell}_{n^{\ell}}\}$$.
 Note that $$A^{\ell}$$ is used to define hidden and output layer elements. 
 
@@ -108,11 +108,24 @@ $$\ell$$. Let $$W$$ and $$b$$ denote weights and biases in general, respectively
 
 A neuron computes a linear function 
 \begin{equation}
-z = w_1x+1 + \dots + w_nx_n = Wx + b.
+z = w_1x+1 + \dots + w_nx_n, \\
+Z = WX + b.
 \end{equation} 
 An output of a
 neuron $$a=g(z)$$ where $$g$$ is the activation function.
  
+We now define structure of each layer $$\ell \in \{0, 1, \dots,|L|\}$$ as follows. 
+Let $m$ be size of the training set used for modeling.
+
+| | Layer | Activation Function |
+|-------|-------|
+| 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0, m} + b^1_{n^1\times 1} $$ | 
+
+
+
+
+
+
 
 
 An input layer consists of $$x=\{x_1, x_2, x_3, x_4\}$$ where $$x_1=$$ distance miles, 
