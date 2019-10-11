@@ -128,11 +128,11 @@ Common choices for activation functions are tanh, the sigmoid function, or ReLUs
 We use ReLUs function for $$g^1$$ and $$g2 as follows.
 
 \begin{equation}
-g^1(Z^1_{5 \times m}) = \max(0, Z^1_{5 \times m})
+x
 \end{equation} 
 
 \begin{equation}
-g^2(Z^2_{2 \times m}) = \max(0, Z^2_{1 \times m})
+x
 \end{equation} 
 
 ## 3. Iterations
@@ -143,11 +143,12 @@ Each iteration of the training process consists of the following steps:
 - **Forward propagation**: Calculating the predicted output $$A$$,
 - **Backward propagation**: Updating $$W$$ and $$b$$.
 
-The Loss Function evaluates the goodness of predictions. Let $Y_{m\times 1}$$ be the actual 
+The Loss Function evaluates the goodness of predictions. Let $Y_{m\times 1}$$ be the observations from the train data. 
+Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
 
 We define the loss function 
 
-Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
+g^2(Z^2_{2 \times m}) = \max(0, Z^2_{1 \times m})
 
 ## 4. Predict Labels
 
