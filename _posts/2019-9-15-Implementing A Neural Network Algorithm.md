@@ -10,7 +10,7 @@ tags:
 
 In this post, we will implement a simple two-layer neural network from scratch to explain how neural
 networks work. We consider the 
-[Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
+[Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
 and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
 
 ![image-center](/images/2019-9-15_neurons.jpg){: .align-center}
@@ -74,7 +74,7 @@ The following are the steps to build the model:
 
 ## Problem
 
-We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/).
+We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
 and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
 
 | ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
@@ -97,23 +97,31 @@ and trailer type (see Figure 2).
 | *Figure 2: Transportation data set* |
 
 
-```latex {cmd=true hide=true}
-\documentclass{standalone}
-\usepackage{tikz}
-\usetikzlibrary{matrix}
-\begin{document}
 \begin{tikzpicture}
-  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
-  {
-     F & B \\
-      & A \\};
-  \path[-stealth]
-    (m-1-1) edge node [above] {$\beta$} (m-1-2)
-    (m-1-2) edge node [right] {$\rho$} (m-2-2)
-    (m-1-1) edge node [left] {$\alpha$} (m-2-2);
+  \draw[thick, level distance=3em] node{Root}
+    child{ node{Child} }
+    child{ node{Child} [sibling distance=3cm]
+      child{ node{Grandchild} }
+      child{ node{Grandchild} } };
 \end{tikzpicture}
-\end{document}
-```
+
+Using the *Lindenmayer* library:
+
+\usetikzlibrary{lindenmayersystems}
+\begin{tikzpicture}
+  \draw[rotate=90]
+    lindenmayer system[l-system={
+      rule set={F -> FF-[-F+F]+[+F-F]},
+      axiom=F, order=4,
+      step=2pt, randomize step percent=25,
+      angle=30, randomize angle percent=5}];
+\end{tikzpicture}
+
+An input layer consists of 
+
+a training set of m_train weather data labeled as rain (1) or not (0)
+a test set of m_test weather data labeled as rain or not
+each weather data consists of x1 = temperature, x2 = humidity, x3 = atmospheric pressure
 
 ## 2. Initialize Parameters 
 
