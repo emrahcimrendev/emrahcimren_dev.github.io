@@ -115,7 +115,7 @@ An output of a
 neuron $$a=g(z)$$ where $$g$$ is the activation function.
  
 We now define structure of each layer $$\ell \in \{0, 1, \dots,|L|\}$$ as follows. 
-Let $m$ be size of the training set used for modeling.
+Let $m$ be the size of the training set used for modeling.
 
 | Layer | Activation Function | Output | 
 |-------|-------|-------|
@@ -126,13 +126,8 @@ Let $m$ be size of the training set used for modeling.
 | L | $$Z^{L}_{n^{L} \times m} = W^{L}_{n^{L}\times n^{L-1}} A^{L}_{n^{L}\times m} + b^{L}_{n^{L}\times 1}$$ | $$A^{L}_{n^{L}\times m} = g^{L}(Z^{L}_{n^{L} \times m})$$ |
 
 
-
-
-
-
-An input layer consists of $$x=\{x_1, x_2, x_3, x_4\}$$ where $$x_1=$$ distance miles, 
-$$x_2=$$ lbs per truck, $$x_3=$$ dry van indicator, and $$x_4=$$ temperature controlled truck 
-indicator. 
+For the transportation rates prediction problem, $$n^0=4$$ from features distance miles,
+lbs per truck,dry van indicator, and temperature controlled truck  indicator. 
 
 ## 2. Initialize Parameters 
 
