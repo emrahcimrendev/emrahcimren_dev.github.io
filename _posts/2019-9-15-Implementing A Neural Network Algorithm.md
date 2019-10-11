@@ -99,9 +99,16 @@ and trailer type (see Figure 2).
 ** ADD NETWORK DIAGRAM HERE
 
 Let $$L$$ be the set of layers. Let $$n^{\ell}$$ be the number of elements at layer $$\ell \in L$$. 
-Let $$X$$ be the set of input layer where $$X=\{x_1, \dots, x_m\]$$. Let $$A^{\ell}$$ be set of 
+Let $$X$$ be the set of input layer where $$X=\{x_1, \dots, x_m\}$$. Let $$A^{\ell}$$ be set of 
 non-input layer $$\ell \in L$$ elements where $$A^{\ell}=\{a^{\ell}_1,\dots, a^{\ell}_{n^{\ell}}\}$$.
 Note that $$A^{\ell}$$ is used to define hidden and output layer elements. 
+
+Let $$W^{\ell}$$ and $$b^{\ell}$$ be the set of weights and biases between layer $$\ell-1$$ and 
+$$\ell$$. 
+
+
+
+A set of weights and biases between each layer, W and b
 
 An input layer consists of $$x=\{x_1, x_2, x_3, x_4\}$$ where $$x_1=$$ distance miles, 
 $$x_2=$$ lbs per truck, $$x_3=$$ dry van indicator, and $$x_4=$$ temperature controlled truck 
