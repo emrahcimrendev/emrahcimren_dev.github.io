@@ -96,32 +96,13 @@ and trailer type (see Figure 2).
 |:--:| 
 | *Figure 2: Transportation data set* |
 
+** ADD NETWORK DIAGRAM HERE
 
-\begin{tikzpicture}
-  \draw[thick, level distance=3em] node{Root}
-    child{ node{Child} }
-    child{ node{Child} [sibling distance=3cm]
-      child{ node{Grandchild} }
-      child{ node{Grandchild} } };
-\end{tikzpicture}
+An input layer consists of $$x=\{x_1, x_2, x_3, x_4\}$$ where $$x_1=$$ distance miles, 
+$$x_2=$$ lbs per truck, $$x_3=$$ dry van indicator, and $$x_4=$$ temperature controlled truck 
+indicator. 
 
-Using the *Lindenmayer* library:
 
-\usetikzlibrary{lindenmayersystems}
-\begin{tikzpicture}
-  \draw[rotate=90]
-    lindenmayer system[l-system={
-      rule set={F -> FF-[-F+F]+[+F-F]},
-      axiom=F, order=4,
-      step=2pt, randomize step percent=25,
-      angle=30, randomize angle percent=5}];
-\end{tikzpicture}
-
-An input layer consists of 
-
-a training set of m_train weather data labeled as rain (1) or not (0)
-a test set of m_test weather data labeled as rain or not
-each weather data consists of x1 = temperature, x2 = humidity, x3 = atmospheric pressure
 
 ## 2. Initialize Parameters 
 
