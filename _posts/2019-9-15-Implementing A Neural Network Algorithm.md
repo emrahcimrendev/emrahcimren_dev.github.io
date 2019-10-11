@@ -119,10 +119,10 @@ Let $m$ be size of the training set used for modeling.
 
 | Layer | Activation Function | Output | 
 |-------|-------|-------|
-| 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0\times m} + b^1_{n^1\times 1}$$ |  $$A^1_{n^1\times m} = g^1(Z^1_{n^1 \times m}) |
-| 2 | $$Z^1_{n^2 \times m} = W^2_{n^2\times n^1} X_{n^1\times m} + b^2_{n^2\times 1}$$ |  $$A^2_{n^2\times m} = g^2(Z^2_{n^2 \times m}) |
+| 1 | $$Z^1_{n^1 \times m} = W^1_{n^1\times n^0} X_{n^0\times m} + b^1_{n^1\times 1}$$ |  $$A^1_{n^1\times m} = g^1(Z^1_{n^1 \times m})$$ |
+| 2 | $$Z^1_{n^2 \times m} = W^2_{n^2\times n^1} X_{n^1\times m} + b^2_{n^2\times 1}$$ |  $$A^2_{n^2\times m} = g^2(Z^2_{n^2 \times m})$$ |
 | $$\dots$$ | $$\dots$$ | $$\dots$$ |
-
+| L-1 | $$Z^{L-1}_{n^{L-1} \times m} = W^{L-1}_{n^{L_1}\times n^{L-2}} X_{n^{L-1}\times m} + b^{L-1}_{n^{L-1}\times 1}$$ |  $$A^{L-1}_{n^{L-1}\times m} = g^{L-1}(Z^{L-1}_{n^{L-1} \times m})$$ |
 
 
 
