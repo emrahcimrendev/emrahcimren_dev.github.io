@@ -127,9 +127,9 @@ $$n^1 = 5$$, and $$n^2=1$$. We define the structure of the network as follows.
 Common choices for activation functions are tanh, the sigmoid function, or ReLUs. 
 We use ReLUs function for $$g^1$$ and $$g^2$$ as follows.
 
-\begin{equation}
+$$
 g^1(Z^1_{5 \times m}) = \max(Z^1_{5 \times m})
-\end{equation} 
+$$
 
 \begin{equation}
 g^2(Z^2_{1 \times m}) 
@@ -156,6 +156,17 @@ $$
 
 ### Backward Propagation
 Backward propagation is used to calculate the gradient of the loss function with respect to the parameters.
+We use the chain rule to calculate derivatives. 
+
+Let $$h(x)$$ be a function defined as 
+
+$$
+h(x) = f_1(f_2(f_3(x)))
+$$
+
+where $$f_1(x)$$, $$f_2(x)$$, and $$f_3(x)$$ are functions.
+
+
 
 
 
