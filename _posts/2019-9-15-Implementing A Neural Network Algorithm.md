@@ -92,11 +92,11 @@ $$\ell$$. Let $$W$$ and $$b$$ denote weights and biases in general, respectively
 
 A neuron computes a linear function 
 \begin{equation}
-z = w_1x+1 + \dots + w_nx_n, 
+z = w_1x+1 + \dots + w_nx_n 
 \end{equation} 
 
 \begin{equation}
-Z = WX + b.
+Z = WX + b
 \end{equation} 
 
 An output of a
@@ -117,7 +117,7 @@ Let $m$ be the size of the training set used for modeling.
 
 For the transportation rates prediction problem, $$L=\{0, 1, 2\}$$, $$n^0=4$$ from features distance miles,
 lbs per truck,dry van indicator, and temperature controlled truck  indicator,
-$$n^1 = 5$$, and $$n^2=1$$. We define the structure of the nextwork as follows.
+$$n^1 = 5$$, and $$n^2=1$$. We define the structure of the network as follows.
 
 | Layer | Activation Function | Output | 
 |-------|-------|-------|
@@ -125,14 +125,14 @@ $$n^1 = 5$$, and $$n^2=1$$. We define the structure of the nextwork as follows.
 | 2 | $$Z^1_{1 \times m} = W^2_{1\times 5} A^1_{5\times m} + b^2_{1\times 1}$$ |  $$A^2_{1\times m} = g^2(Z^2_{1 \times m})$$ |
 
 Common choices for activation functions are tanh, the sigmoid function, or ReLUs. 
-We use ReLUs function for $$g^1$$ and $$g2$$ as follows.
+We use ReLUs function for $$g^1$$ and $$g^2$$ as follows.
 
 \begin{equation}
-g^1(Z^1_{5 \times m}) = \max(0, Z^1_{5 \times m})
+g^1(Z^1_{5 \times m})
 \end{equation} 
 
 \begin{equation}
-g^2(Z^2_{1 \times m}) = \max(0, Z^2_{1 \times m})
+g^2(Z^2_{1 \times m})
 \end{equation} 
 
 ## 3. Iterations
@@ -146,7 +146,11 @@ Each iteration of the training process consists of the following steps:
 The Loss Function evaluates the goodness of predictions. 
 Our goal in training is to find the best set of $$W$$ and $$b$$ that minimizes the loss function.
 
-Let $$Y_{m\times 1}$$ be the observations from the train data. We define the loss function as follows.
+Let $$Y = \{y_0, \dots, y_m\} $$ be the observations from the train data. We define the loss function as follows.
+
+\begin{equation}
+Loss(A^L, Y) = -\frac{1}{m}\sum_{i=1}^m(y_i log(a^{\ell}_{n^{\ell}i}))+(1-y_i)log(1-a^{\ell}_{n^{\ell}i})
+\end{equation} 
 
 
 
