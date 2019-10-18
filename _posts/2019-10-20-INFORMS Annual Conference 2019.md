@@ -1,5 +1,5 @@
 ---
-title: "INFORMS Annual Conference 2019"
+title: " 2019 INFORMS Annual Conference"
 categories:
   - conferences
 tags:
