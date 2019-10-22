@@ -15,7 +15,7 @@ The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 2
 ## Sunday, October 20
 
 I presented my work, "Network Design with Routing Consideration", in the Contemporary Scheduling session.
-The work is about a network design algorithm which is used to identify location of distribution facilities
+We developed a network design algorithm to identify location of distribution facilities
 by considering store deliveries.
 
 <style type="text/css">
