@@ -24,7 +24,7 @@ The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 2
 
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
-  <iframe src="https://drive.google.com/open?id=12Fhn_F1W1wgWveQnuC_dOrbx_1uVb338" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/edit?usp=sharing" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
 
