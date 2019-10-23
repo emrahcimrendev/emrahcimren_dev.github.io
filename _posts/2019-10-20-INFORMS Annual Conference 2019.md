@@ -13,8 +13,8 @@ over 7,000 attendees which was record-breaking.
 ![image-center](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-center}
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
-I presented my work, "Network Design with Routing Consideration", in the Contemporary Scheduling session.
-We developed a network design algorithm to identify location of distribution facilities
+I presented my work, "Network Design with Routing Consideration", where we developed 
+a network design algorithm to identify location of distribution facilities
 by considering store deliveries. The following is the slide deck.
 
 <style type="text/css">
@@ -27,4 +27,3 @@ by considering store deliveries. The following is the slide deck.
   <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="759" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
-
