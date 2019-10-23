@@ -13,7 +13,7 @@ tags:
 The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
 
-I presented my work, "Network Design with Routing Consideration", where we developed 
+I presented my work, **Network Design with Routing Consideration**, where we developed 
 a network design algorithm to identify location of distribution facilities
 by considering store deliveries. The following is the slide deck.
 
