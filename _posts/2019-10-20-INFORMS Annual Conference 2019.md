@@ -10,7 +10,8 @@ tags:
 The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
 
-![image-center](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-center}
+| ![_config.yml]({{ site.baseurl }}/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png) | 
+|:--:|
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
 I presented my work, "Network Design with Routing Consideration", where we developed 
