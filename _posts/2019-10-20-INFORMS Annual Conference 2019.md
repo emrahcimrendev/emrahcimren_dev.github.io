@@ -14,8 +14,8 @@ over 7,000 attendees which was record-breaking.
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
 I organized **OMS/Practice Curated: Contemporary Scheduling** session
-at the conference. Session was about the Operations Research applications and had
-about forty attendance. 
+at the conference. Session was about the Operations Research applications and attracted
+about forty people. 
 
 ![_config.yml]({{ site.baseurl }}/images/INFORMS 2019/informs_schedule.png)
 
@@ -29,13 +29,15 @@ by considering store deliveries.
   }
 </style>
 
-| ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} |
+|-------|-------|
+| ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} |
+
 
 The following is the slide deck.
 
 <style type="text/css">
   p {
-    .responsive-wrap iframe{ max-width: 100%;};
+    .responsive-wrap iframe{ max-width: 80%;};
   }
 </style>
 
