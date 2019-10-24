@@ -13,7 +13,7 @@ over 7,000 attendees which was record-breaking.
 
 <style type="text/css">
   p {
-    .width-half {width: 30%}
+    .width-half {width: 20%}
   }
 </style>
 
