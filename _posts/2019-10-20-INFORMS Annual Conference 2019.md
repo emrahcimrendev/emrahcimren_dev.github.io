@@ -29,8 +29,7 @@ by considering store deliveries.
   }
 </style>
 
-|-------|-------|
-| ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} |
+ ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} 
 
 
 The following is the slide deck.
@@ -43,6 +42,6 @@ The following is the slide deck.
 
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
-  <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="650" height="488" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="620" height="465" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
