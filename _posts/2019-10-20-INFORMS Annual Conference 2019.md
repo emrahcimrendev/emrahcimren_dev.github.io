@@ -29,7 +29,7 @@ by considering store deliveries.
   }
 </style>
 
- ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} 
+ ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} 
 
 
 The following is the slide deck.
