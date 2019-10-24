@@ -13,11 +13,11 @@ over 7,000 attendees which was record-breaking.
 
 <style type="text/css">
   p {
-    .width-half {width: 20%}
+    .width-half_logo {width: 10%}
   }
 </style>
 
- ![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-right .width-half}
+ ![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-right .width-half_logo}
 
 I organized **OMS/Practice Curated: Contemporary Scheduling** session
 at the conference. Session was about the Operations Research applications and attracted
