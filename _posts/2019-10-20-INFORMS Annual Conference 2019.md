@@ -15,7 +15,7 @@ tags:
 
 The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
-![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-center .width-half}
+![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-right .width-half}
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
 I organized **OMS/Practice Curated: Contemporary Scheduling** session
@@ -28,7 +28,7 @@ I presented my work, **Network Design with Routing Consideration**, where we dev
 a network design algorithm to identify location of distribution facilities
 by considering store deliveries. 
 
- ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-center .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-center .width-half} 
+ ![](/images/INFORMS 2019/emrah_slide.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} 
 
 The following is the slide deck.
 
