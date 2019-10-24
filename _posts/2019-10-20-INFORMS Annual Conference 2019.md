@@ -43,6 +43,6 @@ The following is the slide deck.
 
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
-  <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="759" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe src="https://docs.google.com/presentation/d/1uKyUdQ2WzBUil71hkKUmFIzGBh_dYVwiN4GSFWfhLg4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="650" height="488" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
