@@ -7,10 +7,17 @@ tags:
   - Operations research
 --- 
 
-The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
+[The 2019 INFORMS Annual Meeting](http://meetings2.informs.org/wordpress/seattle2019/) was held at 
+Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
-![_config.yml]({{ site.baseurl }}/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png)
-[Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
+
+<style type="text/css">
+  p {
+    .width-half {width: 30%}
+  }
+</style>
+
+ ![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-right .width-half}
 
 I organized **OMS/Practice Curated: Contemporary Scheduling** session
 at the conference. Session was about the Operations Research applications and attracted
