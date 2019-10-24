@@ -9,7 +9,6 @@ tags:
 
 The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
-
 ![_config.yml]({{ site.baseurl }}/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png)
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
