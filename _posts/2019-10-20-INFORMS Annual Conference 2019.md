@@ -1,9 +1,3 @@
-<style type="text/css">
-  p {
-    .width-half {width: 30%}
-  }
-</style>
-
 ---
 title: " 2019 INFORMS Annual Conference"
 categories:
@@ -13,8 +7,15 @@ tags:
   - Operations research
 --- 
 
+<style type="text/css">
+  p {
+    .width-half {width: 30%}
+  }
+</style>
+
 The 2019 INFORMS Annual Meeting was held at Seattle from October 20 to October 23. There were
 over 7,000 attendees which was record-breaking. 
+
 ![](/images/INFORMS 2019/2019_Seattle_Logo_White_Outlined.png){: .align-right .width-half}
 [Conference web page](http://meetings2.informs.org/wordpress/seattle2019/)
 
