@@ -37,7 +37,7 @@ The following is the slide deck.
 
 <style type="text/css">
   p {
-    .responsive-wrap iframe{ max-width: 80%;};
+    .responsive-wrap iframe{ max-width: 70%;};
   }
 </style>
 
