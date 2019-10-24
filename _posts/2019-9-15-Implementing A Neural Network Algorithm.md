@@ -15,6 +15,20 @@ and develop a neural network model to predict transportation rates using the the
 
 ![image-center](/images/2019-9-15_neurons.jpg){: .align-center}
 
+## Problem
+
+We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
+and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
+|:--:| 
+| *Figure 1: Distribution centers and customers* |
+
+Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
+a model to predict transportation rates. 
+
+We now build the neural network model by following algorithm steps.
+
 ## What is a Neural Network?
 
 Neural networks use an architecture inspired by the neurons in the brain. 
@@ -56,19 +70,7 @@ The following are the steps to build the model:
  
 4. Use trained parameters to predict labels.
 
-## Problem
-
-We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
-and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
-
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
-|:--:| 
-| *Figure 1: Distribution centers and customers* |
-
-Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
-a model to predict transportation rates. 
-
-We now build the neural network model by following algorithm steps.
+We now go through the algorithm steps.
 
 ## 1. Define Network Structure
 
@@ -179,5 +181,8 @@ $$
 
 
 ## 4. Predict Labels
+
+
+## 5. Application 
 
 
