@@ -25,11 +25,11 @@ by considering store deliveries.
 
 <style type="text/css">
   p {
-    .width-half {width: 50%}
+    .width-half {width: 30%}
   }
 </style>
 
-![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half}
+| ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} | ![](/images/INFORMS 2019/emrah_present.jpg){: .align-right .width-half} |
 
 The following is the slide deck.
 
