@@ -13,10 +13,11 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "minimal-mistakes-jekyll", :github => "emrahcimren/emrahcimren.github.io"
+gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem "jekyll-remote-theme"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
