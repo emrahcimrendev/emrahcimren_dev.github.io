@@ -15,20 +15,6 @@ and develop a neural network model to predict transportation rates using the the
 
 ![image-center](/images/2019-9-15_neurons.jpg){: .align-center}
 
-## Problem
-
-We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
-and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
-
-| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
-|:--:| 
-| *Figure 1: Distribution centers and customers* |
-
-Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
-a model to predict transportation rates. 
-
-We now build the neural network model by following algorithm steps.
-
 ## What is a Neural Network?
 
 Neural networks use an architecture inspired by the neurons in the brain. 
@@ -70,9 +56,17 @@ The following are the steps to build the model:
  
 4. Use trained parameters to predict labels.
 
-We now go through the algorithm steps.
+## Problem
 
-## 1. Define Network Structure
+We consider the [Predicting Short Term Trucking Rates problem](https://emrahcimren.github.io/transportation%20rates/Predicting-Short-Term-Trucking-Rates-with-Random-Forests/)
+and develop a neural network model to predict transportation rates using the the European long-haul Truckload data.
+
+| ![_config.yml]({{ site.baseurl }}/images/trans_rate_random_forest_customer_warehouse_network.jpg) | 
+|:--:| 
+| *Figure 1: Distribution centers and customers* |
+
+Our objective is to determine FTL and LTL rates for each distribution center to each customer. We develop
+a model to predict transportation rates. 
 
 The dataset consists of the European long-haul Truckload data, including
 mode, distance covered per shipment, average shipment weight per truck, average shipment cost per truck,
@@ -83,6 +77,10 @@ and trailer type (see Figure 2).
 | *Figure 2: Transportation data set* |
 
 ** ADD NETWORK DIAGRAM HERE
+
+We now build the neural network model by following algorithm steps.
+
+## 1. Define Network Structure
 
 Let $$L$$ be the set of layers. Let $$n^{\ell}$$ be the number of elements at layer $$\ell \in L$$. 
 Let $$X$$ be the set of input layer where $$X=\{x_1, \dots, x_n^0\}$$. Let $$A^{\ell}$$ be set of 
