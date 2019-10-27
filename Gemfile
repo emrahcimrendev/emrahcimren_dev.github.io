@@ -9,8 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-
-
+# gem "github-pages", group: :jekyll_plugins
 
 # To upgrade, run `bundle update`.
 
@@ -18,8 +17,7 @@ gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
-#gem "jekyll-remote-theme"
-gem "github-pages"
+gem "jekyll-remote-theme"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
