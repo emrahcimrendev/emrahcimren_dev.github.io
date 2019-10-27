@@ -1,5 +1,5 @@
 ---
-title: "Weighted Clustering with Minimum-Maximum Cluster Sizes: Greenfield Analysis"
+title: "Weighted Clustering with Minimum-Maximum Cluster Sizes, Greenfield Analysis"
 categories:
   - greenfield analysis
 tags:
