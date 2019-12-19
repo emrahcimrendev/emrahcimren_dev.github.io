@@ -1,10 +1,10 @@
 ---
-title: " 2019 INFORMS Annual Conference"
+title: "2019 INFORMS Annual Conference"
 categories:
   - conferences
 tags:
   - INFORMS Annual
-  - Operations research
+  - operations research
 --- 
 
 [The 2019 INFORMS Annual Meeting](http://meetings2.informs.org/wordpress/seattle2019/) was held at 

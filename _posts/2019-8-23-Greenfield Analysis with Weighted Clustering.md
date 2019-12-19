@@ -1,7 +1,7 @@
 ---
 title: "Weighted Clustering with Minimum-Maximum Cluster Sizes, Greenfield Analysis"
 categories:
-  - greenfield analysis
+  - data science
 tags:
   - greenfield analysis
   - weighted clustering

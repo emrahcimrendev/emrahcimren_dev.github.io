@@ -1,7 +1,7 @@
 ---
 title: "Visualizing Network Optimization Model Results Using Python"
 categories:
-  - network flows visualization
+  - visualization
 tags:
   - network flows visualization
   - python
