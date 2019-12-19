@@ -17,8 +17,8 @@ in all other groups.
 
 ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/ecommerce.jpg)
 
-Segmentation is the part of the assortment planning process where we decide right products 
-at the right quantity at the right price in the right place at the right time. 
+Segmentation is the part of the assortment planning process where we decide *right products*
+at the *right quantity* at the *right price* in the *right place* at the *right time*. 
 The following is the assortment planning framework typically followed by retailers.  
 
 ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment planning.PNG)
@@ -41,6 +41,8 @@ The objective of segmentation is to understand
 - What price they are willing to pay.
 
 Then, they are classified into groups based on these characteristics.
+
+
 
 
 
