@@ -23,6 +23,11 @@ The following is the assortment planning framework typically followed by retaile
 
 ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment planning.PNG)
 
+Segmentation is then followed by product design (product offering). The objective of the product design is to
+construct bundles of product/service features to target each customer segment. 
+Correlating customers’ willingness to pay with their preferences and 
+purchase behavior is the key to good product design.
+
 ### What is Segmentation?
 
 Segmentation is the process of classifying customers into groups (segments) based on 
@@ -36,3 +41,7 @@ The objective of segmentation is to understand
 - What price they are willing to pay.
 
 Then, they are classified into groups based on these characteristics.
+
+
+
+
