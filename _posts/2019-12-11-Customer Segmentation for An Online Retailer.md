@@ -15,7 +15,9 @@ where each member in each segment is very similar
 by some measure to each other and very dissimilar to members
 in all other segments.
 
-![_config.yml]({{ site.baseurl }}/images/2019-12-1_ecommerce.jpg)
+![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/ecommerce.jpg)
+
+
 
 
 
