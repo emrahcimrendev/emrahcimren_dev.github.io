@@ -9,6 +9,11 @@ tags:
   - customer segmentation
 --- 
 
-In this post, we provide customer segmentatuon approach for an online apparel retailer. 
+In this post, we provide a customer segmentation application for an online apparel retailer. 
+Our objective is to dividing the customer market into sub-markets, 
+wherein each member in each segment is very similar
+by some measure to each other and very dissimilar to members
+in all other segments.
 
-2019-12-1_clothingrack.jpg
+![_config.yml]({{ site.baseurl }}/images/2019-12-1_ecommerce.jpg)
+
