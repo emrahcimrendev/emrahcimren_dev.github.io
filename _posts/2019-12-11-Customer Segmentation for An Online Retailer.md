@@ -15,7 +15,7 @@ where each member in each group is very similar
 by some measure to each other and very dissimilar to members
 in all other groups.
 
-![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/ecommerce.jpg)
+![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/ecommerce.png)
 
 Segmentation is the part of the assortment planning process where we decide *right products*
 at the *right quantity* at the *right price* in the *right place* at the *right time*. 
@@ -41,6 +41,8 @@ The objective of segmentation is to understand
 - What price they are willing to pay.
 
 Then, they are classified into groups based on these characteristics.
+
+
 
 
 
