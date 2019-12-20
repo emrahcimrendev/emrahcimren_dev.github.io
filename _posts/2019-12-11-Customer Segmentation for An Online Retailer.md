@@ -21,12 +21,12 @@ Segmentation is the part of the assortment planning process where we decide *rig
 at the *right quantity* at the *right price* in the *right place* at the *right time*. 
 The following is the assortment planning framework typically followed by retailers.  
 
+![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment planning.PNG)
+
 Segmentation is then followed by product design (product offering). The objective of the product design is to
 construct bundles of product/service features to target each customer segment. 
 Correlating customers’ willingness to pay with their preferences and 
 purchase behavior is the key to good product design.
-
-![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/segmentation_and_product_design.PNG)
 
 ### What is Segmentation?
 
