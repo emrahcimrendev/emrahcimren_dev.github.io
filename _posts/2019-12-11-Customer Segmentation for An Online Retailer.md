@@ -28,7 +28,7 @@ construct bundles of product/service features to target each customer segment.
 Correlating customers’ willingness to pay with their preferences and 
 purchase behavior is the key to good product design.
 
-![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/segmentation_and_product_design.PNG}
+![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/segmentation_and_product_design.PNG)
 
 ### What is Segmentation?
 
