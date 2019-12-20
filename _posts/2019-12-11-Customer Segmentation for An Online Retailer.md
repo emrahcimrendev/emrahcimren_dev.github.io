@@ -43,3 +43,4 @@ The objective of segmentation is to understand
 - What price they are willing to pay.
 
 Then, they are classified into groups based on these characteristics.
+
