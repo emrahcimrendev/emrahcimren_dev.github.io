@@ -28,6 +28,8 @@ construct bundles of product/service features to target each customer segment.
 Correlating customers’ willingness to pay with their preferences and 
 purchase behavior is the key to good product design.
 
+![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/segmentation_and_product_design.PNG}
+
 ### What is Segmentation?
 
 Segmentation is the process of classifying customers into groups (segments) based on 
@@ -41,11 +43,3 @@ The objective of segmentation is to understand
 - What price they are willing to pay.
 
 Then, they are classified into groups based on these characteristics.
-
-
-
-
-
-
-
-
