@@ -30,7 +30,7 @@ construct bundles of product/service features to target each customer segment.
 Correlating customers’ willingness to pay with their preferences and 
 purchase behavior is the key to good product design.
 
-## Problem
+## Analysis
 
 The objective of this work is first to understand 
 
@@ -40,6 +40,10 @@ The objective of this work is first to understand
 - What price they are willing to pay.
 
 Then, we classify customers into groups based on these characteristics.
+
+## Problem
+
+
 
 
 
