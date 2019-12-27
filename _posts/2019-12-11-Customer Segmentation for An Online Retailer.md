@@ -24,15 +24,13 @@ at the *right quantity* at the *right price* in the *right place* at the *right 
 |:--:|
 | *Figure 1: Assortment planning process* |
 
-Segmentation is followed by product design (product offering). The objective of the product design is to
+We lassify customers into groups (segments) based on 
+observed or inferred characteristics, behaviors, and preferences in the segmentation step. Segmentation is then followed by product design (product offering). The objective of the product design is to
 construct bundles of product/service features to target each customer segment. 
 Correlating customers’ willingness to pay with their preferences and 
 purchase behavior is the key to good product design.
 
-### Problem
-
-Segmentation is the process of classifying customers into groups (segments) based on 
-observed or inferred characteristics, behaviors, and preferences. 
+## Problem
 
 The objective of segmentation is to understand 
 
