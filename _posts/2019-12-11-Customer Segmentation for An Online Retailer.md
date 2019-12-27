@@ -32,12 +32,14 @@ purchase behavior is the key to good product design.
 
 ## Problem
 
-The objective of segmentation is to understand 
+The objective of this work is first to understand 
 
 - Who is buying the product, 
 - How they buy,
 - What attributes they value (and don’t value),
 - What price they are willing to pay.
 
-Then, they are classified into groups based on these characteristics.
+Then, we classify customers into groups based on these characteristics.
+
+
 
