@@ -24,7 +24,7 @@ at the *right quantity* at the *right price* in the *right place* at the *right 
 |:--:|
 | *Figure 1: Assortment planning process* |
 
-We lassify customers into groups (segments) based on 
+We classify customers into groups (segments) based on 
 observed or inferred characteristics, behaviors, and preferences in the segmentation step. Segmentation is then followed by product design (product offering). The objective of the product design is to
 construct bundles of product/service features to target each customer segment. 
 Correlating customers’ willingness to pay with their preferences and 
