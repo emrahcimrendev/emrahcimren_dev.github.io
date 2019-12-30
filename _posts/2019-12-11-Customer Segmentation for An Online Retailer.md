@@ -18,17 +18,12 @@ in all other groups.
 ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/ecommerce.png)
 
 Segmentation is the part of the assortment planning process where we decide *right products*
-at the *right quantity* at the *right price* in the *right place* at the *right time* (see Figure 1).
+at the *right quantity* at the *right price* in the *right place* at the *right time* (see Figure 1). We classify customers into groups (segments) based on 
+observed or inferred characteristics, behaviors, and preferences.
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment planning.PNG) |
 |:--:|
 | *Figure 1: Assortment planning process* |
-
-We classify customers into groups (segments) based on 
-observed or inferred characteristics, behaviors, and preferences in the segmentation step. Segmentation is then followed by product design (product offering). The objective of the product design is to
-construct bundles of product/service features to target each customer segment. 
-Correlating customers’ willingness to pay with their preferences and 
-purchase behavior is the key to good product design.
 
 ## Analysis
 
