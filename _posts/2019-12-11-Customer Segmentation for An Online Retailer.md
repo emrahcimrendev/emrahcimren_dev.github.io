@@ -38,7 +38,7 @@ Then, we classify customers into groups based on these characteristics.
 
 ## Problem
 
-We consider an online woman apparel retailer, called XYZ. XYZ has four selling seasons; fall (FA), winter (WA), spring (SP), and summer (SU). At
+We consider an online woman apparel retailer, called XYZ. XYZ has four selling seasons; fall (FA), winter (WA), spring (SP), and summer (SU). At the beginning of each season, they offer an assortment consisting of new products and carryover products from the previous seasons. 
 
 
 
