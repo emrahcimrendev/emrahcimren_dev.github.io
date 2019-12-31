@@ -40,15 +40,12 @@ Then, we classify customers into groups based on these characteristics.
 
 We consider an online woman apparel retailer, called XYZ. XYZ has four selling seasons:
 
-- Spring(Febwk1–Aprwk4)
-- Summer(Maywk1–Julwk4)
-- Fall(Augwk1–Octwk4)
-- Winter(Novwk1–Janwk4)
+- Spring (SP) from February week 1 to April week 4.
+- Summer (SU) from May week 1 to July week 4.
+- Fall (FA) from August week 1 to October week 4.
+- Winter (WI) from November week 1 to January week 4.
 
-
-
-
-fall (FA), winter (WA), spring (SP), and summer (SU). At the beginning of each season, they offer an assortment consisting of new products and carryover products from the previous seasons. 
+At the beginning of each season, they offer an assortment consisting of new products and carryover products from the previous seasons. 
 
 
 
