@@ -42,3 +42,6 @@ The objective of segmentation is to understand
 
 Then, they are classified into groups based on these characteristics.
 
+### References
+1. http://support.sas.com/resources/papers/proceedings12/103-2012.pdf
+2. 
