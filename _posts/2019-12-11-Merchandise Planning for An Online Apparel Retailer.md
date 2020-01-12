@@ -6,7 +6,7 @@ tags:
   - merchandise planning
 --- 
 
-In this post, we defined merchandise planning process for an online apparel retailer, XYZ. 
+In this post, we define merchandise planning process for an online apparel retailer, XYZ. 
 Merchandise planning is a process where we determine *right products*
 at the *right quantity* at the *right price* in the *right place* 
 at the *right time* while meeting company's financial goals. 
