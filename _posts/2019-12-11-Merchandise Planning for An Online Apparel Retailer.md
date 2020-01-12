@@ -34,14 +34,18 @@ We consider an online woman apparel retailer, called XYZ. XYZ has four selling s
 Spring (SP), Summer (SU), Fall (FA), and Holiday (HO). Company's objective is to plan 
 SP 2017 merchandise.
 
+XYZ's merchandise follows a hierarchical structure (see Figure 1). 
+
+ 
+
 Merchandising planning is a process where we determine *right products*
 at the *right quantity* at the *right price* in the *right place* 
 at the *right time* while meeting company's financial goals. 
-Figure 1 shows merchandising planning steps.
+Figure 2 shows merchandising planning steps.
 
-| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/merchandising_planning.PNG) |
+| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment_planning.PNG) |
 |:--:|
-| *Figure 1: Merchandising planning steps* |
+| *Figure 2: Merchandising planning steps* |
 
 
 
