@@ -63,6 +63,8 @@ at the *right time* while meeting company's financial goals (see Figure 3).
 |:--:|
 | *Figure 2: Merchandising planning steps* |
 
+We now go over each step with examples.
+
 ### 1. Category Sales Forecasting
 
 ### 
