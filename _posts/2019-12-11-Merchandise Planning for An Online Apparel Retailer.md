@@ -51,7 +51,7 @@ Figure 2 shows an example for Stonewashed blue skinny jeans size S.
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/jeans.PNG) |
 |:--:|
-| *Figure 2: Jeans example* |
+| *Figure 2: Stonewashed blue skinny jeans size S example* |
 
 ## Merchandise Planning Process
 
@@ -74,7 +74,7 @@ Figure 2 shows merchandise planning steps.
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment_planning.PNG) |
 |:--:|
-| *Figure 2: Merchandise planning steps* |
+| *Figure 3: Merchandise planning steps* |
 
 
 
