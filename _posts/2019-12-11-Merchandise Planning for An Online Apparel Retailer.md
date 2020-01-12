@@ -36,7 +36,7 @@ she goes to the Women's Apparel department.
 Once in the Women's Apparel department, 
 the consumer proceeds to the next level of the merchandise hierarchy which is classification. 
 
-Classification is a group of items based on body coverage (e.g.m tops, bottoms, and dresses). 
+Classification is a group of items based on body coverage (e.g. tops, bottoms, and dresses). 
 Each classification
 consists of categories. Merchandise category
 is an assortment of items that customers see as substitutes for each other. 
