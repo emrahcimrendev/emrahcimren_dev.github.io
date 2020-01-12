@@ -65,16 +65,10 @@ at the *right time* while meeting company's financial goals (see Figure 3).
 
 We now go over each step with examples.
 
-### 1. Category Sales Forecasting
-
-### 
+### 1. Forecast Category Sales
 
 
-Figure 2 shows merchandise planning steps.
 
-| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Customer Segmentation/assortment_planning.PNG) |
-|:--:|
-| *Figure 3: Merchandise planning steps* |
 
 
 
