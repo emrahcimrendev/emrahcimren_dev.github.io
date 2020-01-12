@@ -17,13 +17,26 @@ at the *right time* while meeting company's financial goals.
 
 ## Retailer XYZ
 
-We consider an online woman apparel retailer, called XYZ. XYZ has four selling seasons; 
+XYZ has four selling seasons; 
 Spring (SP), Summer (SU), Fall (FA), and Holiday (HO). Company's objective is to plan 
-SP 2017 merchandise.
+SP 2020 merchandise.
 
-XYZ's merchandise follows a hierarchical structure (see Figure 1). 
+XYZ's merchandise follows a hierarchical structure (see Figure 1 for an example). Merchandise category
+is an assortment of items that customers see as substitutes for each other. 
+We Assign products to different categories based on differences in product attributes
+and common consumers and buying behaviours.
 
- 
+| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/jeans.PNG) |
+|:--:|
+| *Figure 2: Jeans example* |
+
+
+
+## Merchandise Planning Process
+
+### 1. Category Sales Forecasting
+
+### 
 
 
 Figure 2 shows merchandise planning steps.
