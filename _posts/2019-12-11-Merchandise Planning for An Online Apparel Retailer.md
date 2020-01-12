@@ -52,11 +52,14 @@ Figure 2 shows an example for Stonewashed blue skinny jeans size S.
 |:--:|
 | *Figure 2: Jeans example* |
 
-
-
-
-
 ## Merchandise Planning Process
+
+Merchandise planning is a seven-step process (see Figure 3). 
+
+| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/merch_plan_steps.PNG) |
+|:--:|
+| *Figure 2: Jeans example* |
+
 
 ### 1. Category Sales Forecasting
 
