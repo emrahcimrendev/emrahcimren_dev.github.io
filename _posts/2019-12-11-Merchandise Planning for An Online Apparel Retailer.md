@@ -30,17 +30,23 @@ XYZ's merchandise follows a hierarchical structure (see Figure 1).
 Department denotes high level group of products 
 such as Women's Apparel, Women's Footwear, etc. 
 When the customer arrives at the store, specific departments contain the merchandise. 
-For example, if a customer enters the store and needs a t-shirt, 
+For example, if a consumer enters the store and needs a t-shirt, 
 she goes to the Women's Apparel department. 
 Once in the Women's Apparel department, 
-the customer proceeds to the next level of the merchandise hierarchy which is classification. 
+the consumer proceeds to the next level of the merchandise hierarchy which is classification. 
 
-XYZ classifies products based on body coverage; tops, bottoms, and dresses. 
-
-Figure 2 shows an example for jeans. Merchandise category
+Classification is a group of items based on body coverage (e.g.m tops, bottoms, and dresses). 
+Each classification
+consists of categories. Merchandise category
 is an assortment of items that customers see as substitutes for each other. 
-We Assign products to different categories based on differences in product attributes
-and common consumers and buying behaviours.
+We assign products to different categories based on differences in product attributes
+and common consumers and buying behaviours. 
+
+A category consists of Styles where products are grouped based on 
+visuals or outer look. Style creates important aesthetic value for consumers.
+Stock-keeping unit (SKU) is the smallest unit available for inventory control. 
+
+Figure 2 shows an example for Stonewashed blue skinny jeans size S. 
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/jeans.PNG) |
 |:--:|
