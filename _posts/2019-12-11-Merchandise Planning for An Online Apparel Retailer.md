@@ -61,8 +61,7 @@ at the *right time* while meeting company's financial goals (see Figure 3).
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/merch_plan_steps.PNG) |
 |:--:|
-| *Figure 2: Jeans example* |
-
+| *Figure 2: Merchandising planning steps* |
 
 ### 1. Category Sales Forecasting
 
