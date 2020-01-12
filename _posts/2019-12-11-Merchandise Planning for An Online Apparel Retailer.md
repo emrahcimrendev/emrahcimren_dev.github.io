@@ -55,7 +55,7 @@ Figure 2 shows an example for Stonewashed blue skinny jeans size S.
 
 ## Merchandise Planning Process
 
-Merchandise planning is a seven-step process where we XYZ determines *right products*
+Merchandise planning is a seven-step process where XYZ determines *right products*
 at the *right quantity* at the *right price* in the *right place* 
 at the *right time* while meeting company's financial goals (see Figure 3). 
 
