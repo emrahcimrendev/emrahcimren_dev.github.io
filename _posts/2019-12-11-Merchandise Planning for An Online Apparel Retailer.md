@@ -7,13 +7,14 @@ tags:
 --- 
 
 In this post, we defined merchandise planning process for an online apparel retailer, XYZ. 
+Merchandise planning is a process where we determine *right products*
+at the *right quantity* at the *right price* in the *right place* 
+at the *right time* while meeting company's financial goals. 
 Our objective is to explain steps of merchandise planning with examples.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-11-Merchandise Planning for An Online Apparel Retailer/store.jpg)
 
-Merchandise planning is a process where we determine *right products*
-at the *right quantity* at the *right price* in the *right place* 
-at the *right time* while meeting company's financial goals. 
+
 
 ## Retailer XYZ
 
@@ -54,7 +55,9 @@ Figure 2 shows an example for Stonewashed blue skinny jeans size S.
 
 ## Merchandise Planning Process
 
-Merchandise planning is a seven-step process (see Figure 3). 
+Merchandise planning is a seven-step process where we XYZ determines *right products*
+at the *right quantity* at the *right price* in the *right place* 
+at the *right time* while meeting company's financial goals (see Figure 3). 
 
 | ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/merch_plan_steps.PNG) |
 |:--:|
