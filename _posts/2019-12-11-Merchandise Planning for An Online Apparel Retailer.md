@@ -9,7 +9,7 @@ tags:
 In this post, we defined merchandise planning process for an online apparel retailer, XYZ. 
 Our objective is to explain steps of merchandise planning with examples.
 
-![_config.yml]({{ site.baseurl }}/images//2019-12-11-Merchandise Planning for An Online Apparel Retailer/store.png)
+![_config.yml]({{ site.baseurl }}/images//2019-12-11-Merchandise Planning for An Online Apparel Retailer/store.jpg)
 
 Merchandise planning is a process where we determine *right products*
 at the *right quantity* at the *right price* in the *right place* 
@@ -35,7 +35,7 @@ she goes to the Women's Apparel department.
 Once in the Women's Apparel department, 
 the customer proceeds to the next level of the merchandise hierarchy which is classification. 
 
-We classify products based on body coverage, tops, bottoms, and dresses. 
+XYZ classifies products based on body coverage; tops, bottoms, and dresses. 
 
 Figure 2 shows an example for jeans. Merchandise category
 is an assortment of items that customers see as substitutes for each other. 
