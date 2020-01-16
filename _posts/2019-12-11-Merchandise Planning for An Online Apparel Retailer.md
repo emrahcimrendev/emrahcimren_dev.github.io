@@ -18,7 +18,7 @@ Our objective is to explain steps of merchandise planning with examples.
 
 XYZ has four selling seasons; 
 Spring (SP), Summer (SU), Fall (FA), and Holiday (HO). Company's objective is to plan 
-SP 2020 merchandise.
+SP2020 merchandise.
 
 XYZ's merchandise follows a hierarchical structure (see Figure 1). 
 
@@ -51,6 +51,13 @@ Figure 2 shows an example for Basic Standard-Fit T-Shirt Fire Red Size XS.
 |:--:|
 | *Figure 2: Basic Standard-Fit T-Shirt Fire Red Size XS* |
 
+## XYZ Data
+
+We consider 2-year t-shirts point of sale data (POS). We combine POS with product data. In the product data, 
+we combine hierarchy information with product attributes (see Figure 3).
+
+
+ 
 ## Merchandise Planning Process
 
 Merchandise planning is a seven-step process where XYZ determines *right products*
@@ -61,7 +68,7 @@ at the *right time* while meeting company's financial goals (see Figure 3).
 |:--:|
 | *Figure 2: Merchandising planning steps* |
 
-We now go over each step with examples.
+We now go over each step through T-Shirts example.
 
 ### 1. Forecast Category Sales
 
