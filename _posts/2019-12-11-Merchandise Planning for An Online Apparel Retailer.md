@@ -67,7 +67,22 @@ We now go over each step with examples.
 
 ### 1. Forecast Category Sales
 
+In this step, we first understand the nature of the life cycle of each style. 
+Product life cycle is the stages a product goes through after it has been introduced in the market (see Figure 3). 
 
+
+
+
+| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/product_lifecycle.png) |
+|:--:|
+| *Figure 3: Product lifecycle* |
+
+
+
+
+2.Collecting data on sales of product and comparable products
+3.Using statistical techniques to project sales
+4.Work with vendors to coordinate manufacturing and merchandise delivery with forecasted demand
 
 
 
