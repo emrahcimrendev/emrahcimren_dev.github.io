@@ -10,15 +10,17 @@ In this post, we define merchandise planning process for an online apparel retai
 Merchandise planning is a process where we determine *right products*
 at the *right quantity* at the *right price* in the *right place* 
 at the *right time* while meeting company's financial goals. 
-Our objective is to explain steps of merchandise planning with examples.
+Our objective in this post is to explain steps of merchandise planning with examples.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-11-Merchandise Planning for An Online Apparel Retailer/store.jpg)
 
 ## Retailer XYZ
 
-XYZ has four selling seasons; 
+XYZ sells women apparel products online. They have four selling seasons; 
 Spring (SP), Summer (SU), Fall (FA), and Holiday (HO). Company's objective is to plan 
-SP2020 merchandise.
+SP2020 merchandise. 
+
+### Merchandise 
 
 XYZ's merchandise follows a hierarchical structure (see Figure 1). 
 
@@ -51,63 +53,26 @@ Figure 2 shows an example for Basic Standard-Fit T-Shirt Fire Red Size XS.
 |:--:|
 | *Figure 2: Basic Standard-Fit T-Shirt Fire Red Size XS* |
 
-## XYZ Data
+In this work, we focus on particularly *T-Shirts* category where 
+XYZ offers about xxx styles-color combinations at each season. 
 
-We consider 2-year t-shirts point of sale data (POS). We combine POS with product data. In the product data, 
-we combine hierarchy information with product attributes (see Figure 3).
+### Products
 
+For T-Shirts, we use following product attributes to be able to differentiate styles 
+where each style consists of a unique combination.
 
- 
-## Merchandise Planning Process
-
-Merchandise planning is a seven-step process where XYZ determines *right products*
-at the *right quantity* at the *right price* in the *right place* 
-at the *right time* while meeting company's financial goals (see Figure 3). 
-
-| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/merch_plan_steps.PNG) |
-|:--:|
-| *Figure 2: Merchandising planning steps* |
-
-We now go over each step through T-Shirts example.
-
-### 1. Forecast Category Sales
-
-In this step, we first understand the nature of the life cycle of each style. 
-Product life cycle is the stages a product goes through after it has been introduced in the market (see Figure 3). 
-
-| ![_config.yml]({{ site.baseurl }}/images/2019-12-11-Merchandise Planning for An Online Apparel Retailer/product_lifecycle.png) |
-|:--:|
-| *Figure 3: Product lifecycle* |
-
-A product follows four stages in its lifecycle:
-
-- Introduction stage: Product is introduced to the market at this stage. 
-The cost of the product is high initially since the cost of production is high. 
-The product does not face much competition since it has just appeared in the market. 
-The company invests mostly in advertising and promoting the product.
-
-- Growth stage: Customer already recognizes the product. Since demand is high, the profit gets increased. 
-During this stage, the brands improve the quality of their products, 
-add new features, spread more outlets, increase distribution channels, 
-and reduce the cost if profit is low. Investing more in promotional 
-activity will increase the potential of gaining more profit.
-
-- Maturity stage: In this stage, potential competitors starts threatening the product. The maturity stage defines the time when the product has stabilised in the market. The manufactures now have to make sure the product remains at its position. The manufactures need to think logically before making any decision. They will gradually decrease the cost of the product since the volume of the product has been increased. This is the period when more competitors seem to join the market.
+| Product Attribute Name | Product Attribute Value |
+| ---------------------- | ------------------------|
+| Segment | Basic, Casual,  Active |
+| Fit | Slim, Standard, Relaxed |
+| Neck | Crew, V, Turtle |
+| Graphic | True, False |
+| Pattern | True, False |
+| Pocket | True, False |
+| Cropped | True, False |
+| Cap Sleeves | True, False |
+| Side Split Hems | True, False |
+| Curved Hem | True, False |
+| Dropped Hem | True, False |
 
 
-
-
-
-
-2.Collecting data on sales of product and comparable products
-3.Using statistical techniques to project sales
-4.Work with vendors to coordinate manufacturing and merchandise delivery with forecasted demand
-
-
-
-
-
-
-### References
-1. http://support.sas.com/resources/papers/proceedings12/103-2012.pdf
-2. 
