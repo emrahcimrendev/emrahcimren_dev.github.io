@@ -65,14 +65,21 @@ where each style consists of a unique combination.
 | ---------------------- | ------------------------|
 | Segment | Basic, Casual,  Active |
 | Fit | Slim, Standard, Relaxed |
-| Neck | Crew, V, Turtle |
+| Neck Shape | Crew, V, Turtle |
+| Sleeves Shape | Raglan, Set-in |
 | Graphic | True, False |
-| Pattern | True, False |
+| Pattern | Floral, All Over Print, Plaid, Solid, Spot, Stripe  |
 | Pocket | True, False |
 | Cropped | True, False |
 | Cap Sleeves | True, False |
 | Side Split Hems | True, False |
 | Curved Hem | True, False |
 | Dropped Hem | True, False |
+| Material of Clothing | Only Cotton, Synthetic,  Viscose |
+
+### Sales
+
+We also consider sales transaction data by time, sku, and customer. 
+
 
 
