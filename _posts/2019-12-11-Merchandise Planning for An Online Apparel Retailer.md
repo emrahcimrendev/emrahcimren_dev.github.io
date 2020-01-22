@@ -18,7 +18,7 @@ Our objective in this post is to explain steps of merchandise planning with exam
 
 XYZ sells women apparel products online. They have four selling seasons; 
 Spring (SP), Summer (SU), Fall (FA), and Holiday (HO). Company's objective is to plan 
-SP2020 merchandise. 
+SP2017 merchandise. 
 
 ### Merchandise 
 
@@ -54,7 +54,13 @@ Figure 2 shows an example for Basic Standard-Fit T-Shirt Fire Red Size XS.
 | *Figure 2: Basic Standard-Fit T-Shirt Fire Red Size XS* |
 
 In this work, we focus on particularly *T-Shirts* category where 
-XYZ offers about xxx styles-color combinations at each season. 
+XYZ offers about 31 style-color combinations at each season. 
+
+### Sales
+
+We consider sales transaction data by time, sku, and customer. 
+
+
 
 ### Products
 
@@ -77,9 +83,6 @@ where each style consists of a unique combination.
 | Dropped Hem | True, False |
 | Material of Clothing | Only Cotton, Synthetic,  Viscose |
 
-### Sales
-
-We also consider sales transaction data by time, sku, and customer. 
 
 
 
