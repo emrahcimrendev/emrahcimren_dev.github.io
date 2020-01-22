@@ -57,9 +57,9 @@ In this work, we focus on particularly *T-Shirts* category where
 XYZ offers about 31 style-color combinations at each season. 
 
 ### Sales
-
 We consider sales transaction data by time, sku, and customer. 
 
+*** Add insights about sales ***
 
 
 ### Products
