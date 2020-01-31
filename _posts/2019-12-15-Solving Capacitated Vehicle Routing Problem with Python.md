@@ -11,7 +11,7 @@ tags:
 --- 
 
 Vehicle routing problem (VRP) is identifying the optimal set of routes for a set of 
-vehicles/fleet/transportation modes to travel in order to deliver to a given 
+vehicles to travel in order to deliver to a given 
 set of customers. When vehicles have limited carrying capacity and 
 customers have time windows within which the deliveries must be made, problem becomes
 capacitated vehicle routing problem with time windows (CVRPTW). 
