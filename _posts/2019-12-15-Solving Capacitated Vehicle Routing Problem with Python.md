@@ -20,3 +20,16 @@ get a fast and robust solution.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem with Python/truck_main.jpg)
 
+## Problem 
+
+Consider a pizza restaurant chain in the state of xxx with xxx stores. 
+
+## Analysis
+
+### Mathematical Formulation
+
+### Python Implementation
+
+### Analysis of Results
+
+
