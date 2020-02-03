@@ -23,6 +23,7 @@ get a fast and robust solution.
 ## Problem 
 
 Consider a pizza restaurant chain, PPizza, in Los Angeles, CA with 34 stores and one depot. 
+
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem with Python/store_depot_map.PNG) | 
 |:--:| 
 | *Figure 1: PPizza depot and stores* |
