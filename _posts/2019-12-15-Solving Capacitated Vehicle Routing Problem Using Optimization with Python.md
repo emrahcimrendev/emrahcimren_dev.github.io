@@ -40,11 +40,17 @@ done within. Unloading time varies by store depending on location and parking av
 |:--:| 
 | *Figure 1: PPizza depot and stores* |
 
-Depot has temperature controlled 
+Trucks leave from the depot at 6am in the morning. We can allocate a helper to a truck to speed up
+unloading. Drivers cannot drive for longer than 11 hours due to Department of Transportation regulations.
+We can add a second driver to a truck to be able to deliver longer distances. This case is called
+"team driver" and truck can be operated up to 22 hours.
 
-## Analysis
+We want to identify the required number of trucks and truck operating schedules to be able to deliver
+fresh ingredients to each store with given time windows constraints by minimizing the total cost. 
 
 ### Mathematical Formulation
+
+
 
 ### Python Implementation
 
