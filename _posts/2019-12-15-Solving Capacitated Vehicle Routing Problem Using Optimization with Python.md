@@ -22,7 +22,6 @@ get a fast and robust solution.
 
 ## Problem 
 
-
 We consider a pizza restaurant chain, **PPizza**, in the Los Angeles, CA area with 34 stores. 
 Each store operates from 10am to 1am everyday. **PPizza** offers three pizza sizes
 (small, medium, large) with various toppings and soft drinks. Pizzas are prepared using fresh
