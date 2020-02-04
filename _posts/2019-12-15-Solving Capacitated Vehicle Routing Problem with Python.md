@@ -22,7 +22,11 @@ get a fast and robust solution.
 
 ## Problem 
 
-Consider a pizza restaurant chain, PPizza, in Los Angeles, CA with 34 stores and one depot. 
+We consider a pizza restaurant chain, **PPizza**, in Los Angeles, CA with 34 stores. 
+Each store operates from 10am to 1am everyday. 
+ 
+ and one depot. 
+Figure 1 shows location of stores and a depot.  
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem with Python/store_depot_map.PNG) | 
 |:--:| 
