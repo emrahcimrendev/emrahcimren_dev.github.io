@@ -36,7 +36,7 @@ Soft drinks are delivered and replenished by suppliers directly.
 Figure 1 shows location of stores and the depot. Each store has time windows where delivery needs to be
 done within. Unloading time varies by store depending on location and parking availability. 
 
-| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem with Python/store_depot_map.PNG) | 
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem Using Optimization with Python/store_depot_map.PNG) | 
 |:--:| 
 | *Figure 1: PPizza depot and stores* |
 
