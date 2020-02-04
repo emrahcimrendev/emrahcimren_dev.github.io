@@ -50,10 +50,15 @@ fresh ingredients to each store with given time windows constraints by minimizin
 
 ### Mathematical Formulation
 
+We develop the following mixed integer formulation for the PPizza delivery problem 
+by extending xxx model. 
+
 
 
 ### Python Implementation
 
 ### Analysis of Results
 
+
+### References
 
