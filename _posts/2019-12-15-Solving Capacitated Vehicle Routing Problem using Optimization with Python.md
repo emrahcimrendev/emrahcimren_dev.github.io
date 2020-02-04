@@ -22,11 +22,13 @@ get a fast and robust solution.
 
 ## Problem 
 
+
 We consider a pizza restaurant chain, **PPizza**, in the Los Angeles, CA area with 34 stores. 
 Each store operates from 10am to 1am everyday. **PPizza** offers three pizza sizes
 (small, medium, large) with various toppings and soft drinks. Pizzas are prepared using fresh
 ingredients and baked in store on demand. 
 
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem Using Optimization with Python/pizza.PNG)
 
 forecasts weekly demand of 
 food items for each store and identifies required ingredients. 
