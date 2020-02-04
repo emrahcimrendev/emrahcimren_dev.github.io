@@ -29,15 +29,18 @@ ingredients and baked in store on demand.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem Using Optimization with Python/pizza.PNG)
 
-forecasts weekly demand of 
-food items for each store and identifies required ingredients. 
- 
- and one depot. 
-Figure 1 shows location of stores and a depot.  
+**PPizza** forecasts weekly demand of  food items for each store and identifies required ingredients
+and soft drinks. Fresh ingredients are delivered to stores daily from the main depot once a day. 
+Soft drinks are delivered and replenished by suppliers directly. 
+
+Figure 1 shows location of stores and the depot. Each store has time windows where delivery needs to be
+done within. Unloading time varies by store depending on location and parking availability. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem with Python/store_depot_map.PNG) | 
 |:--:| 
 | *Figure 1: PPizza depot and stores* |
+
+Depot has temperature controlled 
 
 ## Analysis
 
