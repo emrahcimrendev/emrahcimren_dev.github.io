@@ -78,7 +78,7 @@ $\begin{equation}
  \end{equation}$
 
 $\begin{equation} 
- a_{n+1}=\min_{i∈N}\\{a_i + −t_{0i}\\},
+ a_{n+1}=\min_{i∈N}\\{a_i + s_{i} + t_{in+1}\\},
  \end{equation}$
  
  an+1=mini∈N{ai+si+tin+1}
