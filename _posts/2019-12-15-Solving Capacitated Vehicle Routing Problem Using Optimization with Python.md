@@ -53,7 +53,7 @@ fresh ingredients to each store with given time windows and DOT constraints by m
 ### Mathematical Formulation
 
 We develop the following mixed integer formulation for the **PPizza** delivery problem 
-by extending xxx model. 
+by extending Desrochers et al., (1988) model. 
 
 
 
@@ -63,4 +63,7 @@ by extending xxx model.
 
 
 ### References
-
+Desrochers, M., Lenstra, J.K., Savelsbergh, M.W.P., Soumis, F. (1988). 
+Vehicle routing with time windows: Optimization and approximation. 
+In: Golden, B.L., Assad, A.A. (Eds.), 
+Vehicle Routing: Methods and Studies. North-Holland, Amsterdam, pp. 65–84.
