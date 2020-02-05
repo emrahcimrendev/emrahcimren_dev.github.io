@@ -72,11 +72,16 @@ time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ 
 $\begin{equation} 
  a_0=\min_{i∈N}\\{a_i−t_{0i}\\},
  \end{equation}$
+ 
 $\begin{equation} 
  b_0=\max_{i∈N}\\{b_i−t_{0i}\\},
  \end{equation}$
 
-
+$\begin{equation} 
+ a_{n+1}=\min_{i∈N}\\{a_i + −t_{0i}\\},
+ \end{equation}$
+ 
+ an+1=mini∈N{ai+si+tin+1}
 
 
 
