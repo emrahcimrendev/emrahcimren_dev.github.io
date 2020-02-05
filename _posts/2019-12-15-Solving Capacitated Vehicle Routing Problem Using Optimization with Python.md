@@ -67,7 +67,9 @@ Let $t_{ij}$ be the travel minutes from location $i\in V$ to location $j\in V\se
 
 Let $[a_i, b_i]$ be time window for non-depot location $i\in V\setminus\{0, n+1\}$ where 
 $a_i$ and $b_i$ are starting and ending times. Let $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ be
-time windows for the depot.
+time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ as
+
+$\begin{equation} \begin{bmatrix} x & \dot{x} & \theta & \dot{\theta} & L & m & M \end{bmatrix} \end{equation}$
 
 
 
