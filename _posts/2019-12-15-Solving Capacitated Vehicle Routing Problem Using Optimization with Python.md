@@ -52,8 +52,15 @@ fresh ingredients to each store with given time windows and DOT constraints by m
 
 ### Mathematical Formulation
 
-We develop the following mixed integer formulation for the **PPizza** delivery problem 
-by extending Desrochers et al., (1988) model. 
+We develop a mixed integer model for the **PPizza** delivery problem 
+by extending Desrochers et al., (1988) formulation. 
+
+Let $$G=(V, A)$$, where $$|V|=n+2$, and the depot is represented by the two vertices $$0$$ and $$n+1$$. 
+
+
+
+
+$$$ $$$
 
 
 
