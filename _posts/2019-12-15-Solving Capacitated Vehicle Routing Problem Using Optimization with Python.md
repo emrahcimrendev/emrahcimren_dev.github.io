@@ -70,7 +70,7 @@ $a_i$ and $b_i$ are starting and ending times. Let $[a_0, b_0]$ and $[a_{n+1}, b
 time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ as
 
 $\begin{equation} 
- a_0=\min_{i∈N}\Large{a_i−t_{0i}\Large},
+ a_0=\min_{i∈N}\\{a_i−t_{0i}\\},
  \end{equation}$
  
 $\begin{equation} 
