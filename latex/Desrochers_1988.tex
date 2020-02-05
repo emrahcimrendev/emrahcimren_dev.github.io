@@ -1,0 +1,209 @@
+%%
+%% Author: jsalazer
+%% 8/21/2019
+%%
+
+%% TODO:
+
+% Preamble
+\documentclass[12pt]{article}
+% Use latex macro
+\input latexmacro
+\standard
+
+\oddsidemargin=0in%
+\evensidemargin=0in %
+\topmargin =-.5in %
+\textheight=8.5in %
+\textwidth=6.4in %
+
+% Packages
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{tikz-network}
+
+\usetikzlibrary{shapes}
+
+\pagenumbering{arabic}
+
+\graphicspath{{./img/}}
+
+
+% Document
+\begin{document}
+\double
+
+{\Large \bf Sets and Parameters}
+
+Let $G=(V, A)$ be a directed graph where $|V|=n+2$,
+and the depot is represented by the two vertices $0$ and $n+1$.
+Feasible vehicle routes then correspond to paths starting at vertex $0$ and ending at vertex $n+1$.
+
+Let $N$ be set of non-depot locations where $N=V\{0, n+1\}$.
+
+Let $A$ be the set of arcs where $A=\{(i, j)\st i, j \in V, i \neq j\}$.
+Let $\delta^{+}(i)=\{j\st (i, j) \in A\}$
+and $\delta^{-}(j)=\{i\st (i, j) \in A\}$. Note that arc $(i,j) \in A$ denotes
+location $j$ is visited after location $i$.
+
+Let $K$ be the set of vehicles where $|K|=m$. Let $\bar{s}_i$ and $s_i$ be the service time
+at node $i\in V$ without and with helper, respectively.
+Note that $\bar{s}_{0}=\bar{s}_{n+1}=0$ and $s_0=s_{n+1}=0$.
+
+Let $t_{ij}$ be the travel minutes from location $i\in V$ to location $j\in V\setminus\{i\}$.
+
+Let $[a_i, b_i]$ be time window for non-depot location $i\in V\setminus\{0, n+1\}$ where
+$a_i$ and $b_i$ are starting and ending times. Let $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ be
+time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ as
+
+\begin{equationarray}{lll}
+  a_0&=&\min_{i\in N}\{a_i-t_{0i}\}, \nonumber\\[10pt]
+  b_0&=&\max_{i\in N}\{b_i-t_{0i}\}, \nonumber\\[10pt]
+  a_{n+1}&=&\min_{i\in N}\{a_i + s_{i} + t_{in+1}\}, \nonumber\\[10pt]
+  b_{n+1}&=&\max_{i\in N}\{b_i+s_i+t_{in+1}\}. \nonumber
+\end{equationarray}
+
+Let $q_i$ denote the demand of location $i$ and let $Q_k$ be the vehicle $k\in K$ capacity.
+
+\newpage
+{\Large \bf Variables}
+
+Let $x_{ijk}$ be the binary variable for sequencing where
+
+\begin{equationarray}{rlllll}
+    &
+    x_{ijk} &
+    = &
+    \left\{
+    \begin{array}{ll}
+        1, &
+        \mbox{if and only if arc } (i, j)\in A \mbox{ is used by vehicle } k \in K, \nonumber \\[5pt]
+        0, &
+        \mbox{otherwise.}
+    \end{array}
+    \right. &
+\end{equationarray}
+
+\newpage
+
+We now provide the mathematical formulation for the RDC Network Design problem.
+
+Let $x_{ijpbt}$ be the variable for the flow of product in pounds from node $i \in N$ to node $j \in N\setminus\{i\}$ for product $p\in P$ in BU $b \in B$ at period
+$t \in T$.
+
+Let $z_i$ be the binary variable for the selection of an RDC node $i \in N_3$ where
+
+\begin{equationarray}{rlllll}
+    &
+    z_{i} &
+    = &
+    \left\{
+    \begin{array}{ll}
+        1, &
+        \mbox{if RDC node } i \in N_3 \mbox{ is selected}, \nonumber \\[5pt]
+        0, &
+        \mbox{otherwise.}
+    \end{array}
+    \right. &
+\end{equationarray}
+
+
+The model \textbf{RDC-1} is formulated as,
+
+\begin{equationarray}{rrrlll}
+    \mbox{minimize} \sum_{i \in \{N_2 \cup N_3\}} \sum_{j \in \{N_3 \setminus\{i\} \cup N_4\}} \sum_{p \in P} \sum_{b \in B} \sum_{t \in T} \bar{c}_{ijpb}x_{ijpbt}
+    \label{model:rdc-1: objective}
+\end{equationarray}
+
+\vspace{-6pt}
+
+\begin{equationarray}{rrrlll}
+
+    \mbox{subject to} &
+    \sum_{i \in N_3} x_{ijpbt} &
+    = &
+    d_{jptbt}, &
+    \forall j\in N_4, p\in P, b \in B, t\in T,
+    \label{model:rdc-1: demand}\\[18pt]
+
+    &
+    \sum_{i \in \{N_1 \cup N_2\}} x_{ijpbt} &
+    = &
+    \sum_{i \in N_4} x_{jipbt}, &
+    \forall j \in N_3, p \in P, b \in B, t \in T,
+    \label{model:rdc-1: flow in flow out}\\[18pt]
+
+    &
+    \sum_{i \in \{N_1 \cup N_2\}} \sum_{p \in P} \sum_{b \in B} \ell_p * \frac{x_{ijpbt}}{u_{ipt}} &
+    \le &
+    v_{jt}, &
+    \forall j \in N_3, t \in T,
+    \label{model:rdc-1: rdc capacity}\\[18pt]
+
+    &
+    \sum_{j \in N_3} \sum_{b \in B} x_{ijpbt} &
+    \le &
+    w_{ipt}, &
+    \forall i \in N_2, p \in P, t \in T,
+    \label{model:rdc-1: rp capacity}\\[18pt]
+
+    &
+    \sum_{j \in N_4} y_{ij} &
+    = &
+    1, &
+    \forall i \in N_3,
+    \label{model:rdc-1: cdc allocation}\\[18pt]
+
+    &
+    \sum_{p \in P} \sum_{t \in T} \sum_{b \in B} x_{ijpbt} &
+    \le &
+    M * y_{ij}, &
+    \forall i \in N_3, j \in N_4,
+    \label{model:rdc-1: cdc allocation big M}\\[18pt]
+
+    &
+    \sum_{j \in N_4} y_{ij} &
+    \le &
+    M * z_i, &
+    \forall i \in N_3,
+    \label{model:rdc-1: rdc selection big M}\\[18pt]
+
+    &
+    x_{ijpbt} &
+    \ge &
+    0, &
+    \forall i \in N, j\in \{N \setminus \{i\}\}, \nonumber \\&
+    &
+    &
+    &
+    p \in P, t \in T, b \in B,
+    \label{model:rdc-1: variable positivity real} \\[18pt]
+
+    &
+    y_{ij} &
+    \in\ &
+    \{0,1\} &
+    \forall i\in N_3, j \in N_4,
+    \label{model:rdc-1: cdc allocation binary} \\[18pt]
+
+    &
+    z_i &
+    \in\ &
+    \{0,1\} &
+    \forall i\in N_3.
+    \label{model:rdc-1: rdc site selection binary}
+
+\end{equationarray}
+
+The objective of the model, (\ref{model:rdc-1: objective}), minimizes the total transportation costs from RP to RDC to customer.
+In (\ref{model:rdc-1: demand}), total product demand for each customer should be satisfied for each period. Flow balances at the
+RDC are described in (\ref{model:rdc-1: flow in flow out}). The RDC capacity is measured in total pallets, and thus
+(\ref{model:rdc-1: rdc capacity}) describes the conversion of the flow in pounds into pallets. In (\ref{model:rdc-1: rp capacity}), the
+flow out of the RP is constrained by its capacity for the horizon. RDC assignments to CDC are described
+in (\ref{model:rdc-1: cdc allocation}) and (\ref{model:rdc-1: cdc allocation big M}), which ensures one and only CDC is assigned
+to a RDC for the model horizon. The model is able to decide whether an RDC is open or closed for the model horizon
+which is described in (\ref{model:rdc-1: rdc selection big M}). Lastly, nonegativity and binary constraints are described (\ref{model:rdc-1: variable positivity real}),
+(\ref{model:rdc-1: cdc allocation binary}), and (\ref{model:rdc-1: rdc site selection binary}).
+
+\end{document}

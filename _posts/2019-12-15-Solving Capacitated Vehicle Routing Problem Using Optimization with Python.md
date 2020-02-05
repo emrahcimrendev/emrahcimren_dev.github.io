@@ -55,33 +55,6 @@ fresh ingredients to each store with given time windows and DOT constraints by m
 We develop a mixed integer model for the **PPizza** delivery problem 
 by extending Desrochers et al., (1988) formulation. 
 
-Let $G=(V, A)$ be a directed graph where $|V|=n+2$, 
-and the depot is represented by the two vertices $0$ and $n+1$. 
-Feasible vehicle routes then correspond to paths starting at vertex $0$ and ending at vertex $n+1$.
-
-Let $K$ be the set of vehicles where $|K|=m$. Let $~{s}_i$ and $s_i$ be the service time 
-at node $i\in V$ without and with helper, respectively. 
-Note that $s_{0}=s_{n+1}=0$ and $s_0=s_{n+1}=0$. 
- 
-Let $t_{ij}$ be the travel minutes from location $i\in V$ to location $j\in V\setminus\{i\}$. 
-
-Let $[a_i, b_i]$ be time window for non-depot location $i\in V\setminus\{0, n+1\}$ where 
-$a_i$ and $b_i$ are starting and ending times. Let $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ be
-time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ as
-
-$\begin{equation} 
- a_0=\min_{i∈N}\\{a_i−t_{0i}\\},
- \end{equation}$
- 
-$\begin{equation} 
- b_0=\max_{i∈N}\\{b_i−t_{0i}\\},
- \end{equation}$
-
-$\begin{equation} 
- a_{n+1}=\min_{i∈N}\\{a_i + s_{i} + t_{in+1}\\},
- \end{equation}$
- 
- an+1=mini∈N{ai+si+tin+1}
 
 
 
