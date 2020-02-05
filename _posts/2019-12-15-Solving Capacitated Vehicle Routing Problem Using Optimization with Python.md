@@ -65,7 +65,11 @@ Note that $s^{-}_0=s^{-}_{n+1}=0$ and $s^{+}_0=s^{+}_{n+1}=0$.
  
 Let $t_{ij}$ be the travel minutes from location $i\in V$ to location $j\in V\setminus\{j\}$. 
 
-Let $a_i$ and $b_i$ are starting and ending time windows for non-depot location $i\in $
+Let $[a_i, b_i]$ be time window for non-depot location $i\in V\setminus\{0, n+1\}$ where 
+$a_i$ and $b_i$ are starting and ending times. Let $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ be
+time windows for the depot.
+
+
 
 
 
