@@ -59,7 +59,7 @@ Let $G=(V, A)$ be a directed graph where $|V|=n+2$,
 and the depot is represented by the two vertices $0$ and $n+1$. 
 Feasible vehicle routes then correspond to paths starting at vertex $0$ and ending at vertex $n+1$.
 
-Let $K$ be the set of vehicles where $|K|=m$. Let $\\bar{s}_i$ and $s_i$ be the service time 
+Let $K$ be the set of vehicles where $|K|=m$. Let $$s_i$$ and $s_i$ be the service time 
 at node $i\in V$ without and with helper, respectively. 
 Note that $s_{0}=s_{n+1}=0$ and $s_0=s_{n+1}=0$. 
  
@@ -72,9 +72,8 @@ time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ 
 $\begin{equation} 
  a_0=\min_{i∈N}\\{a_i−t_{0i}\\},
  \end{equation}$
- 
 $\begin{equation} 
- b_0=\max_{i∈N}\Large{b_i−t_{0i}\Large},
+ b_0=\max_{i∈N}\\{b_i−t_{0i}\\},
  \end{equation}$
 
 
