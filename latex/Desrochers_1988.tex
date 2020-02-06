@@ -66,6 +66,8 @@ time windows for the depot. We can define $[a_0, b_0]$ and $[a_{n+1}, b_{n+1}]$ 
 
 Let $q_i$ denote the demand of location $i$ and let $Q_k$ be the vehicle $k\in K$ capacity.
 
+Let $c_k$, $h_k$, and $p_k$ be unit transportation, helper, and team truck costs for vehicle $k \in K$.
+
 \newpage
 {\Large \bf Variables}
 
@@ -84,6 +86,132 @@ Let $x_{ijk}$ be the binary variable for sequencing where
     \end{array}
     \right. &
 \end{equationarray}
+
+Let $w_{ik}$ be continuous variable indicating the time at which vehicle $k \in K$ starts servicing location $i \in V$.
+
+Let $y_{k}$ be the binary variable for helper assignment where
+
+\begin{equationarray}{rlllll}
+    &
+    y_{k} &
+    = &
+    \left\{
+    \begin{array}{ll}
+        1, &
+        \mbox{if vehicle } k \in K \mbox{ has a helper}, \nonumber \\[5pt]
+        0, &
+        \mbox{otherwise.}
+    \end{array}
+    \right. &
+\end{equationarray}
+
+Let $z_{k}$ be the binary variable for team driver assignment where
+
+\begin{equationarray}{rlllll}
+    &
+    z_{k} &
+    = &
+    \left\{
+    \begin{array}{ll}
+        1, &
+        \mbox{if vehicle } k \in K \mbox{ has a team driver}, \nonumber \\[5pt]
+        0, &
+        \mbox{otherwise.}
+    \end{array}
+    \right. &
+\end{equationarray}
+
+
+\newpage
+{\Large \bf Mathematical Formulation}
+
+The model is formulated as,
+
+\begin{equationarray}{rrrlll}
+    \mbox{minimize} \sum_{k\in K}\Big[\sum_{(i,j)\in A}c_kt_{ij}x_{ijk} + h_ky_k + q_kz_k\Big]
+    \label{model: objective}
+\end{equationarray}
+
+\vspace{-6pt}
+
+\begin{equationarray}{rrrlll}K
+
+    \mbox{subject to} &
+    \sum_{i \in N_3} x_{ijpbt} &
+    = &
+    d_{jptbt}, &
+    \forall j\in N_4, p\in P, b \in B, t\in T,
+    \label{model:rdc-1: demand}\\[18pt]
+
+    &
+    \sum_{i \in \{N_1 \cup N_2\}} x_{ijpbt} &
+    = &
+    \sum_{i \in N_4} x_{jipbt}, &
+    \forall j \in N_3, p \in P, b \in B, t \in T,
+    \label{model:rdc-1: flow in flow out}\\[18pt]
+
+    &
+    \sum_{i \in \{N_1 \cup N_2\}} \sum_{p \in P} \sum_{b \in B} \ell_p * \frac{x_{ijpbt}}{u_{ipt}} &
+    \le &
+    v_{jt}, &
+    \forall j \in N_3, t \in T,
+    \label{model:rdc-1: rdc capacity}\\[18pt]
+
+    &
+    \sum_{j \in N_3} \sum_{b \in B} x_{ijpbt} &
+    \le &
+    w_{ipt}, &
+    \forall i \in N_2, p \in P, t \in T,
+    \label{model:rdc-1: rp capacity}\\[18pt]
+
+    &
+    \sum_{j \in N_4} y_{ij} &
+    = &
+    1, &
+    \forall i \in N_3,
+    \label{model:rdc-1: cdc allocation}\\[18pt]
+
+    &
+    \sum_{p \in P} \sum_{t \in T} \sum_{b \in B} x_{ijpbt} &
+    \le &
+    M * y_{ij}, &
+    \forall i \in N_3, j \in N_4,
+    \label{model:rdc-1: cdc allocation big M}\\[18pt]
+
+    &
+    \sum_{j \in N_4} y_{ij} &
+    \le &
+    M * z_i, &
+    \forall i \in N_3,
+    \label{model:rdc-1: rdc selection big M}\\[18pt]
+
+    &
+    x_{ijpbt} &
+    \ge &
+    0, &
+    \forall i \in N, j\in \{N \setminus \{i\}\}, \nonumber \\&
+    &
+    &
+    &
+    p \in P, t \in T, b \in B,
+    \label{model:rdc-1: variable positivity real} \\[18pt]
+
+    &
+    y_{ij} &
+    \in\ &
+    \{0,1\} &
+    \forall i\in N_3, j \in N_4,
+    \label{model:rdc-1: cdc allocation binary} \\[18pt]
+
+    &
+    z_i &
+    \in\ &
+    \{0,1\} &
+    \forall i\in N_3.
+    \label{model:rdc-1: rdc site selection binary}
+
+\end{equationarray}
+
 
 \newpage
 
