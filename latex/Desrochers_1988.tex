@@ -161,8 +161,16 @@ The model is formulated as,
 
     &
     w_{ik} - w_{jk} -  \bar{s}_i (1-y_k) - s_iy_k - t_{ij} + M_{ij}(1-x_{ijk})&
-    = & 1, &
+    \ge & 0, &
     \forall k\in K, \forall (i,j)\in A, \label{model: arrive time}\\[18pt]
+
+    &
+    w_{ik} - a_i& \ge & 0, &
+    \forall k\in K, \forall i\in V, \label{model: tw start}\\[18pt]
+
+    &
+    w_{ik} - b_i& \le & 0, &
+    \forall k\in K, \forall i\in V, \label{model: tw finish}\\[18pt]
 
     &
     y_{ij} &
