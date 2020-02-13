@@ -134,14 +134,12 @@ The model is formulated as,
 
 \vspace{-6pt}
 
-\begin{equationarray}{rrrlll}K
+\begin{equationarray}{rrrlll}
 
     \mbox{subject to} &
-    \sum_{i \in N_3} x_{ijpbt} &
-    = &
-    d_{jptbt}, &
-    \forall j\in N_4, p\in P, b \in B, t\in T,
-    \label{model:rdc-1: demand}\\[18pt]
+    \sum_{k \in N} \sum_{j \in delta^{+}(i)}x_{ijk} &
+    = & 1, &
+    \forall i\in N, \label{model: each customer is visited by once}\\[18pt]
 
     &
     \sum_{i \in \{N_1 \cup N_2\}} x_{ijpbt} &
