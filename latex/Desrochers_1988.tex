@@ -136,54 +136,20 @@ The model is formulated as,
 
 \begin{equationarray}{rrrlll}
 
-    \mbox{subject to} &
-    \sum_{k \in N} \sum_{j \in delta^{+}(i)}x_{ijk} &
+    \mbox{subject to}
+    &
+    \sum_{k \in K} \sum_{j \in \delta^{+}(i)}x_{ijk} &
     = & 1, &
     \forall i\in N, \label{model: each customer is visited by once}\\[18pt]
 
     &
-    \sum_{i \in \{N_1 \cup N_2\}} x_{ijpbt} &
-    = &
-    \sum_{i \in N_4} x_{jipbt}, &
-    \forall j \in N_3, p \in P, b \in B, t \in T,
-    \label{model:rdc-1: flow in flow out}\\[18pt]
+
+    \sum_{j \in \delta^{+}(0)}x_{0jk} &
+    = & 1, &
+    \forall k\in K, \label{model: each vehicle should leave the depot}\\[18pt]
 
     &
-    \sum_{i \in \{N_1 \cup N_2\}} \sum_{p \in P} \sum_{b \in B} \ell_p * \frac{x_{ijpbt}}{u_{ipt}} &
-    \le &
-    v_{jt}, &
-    \forall j \in N_3, t \in T,
-    \label{model:rdc-1: rdc capacity}\\[18pt]
 
-    &
-    \sum_{j \in N_3} \sum_{b \in B} x_{ijpbt} &
-    \le &
-    w_{ipt}, &
-    \forall i \in N_2, p \in P, t \in T,
-    \label{model:rdc-1: rp capacity}\\[18pt]
-
-    &
-    \sum_{j \in N_4} y_{ij} &
-    = &
-    1, &
-    \forall i \in N_3,
-    \label{model:rdc-1: cdc allocation}\\[18pt]
-
-    &
-    \sum_{p \in P} \sum_{t \in T} \sum_{b \in B} x_{ijpbt} &
-    \le &
-    M * y_{ij}, &
-    \forall i \in N_3, j \in N_4,
-    \label{model:rdc-1: cdc allocation big M}\\[18pt]
-
-    &
-    \sum_{j \in N_4} y_{ij} &
-    \le &
-    M * z_i, &
-    \forall i \in N_3,
-    \label{model:rdc-1: rdc selection big M}\\[18pt]
-
-    &
     x_{ijpbt} &
     \ge &
     0, &
