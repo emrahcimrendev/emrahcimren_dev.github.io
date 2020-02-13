@@ -143,22 +143,20 @@ The model is formulated as,
     \forall i\in N, \label{model: each customer is visited by once}\\[18pt]
 
     &
-
     \sum_{j \in \delta^{+}(0)}x_{0jk} &
     = & 1, &
     \forall k\in K, \label{model: each vehicle should leave the depot}\\[18pt]
 
     &
+    \sum_{j \in \delta^{-}(i)}x_{jik} - \sum_{j \in \delta^{+}(i)}x_{ijk} &
+    = & 0, &
+    \forall k\in K, \forall i \in N, \label{model: flow conservation}\\[18pt]
 
-    x_{ijpbt} &
-    \ge &
-    0, &
-    \forall i \in N, j\in \{N \setminus \{i\}\}, \nonumber \\&
     &
-    &
-    &
-    p \in P, t \in T, b \in B,
-    \label{model:rdc-1: variable positivity real} \\[18pt]
+    \sum_{i \in \delta^{-}(n+1)}x_{in+1k} &
+    = & 1, &
+    \forall k\in K, \label{model: each vehicle should arrive the depot}\\[18pt]
+
 
     &
     y_{ij} &
