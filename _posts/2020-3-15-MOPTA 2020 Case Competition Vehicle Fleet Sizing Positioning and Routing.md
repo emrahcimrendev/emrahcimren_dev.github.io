@@ -17,6 +17,11 @@ to this problem.
 
 ![_config.yml]({{ site.baseurl }}/images//2020-3-15-MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/transport-fleet.jpg)
 
+## Problem
+
+The detailed problem description is provided at the 
+[competition web page](https://coral.ise.lehigh.edu/~mopta/mopta2020/AIMMS_MOPTA_case_2020.pdf).
+
 
 
 
