@@ -32,7 +32,7 @@ The detailed problem description is provided at the
 
 ### Questions
 
-### Methodology
+## Methodology
 
 
 
