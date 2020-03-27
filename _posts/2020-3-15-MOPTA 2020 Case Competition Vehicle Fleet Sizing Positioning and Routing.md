@@ -59,7 +59,21 @@ For each demand point, a delivery time window exists between 8am and 4pm.
 
 ### Depots
 
+Figure 3 illustrates locations of alternative depots. Each location has an
+an estimated daily fixed cost of maintaining a depot at that location. 
+
+| ![_config.yml]({{ site.baseurl }}/images/MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/depot_locations.PNG) | 
+|:--:| 
+| *Figure 3: Alternative depot locations* |
+
 ### Vehicles
+
+Each depot has an initial number of vehicles assigned. These vehicles remain in place
+even if they are idle. We assume that vehicles move at an average speed of 40 miles/hour.
+
+There is a fixed cost of $30 per day per vehicle which represents fixed annual 
+costs expressed per day (lease or purchase payments, insurance, licenses, 
+driver wages and beneits). 
 
 ### Routing
 
