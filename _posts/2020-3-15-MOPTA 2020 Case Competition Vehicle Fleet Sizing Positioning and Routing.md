@@ -73,7 +73,7 @@ even if they are idle. We assume that vehicles move at an average speed of 40 mi
 
 There is a fixed cost of $30 per day per vehicle which represents fixed annual 
 costs expressed per day (lease or purchase payments, insurance, licenses, 
-driver wages and beneits). 
+driver wages and benefits). 
 
 ### Routing
 
