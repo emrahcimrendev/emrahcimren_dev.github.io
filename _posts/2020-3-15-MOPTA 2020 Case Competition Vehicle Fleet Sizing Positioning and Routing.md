@@ -46,8 +46,8 @@ Figure 1 shows total demand locations for 2018 and 2019.
 |:--:| 
 | *Figure 1: Customer demand map* |
 
-There are total of 1451 demand points each of them has a daily demand. Daily demand can be zero
-for some demand points (Figure 2).
+There are total of 1451 demand points each of them has a daily demand. Note that 
+daily demand can be zero for some demand points. Figure 2 illustrates daily total demand.
 
 | ![_config.yml]({{ site.baseurl }}/images/MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/demand_annual.PNG) | 
 |:--:| 
