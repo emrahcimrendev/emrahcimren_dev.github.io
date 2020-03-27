@@ -15,22 +15,19 @@ location of depots for the vehicles and the fleet size
 should be optimized. In this post, we provide a solution
 to this problem.
 
-![_config.yml]({{ site.baseurl }}/images//2020-3-15-MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/transport-fleet.jpg)
+![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/transport-fleet.jpg)
 
 ## Problem
 
 Determine set of depots, the number of vehicles, and routing of each vehicle per depot 
-to be able to serve the demand by minimizing the total cost. This problem is classified
+to be able to serve the demand at nodes by minimizing the total cost. 
+This problem is classified
 as "location-routing problem" in the literature.
 
 The detailed problem description is provided at the 
 [competition web page](https://coral.ise.lehigh.edu/~mopta/mopta2020/AIMMS_MOPTA_case_2020.pdf).
 
 We now look at problem components.
-
-### Demand
-
-
 
 ### Transportation Network
 
@@ -39,6 +36,19 @@ The vertices are given as 5-digit zip codes and the edges represent routes betwe
 For each edge, distance is given in miles. There exists cost, $0.70/mile, 
 comprises the variable costs such as fuel, tires, repairs, tolls. 
 Ech mile driven generates 0.0009 tons of CO2 on an edge. 
+
+### Demand
+
+Each day there is a demand at each vertex that needs to be served by dispatching a vehicle.
+Figure 1 shows total demand locations for 2018 and 2019. 
+
+| ![_config.yml]({{ site.baseurl }}/images/MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/demand_map.PNG) | 
+|:--:| 
+| *Figure 1: Customer demand map* |
+
+
+
+
 
 
 ### Depots and Vehicles
