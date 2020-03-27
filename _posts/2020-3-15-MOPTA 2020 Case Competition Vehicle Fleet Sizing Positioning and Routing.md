@@ -48,18 +48,18 @@ Figure 1 shows total demand locations for 2018 and 2019.
 
 There are total of 1451 demand points each of them has a daily demand. Note that 
 daily demand can be zero for some demand points. Figure 2 illustrates daily total demand.
-Average number of 
+Although there are total of 1451 demand points, daily positive demand points varies between
+30 and 175. 
 
 | ![_config.yml]({{ site.baseurl }}/images/MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/demand_daily.PNG) | 
 |:--:| 
 | *Figure 2: Daily total demand* |
 
+For each demand point, a delivery time window exists which is between 8am and 4pm. 
 
+### Depots
 
-
-
-### Depots and Vehicles
-
+### Vehicles
 
 ### Routing
 
