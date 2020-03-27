@@ -55,7 +55,7 @@ Although there are total of 1451 demand points, daily positive demand points var
 |:--:| 
 | *Figure 2: Daily total demand* |
 
-For each demand point, a delivery time window exists which is between 8am and 4pm. 
+For each demand point, a delivery time window exists between 8am and 4pm. 
 
 ### Depots
 
