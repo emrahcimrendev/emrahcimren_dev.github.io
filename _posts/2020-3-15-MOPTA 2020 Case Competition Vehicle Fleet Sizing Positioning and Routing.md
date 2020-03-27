@@ -28,11 +28,21 @@ The detailed problem description is provided at the
 
 We now look at problem components.
 
+### Demand
+
+
+
 ### Transportation Network
+
+The transportation network is described as an undirected graph with vertices and edges with weights.
+The vertices are given as 5-digit zip codes and the edges represent routes between locations.
+For each edge, distance is given in miles. There exists cost, $0.70/mile, 
+comprises the variable costs such as fuel, tires, repairs, tolls. 
+Ech mile driven generates 0.0009 tons of CO2 on an edge. 
+
 
 ### Depots and Vehicles
 
-### Demand
 
 ### Routing
 
