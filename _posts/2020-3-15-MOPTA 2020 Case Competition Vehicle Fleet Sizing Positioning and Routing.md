@@ -77,6 +77,9 @@ driver wages and benefits).
 
 ### Routing
 
+For a driver, a maximal total driving time is 11 hours. 
+A vehicle can leave its depot after 6am and return until 5pm.
+
 ### Questions
 
 ## Methodology
