@@ -107,6 +107,8 @@ for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/
 
 ### Mathematical Formulation
 
+In this section, we provide a general formulation of the LRPTW problem.
+
 
 ### Column Generation
 
