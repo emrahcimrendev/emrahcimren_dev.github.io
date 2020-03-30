@@ -94,6 +94,9 @@ cost consisting of depots fixed cost,
 fixed costs of the vehicles, and the variable costs of the routings subject to
 demand, vehicle capacity, and time windows constraints.
 
+Make sure that the vehicles can always be routed to serve the 2018 demand. 
+However, evaluate the robustness of the solution by testing them on the 2019 demand data.
+
 ## Methodology
 
 
