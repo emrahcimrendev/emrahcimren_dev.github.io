@@ -40,7 +40,7 @@ Ech mile driven generates 0.0009 tons of CO2 on an edge.
 ### Demand
 
 Each day there is a demand at each vertex that needs to be served by dispatching a vehicle.
-Figure 1 shows total demand locations for 2018 and 2019. 
+Figure 1 shows total demand locations for the years 2018 and 2019. 
 
 | ![_config.yml]({{ site.baseurl }}/images/MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/demand_map.PNG) | 
 |:--:| 
@@ -86,7 +86,13 @@ For a driver, a maximal total driving time is 11 hours.
 The maximum loading per vehicle is limited to a quantity of 60. 
 However, a vehicle can reload each time it passes by its depot.
 
-### Questions
+### Question
+
+Design a distribution network by identifying location of depots and
+the number of vehicles at each depot with daily delivery schedules with total minimum
+cost consisting of depots fixed cost, 
+fixed costs of the vehicles, and the variable costs of the routings subject to
+demand, vehicle capacity, and time windows constraints.
 
 ## Methodology
 
