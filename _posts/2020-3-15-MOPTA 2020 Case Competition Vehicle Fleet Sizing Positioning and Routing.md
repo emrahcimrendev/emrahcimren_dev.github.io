@@ -99,6 +99,19 @@ However, evaluate the robustness of the solution by testing them on the 2019 dem
 
 ## Methodology
 
+We first create mixed-integer formulation of the problem (LRPTW). 
+Then, we use column generation to solve LRPTW. 
+
+Rousseau provides a tutorial on column generation and branch-and-price 
+for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/000/254/Rousseau_original.pdf?1464701234).
+
+
+
+
+### Mathematical Formulation
+
+
+### Column Generation
 
 
 
