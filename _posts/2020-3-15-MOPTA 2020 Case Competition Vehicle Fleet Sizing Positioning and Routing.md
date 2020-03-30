@@ -77,8 +77,14 @@ driver wages and benefits).
 
 ### Routing
 
-For a driver, a maximal total driving time is 11 hours. 
+A vehicle stops at demand points and delivers demand units at each stop
+with given time windows.
+
 A vehicle can leave its depot after 6am and return until 5pm.
+For a driver, a maximal total driving time is 11 hours. 
+
+The maximum loading per vehicle is limited to a quantity of 60. 
+However, a vehicle can reload each time it passes by its depot.
 
 ### Questions
 
