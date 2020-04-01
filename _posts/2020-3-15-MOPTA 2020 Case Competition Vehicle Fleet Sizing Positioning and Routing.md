@@ -116,8 +116,7 @@ We now provide general model formulation.
 
 ![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/general_model_formulation.PNG)
 
-The formulation contains $|M| + |A||L| + |V||L|$ number of variables  
-and $|M| + |A||L| + |V||L|$ constraints. Since when the network gets larger, 
+The formulation contains $|M| + |A||L| + |V||L|$ number of variables and $|N| + 2|L| + $ constraints. Since when the network gets larger, 
 problem size gets larger quickly, 
 it will become intractable to solve in a reasonable amount of time for standard MIP solvers.
 
