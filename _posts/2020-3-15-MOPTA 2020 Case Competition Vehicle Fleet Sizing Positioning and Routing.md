@@ -35,7 +35,7 @@ The transportation network is described as an undirected graph with vertices and
 The vertices are given as 5-digit zip codes and the edges represent routes between locations.
 For each edge, distance is given in miles. There exists cost, $0.70/mile, 
 comprises the variable costs such as fuel, tires, repairs, tolls. 
-Ech mile driven generates 0.0009 tons of CO2 on an edge. 
+Each mile driven generates 0.0009 tons of CO2 on an edge. 
 
 ### Demand
 
