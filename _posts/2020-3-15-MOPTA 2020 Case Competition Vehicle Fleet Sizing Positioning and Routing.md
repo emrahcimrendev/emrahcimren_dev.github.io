@@ -122,7 +122,7 @@ it will become intractable to solve in a reasonable amount of time for standard 
 
 ### Column Generation
 
-We develop a column generation approach based on Dantzig–-Wolfe decomposition. 
+We develop a column generation approach based on [Dantzig-Wolfe decomposition](https://pubsonline.informs.org/doi/abs/10.1287/opre.8.1.101). 
 LRPTW is decomposed into two problems, the master problem, and the subproblem 
 to provide better bound when linear relaxation of the problem is solved.
 
