@@ -107,7 +107,10 @@ for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/
 
 ### Mathematical Formulation
 
-In this section, we provide a general formulation of the LRPTW problem.
+In this section, we first provide a general formulation of the LRPTW problem.
+
+![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/transport-fleet.jpg)
+
 
 
 ### Column Generation
