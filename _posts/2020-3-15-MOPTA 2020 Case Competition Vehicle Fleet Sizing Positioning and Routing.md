@@ -126,3 +126,11 @@ We develop a column generation approach based on [Dantzig-Wolfe decomposition](h
 LRPTW is decomposed into two problems, the master problem, and the subproblem 
 to provide better bound when linear relaxation of the problem is solved.
 
+#### Master Problem
+
+We now provide the master problem formulation of LRPTW. 
+
+
+
+#### Subproblem
+
