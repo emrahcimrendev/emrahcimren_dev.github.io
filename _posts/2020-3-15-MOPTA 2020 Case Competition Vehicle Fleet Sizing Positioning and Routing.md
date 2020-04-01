@@ -111,7 +111,7 @@ In this section, we first provide a general formulation of the LRPTW problem.
 
 ![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/general_model_definitions.PNG)
 
-
+![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/general_model_formulation.PNG)
 
 ### Column Generation
 
