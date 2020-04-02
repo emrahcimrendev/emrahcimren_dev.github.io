@@ -41,17 +41,22 @@ done within. Unloading time varies by store depending on location and parking av
 |:--:| 
 | *Figure 1: PPizza depot and stores* |
 
-Trucks leave from the depot at 6am in the morning. Each truck can be used once and has a limited capacity.
+Trucks can leave from the depot at 6am and need to return the depot by 5pm. 
+Each truck can be used once and has a limited capacity.
 We want to identify the truck operating schedules 
 to be able to deliver
 fresh ingredients to each store with given time windows by minimizing the total cost. 
 
+## Methodology
 
+We use column generation to solve CVRPTW. Rousseau provides a tutorial on column generation and branch-and-price 
+for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/000/254/Rousseau_original.pdf?1464701234).
 
 ### Mathematical Formulation
 
-We develop a mixed integer model for the **PPizza** delivery problem 
-by extending Desrochers et al., (1988) formulation. 
+We develop a mixed integer model for the **PPizza** delivery problem as follows.
+
+
 
 
 
