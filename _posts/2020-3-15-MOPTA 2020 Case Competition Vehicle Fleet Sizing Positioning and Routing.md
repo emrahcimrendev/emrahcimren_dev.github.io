@@ -128,9 +128,17 @@ to provide better bound when linear relaxation of the problem is solved.
 
 #### Master Problem
 
-We now provide the master problem formulation of LRPTW. 
+We now provide the master problem formulation of LRPTW. The following are the definition of
+master problem model inputs. Note that we only define new inputs. 
 
+![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/master_model_definitions.PNG)
 
+We now formulate the master problem, LRPTW-MP.
+
+![_config.yml]({{ site.baseurl }}/images//MOPTA 2020 Case Competition Vehicle Fleet Sizing Positioning and Routing/master_model_formulation.PNG)
 
 #### Subproblem
+
+The subproblem generates feasible routes with negative reduced costs 
+and those are added in LRPTW-MP. This step is called column generation. 
 
