@@ -3,22 +3,21 @@ title: "Solving Capacitated Vehicle Routing Problem Using Optimization with Pyth
 categories:
   - operations research
 tags:
-  - capacitated vehicle routing problem with time windows
-  - CVRPTW
+  - single depot vehicle routing problem with time windows
+  - VRPTW
   - optimization
-  - mixed integer programming
+  - column generation
   - python
 --- 
 
 Vehicle routing problem (VRP) is identifying the optimal set of routes for a set of 
 vehicles to travel in order to deliver to a given 
-set of customers. When vehicles have limited carrying capacity and 
-customers have time windows within which the deliveries must be made, problem becomes
-capacitated vehicle routing problem with time windows (CVRPTW). 
-In this post, we will discuss how to tackle CVRPTW using Python and 
+set of customers. When customers have time windows within which the deliveries 
+must be made, problem becomes vehicle routing problem with time windows (VRPTW). 
+In this post, we will discuss how to tackle VRPTW using Python and 
 get a fast and robust solution.
 
-![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Capacitated Vehicle Routing Problem Using Optimization with Python/truck_main.jpg)
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Vehicle Routing Problem Using Column Generation with Python/truck_main.jpg)
 
 ## Problem 
 
