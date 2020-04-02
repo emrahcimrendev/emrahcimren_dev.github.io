@@ -45,6 +45,8 @@ We want to identify the truck operating schedules
 to be able to deliver
 fresh ingredients to each store with given time windows by minimizing the total cost. 
 
+
+
 ### Mathematical Formulation
 
 We develop a mixed integer model for the **PPizza** delivery problem 
