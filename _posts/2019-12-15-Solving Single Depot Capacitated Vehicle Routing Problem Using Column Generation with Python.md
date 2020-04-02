@@ -1,5 +1,5 @@
 ---
-title: "Solving Capacitated Vehicle Routing Problem Using Optimization with Python"
+title: "Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python"
 categories:
   - operations research
 tags:
