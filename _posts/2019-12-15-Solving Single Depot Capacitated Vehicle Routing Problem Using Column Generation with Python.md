@@ -56,8 +56,20 @@ for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/
 
 We develop a mixed integer model for the **PPizza** delivery problem as follows.
 
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/general_model_inputs.PNG)
+
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/general_model_formulation.PNG)
+
+### Column Generation
+
+We develop a column generation approach based on [Dantzig-Wolfe decomposition](https://pubsonline.informs.org/doi/abs/10.1287/opre.8.1.101). 
+LRPTW is decomposed into two problems, the master problem, and the subproblem 
+to provide better bound when linear relaxation of the problem is solved.
+
+#### Master Problem
 
 
+#### Subproblem
 
 
 
