@@ -33,7 +33,8 @@ ingredients and baked in store on demand.
 and soft drinks. Fresh ingredients are delivered to stores daily from the main depot once a day. 
 Soft drinks are delivered and replenished by suppliers directly. 
 
-Figure 1 shows location of stores and the depot. Each store has time windows where delivery needs to be
+Figure 1 shows location of stores and the depot. Each store has time windows between 
+9am and 3pm where delivery needs to be
 done within. Unloading time varies by store depending on location and parking availability. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/store_depot_map.PNG) | 
