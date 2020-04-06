@@ -173,6 +173,14 @@ You can install cvrptw_optimization package to your conda environment using the 
 pip install cimren-cvrptw-optimization
 ```
 
+We ran the model for the vehicles from **xx** to **xx**. Figure 2 illustrates routing,
+model obective, and run time minutes for each vehicle. We set the maximum model run time
+to 480 minutes (8 hours). 
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/store_depot_map.PNG) | 
+|:--:| 
+| *Figure 2: General model solution* |
+
 
 
 ### Column Generation
