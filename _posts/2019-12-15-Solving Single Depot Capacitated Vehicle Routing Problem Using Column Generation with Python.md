@@ -47,12 +47,16 @@ We want to identify the truck operating schedules
 to be able to deliver
 fresh ingredients to each store with given time windows by minimizing the total cost. 
 
-## Methodology
+## Analysis
 
-We use column generation to solve CVRPTW. Rousseau provides a tutorial on column generation and branch-and-price 
+We first formulate the problem as a mixed integer program. Then, we solve the problem various
+number of available trucks.
+
+We also develop column generation based algorithm to solve the problem. 
+Rousseau provides a tutorial on column generation and branch-and-price 
 for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/000/254/Rousseau_original.pdf?1464701234).
 
-### Mathematical Formulation
+### General Formulation
 
 We develop a mixed integer model for the **PPizza** delivery problem as follows.
 
@@ -61,6 +65,11 @@ We develop a mixed integer model for the **PPizza** delivery problem as follows.
 
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/general_model_formulation.PNG)
+
+We solve the mixed integer model using Python with PuLp. The following is the 
+implementation.  
+
+
 
 ### Column Generation
 
