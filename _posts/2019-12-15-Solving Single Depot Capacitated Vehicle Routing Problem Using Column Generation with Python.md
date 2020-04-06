@@ -184,7 +184,6 @@ to 480 minutes (8 hours).
 As we use less number of vehicle, total delivery hours is reduced by about an hour per vehicle
 removed. Since each iteration takes average 6 hours, we implement a column generation approach.
 
-
 ### Column Generation
 
 We develop a column generation approach based on [Dantzig-Wolfe decomposition](https://pubsonline.informs.org/doi/abs/10.1287/opre.8.1.101). 
@@ -198,7 +197,13 @@ to provide better bound when linear relaxation of the problem is solved.
 #### Subproblem
 
 
-### Implementation
+### Algorithm
+
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/column_generation_flow_chart.PNG) | 
+|:--:| 
+| *Figure x: Column generation algorithm* |
+
 
 
 ### Analysis
