@@ -100,11 +100,11 @@ for vehicle in range_list:
 
 {% endhighlight %}
 
-You can install cvrptw_optimization package as 
+You can install cvrptw_optimization package to your conda environment using the following code. 
 
-'''
-
-'''
+```
+pip install cimren-cvrptw-optimization
+```
 
 ### Column Generation
 
