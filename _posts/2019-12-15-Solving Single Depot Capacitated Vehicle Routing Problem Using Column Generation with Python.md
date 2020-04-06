@@ -94,7 +94,6 @@ for vehicle in range_list:
                                                                            vehicles_sub,
                                                                            bigm=transportation_matrix.DRIVE_MINUTES.max()*20,
                                                                            solver_time_limit_minutes=360)
-
     solution_paths['OBJECTIVE'] = solution_objective
     solution_paths['NUMBER_OF_VEHICLES'] = vehicle
     solution_paths.to_csv(r'general model solutions/{}_.csv'.format(str(vehicle)), index=False)
