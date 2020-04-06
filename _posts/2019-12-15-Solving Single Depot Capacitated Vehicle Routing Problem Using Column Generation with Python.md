@@ -192,9 +192,18 @@ to provide better bound when linear relaxation of the problem is solved.
 
 #### Master Problem
 
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/master_model_inputs.PNG)
+
+
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/master_model_formulation.PNG)
 
 
 #### Subproblem
+
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_inputs.PNG)
+
+
+![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_formulation.PNG)
 
 
 ### Algorithm
