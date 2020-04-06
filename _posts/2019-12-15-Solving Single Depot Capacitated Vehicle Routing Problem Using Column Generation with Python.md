@@ -181,7 +181,8 @@ to 480 minutes (8 hours).
 |:--:| 
 | *Figure 2: General model solution* |
 
-
+As we use less number of vehicle, total delivery hours is reduced by about an hour per vehicle
+removed. 
 
 ### Column Generation
 
