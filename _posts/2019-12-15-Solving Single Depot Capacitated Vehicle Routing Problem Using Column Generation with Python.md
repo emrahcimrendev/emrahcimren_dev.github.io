@@ -190,6 +190,32 @@ We develop a column generation approach based on [Dantzig-Wolfe decomposition](h
 CVRPTW is decomposed into two problems, the master problem, and the subproblem 
 to provide better bound when linear relaxation of the problem is solved.
 
+The master problem considers only a subset of variables
+from the original while the subproblem identifies the new variables. 
+The objective function of the subproblem considers the
+reduced cost of the new variables with respect to the current dual variables. 
+The outline of branch-and-price algorithm is
+illustrated in Figure 3.
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/column_generation_flow_chart.PNG) | 
+|:--:| 
+| *Figure 3: Column generation algorithm* |
+
+
+In the column generation algorithm, the master problem is solved using an initial solution. 
+It can be any feasible solution that meets all constraints. 
+In this case, we start with the depot-store-depot routes. 
+From this step, the dual prices of each
+constraint in the master problem are obtained. 
+Then, the reduced cost is calculated and utilized in the objective function of
+the subproblem. After solving the subproblem, 
+the variables (called columns in the master problem) with negative reduced
+cost must be identified. 
+These variables are then added to the master problem and resolved iteratively. 
+The process is
+repeated until the subproblem solution has only non-negative reduced costs columns. Theoretically, at that instance, the
+solution of the master problem is the optimal solution.
+
 #### Master Problem
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/master_model_inputs.PNG)
@@ -199,6 +225,11 @@ to provide better bound when linear relaxation of the problem is solved.
 
 
 #### Subproblem
+The subproblem attempts to generate feasible routes with negative reduced costs 
+to be added in the master problem. As the capacity of the vehicles, $$q_k=q$$ 
+$$\forall k\in K$$, is be the same for all vehicles, we solve the problem 
+for $$K=\{1\}$$. 
+The explicit formulation of the subproblem is given as follows.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_inputs.PNG)
 
@@ -209,9 +240,6 @@ to provide better bound when linear relaxation of the problem is solved.
 ### Algorithm
 
 
-| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/column_generation_flow_chart.PNG) | 
-|:--:| 
-| *Figure x: Column generation algorithm* |
 
 
 
