@@ -201,7 +201,6 @@ illustrated in Figure 3.
 |:--:| 
 | *Figure 3: Column generation algorithm* |
 
-
 In the column generation algorithm, the master problem is solved using an initial solution. 
 It can be any feasible solution that meets all constraints. 
 In this case, we start with the depot-store-depot routes. 
@@ -213,10 +212,15 @@ the variables (called columns in the master problem) with negative reduced
 cost must be identified. 
 These variables are then added to the master problem and resolved iteratively. 
 The process is
-repeated until the subproblem solution has only non-negative reduced costs columns. Theoretically, at that instance, the
+repeated until the subproblem solution has only non-negative reduced costs columns. 
+Theoretically, at that instance, the
 solution of the master problem is the optimal solution.
 
 #### Master Problem
+
+We consider all feasible single vehicle routes, $$L$$, with respect to vehicle capacity 
+that start and end at the same depot. Master problem selects sets of routes which
+minimizes total transportation cost.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/master_model_inputs.PNG)
 
