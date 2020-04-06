@@ -70,8 +70,11 @@ We solve the mixed integer model using Python with PuLp. The following is the
 implementation.  
 
 {% highlight python %}
-
 import pandas as pd
+import timeit
+import time
+from threading import Thread, currentThread
+import queue
 from cvrptw_optimization import single_depot_general_model_pulp as sm
 
 # Read input data
@@ -80,23 +83,87 @@ depots = pd.read_pickle(r'data/depots.pkl')
 transportation_matrix= pd.read_pickle(r'data/transportation_matrix.pkl')
 vehicles = pd.read_pickle(r'data/vehicles.pkl')
 
+# Model parameters
+bigm_input=transportation_matrix.DRIVE_MINUTES.max()*20
+solver_time_limit_minutes_input = 480
+
 # Calculate range for vehicles
 min_vehicles = int(round(customers.DEMAND.sum()/60)+2)
-max_vehicles = len(vehicles)
+max_vehicles = len(vehicles)+1
 
-# Iterate through each vehicle and save model results
-for vehicle in range_list:
+# Define functions
+def run_single_depot_general_model(vehicle,
+                                   depots, 
+                                   customers, 
+                                   transportation_matrix, 
+                                   vehicles,
+                                   bigm_input,
+                                   solver_time_limit_minutes_input):
+    """
+    Run general model
+    """
+    start = timeit.default_timer()
     vehicles_sub = vehicles.head(int(vehicle))
     print(len(vehicles_sub))
     solution_objective, solution_paths = sm.run_single_depot_general_model(depots, 
                                                                            customers, 
                                                                            transportation_matrix, 
                                                                            vehicles_sub,
-                                                                           bigm=transportation_matrix.DRIVE_MINUTES.max()*20,
-                                                                           solver_time_limit_minutes=360)
+                                                                           bigm=bigm_input,
+                                                                           solver_time_limit_minutes=solver_time_limit_minutes_input)
     solution_paths['OBJECTIVE'] = solution_objective
     solution_paths['NUMBER_OF_VEHICLES'] = vehicle
+    stop = timeit.default_timer()
+    solution_paths['MODEL_RUN_TIME_MINUTES'] = (stop - start)*60
     solution_paths.to_csv(r'general model solutions/{}_.csv'.format(str(vehicle)), index=False)
+    return 'ok'
+    
+q = queue.Queue()
+def worker():
+    """
+    Worker function to process vehicles from a queue (q).
+    """
+    while True:
+        print("Start thread worker.")
+        vehicle = q.get()
+        print("Starting vehicle: {}".format(str(vehicle)))
+        run_single_depot_general_model(vehicle,
+                                       depots, 
+                                       customers, 
+                                       transportation_matrix, 
+                                       vehicles,
+                                       bigm_input,
+                                       solver_time_limit_minutes_input)
+        print("Finishing vehicle: {}".format(str(vehicle)))
+        q.task_done()
+        print("End thread worker")
+        
+def create_and_process_queue(vehicle_range_list, max_num_threads):
+    """
+    Creates a queue of vehicles to process. Creates threads to process the queue. 
+    The number of threads are limited by max_num_threads.
+    """
+    # add the vehicles to the queue
+    for vehicle in vehicle_range_list:
+        print("Adding vehicle {} to queue".format(str(vehicle)))
+        q.put(vehicle)
+    print("Create threads")
+    for i in range(max_num_threads):
+        time.sleep(10)
+        t = Thread(target=worker)
+        t.daemon = True
+        t.start()
+    q.join()  # blocks until all queue items have been processed
+    
+min_vehicles = int(round(customers.DEMAND.sum()/60)+2)
+max_vehicles = len(vehicles)+1
+
+vehicle_range_list = []
+for vehicle in range(min_vehicles, max_vehicles):
+    vehicle_range_list.append(vehicle)
+vehicle_range_list.reverse()
+
+create_and_process_queue(vehicle_range_list, 5)
 
 {% endhighlight %}
 
@@ -105,6 +172,8 @@ You can install cvrptw_optimization package to your conda environment using the 
 ```
 pip install cimren-cvrptw-optimization
 ```
+
+
 
 ### Column Generation
 
