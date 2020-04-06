@@ -69,7 +69,43 @@ We develop a mixed integer model for the **PPizza** delivery problem as follows.
 We solve the mixed integer model using Python with PuLp. The following is the 
 implementation.  
 
+{% highlight python %}
 
+import pandas as pd
+from cvrptw_optimization import single_depot_general_model_pulp as sm
+
+# Read input data
+customers = pd.read_pickle(r'data/customers.pkl')
+depots = pd.read_pickle(r'data/depots.pkl')
+transportation_matrix= pd.read_pickle(r'data/transportation_matrix.pkl')
+vehicles = pd.read_pickle(r'data/vehicles.pkl')
+
+# Calculate range for vehicles
+min_vehicles = int(round(customers.DEMAND.sum()/60)+2)
+max_vehicles = len(vehicles)
+
+# Iterate through each vehicle and save model results
+for vehicle in range_list:
+    vehicles_sub = vehicles.head(int(vehicle))
+    print(len(vehicles_sub))
+    solution_objective, solution_paths = sm.run_single_depot_general_model(depots, 
+                                                                           customers, 
+                                                                           transportation_matrix, 
+                                                                           vehicles_sub,
+                                                                           bigm=transportation_matrix.DRIVE_MINUTES.max()*20,
+                                                                           solver_time_limit_minutes=360)
+
+    solution_paths['OBJECTIVE'] = solution_objective
+    solution_paths['NUMBER_OF_VEHICLES'] = vehicle
+    solution_paths.to_csv(r'general model solutions/{}_.csv'.format(str(vehicle)), index=False)
+
+{% endhighlight %}
+
+You can install cvrptw_optimization package as 
+
+'''
+
+'''
 
 ### Column Generation
 
