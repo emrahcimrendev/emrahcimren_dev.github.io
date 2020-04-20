@@ -206,11 +206,11 @@ from the original while the subproblem identifies the new variables.
 The objective function of the subproblem considers the
 reduced cost of the new variables with respect to the current dual variables. 
 The outline of branch-and-price algorithm is
-illustrated in Figure 3.
+illustrated in Figure 4.
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/column_generation_flow_chart.PNG) | 
 |:--:| 
-| *Figure 3: Column generation algorithm* |
+| *Figure 4: Column generation algorithm* |
 
 In the column generation algorithm, the master problem is solved using an initial solution. 
 It can be any feasible solution that meets all constraints. 
@@ -279,6 +279,11 @@ solution, iteration_statistics = cg.run_single_depot_column_generation(depots,
                                                                        max_iteration=150)  
 {% endhighlight %}
 
+Solution is at $$12$$ vehicles and $$16.4$$ total drive hours (see Figure 5). 
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Column Generation Solution.png) | 
+|:--:| 
+| *Figure 5: Column generation solution* |
 
 
 ### Analysis
