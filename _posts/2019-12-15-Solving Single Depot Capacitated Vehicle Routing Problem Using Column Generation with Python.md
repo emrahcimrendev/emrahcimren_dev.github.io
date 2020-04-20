@@ -251,7 +251,7 @@ The explicit formulation of the subproblem is given as follows.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_formulation.PNG)
 
-### Algorithm Implementation and Results
+### Algorithm Implementation
 
 We run the column generation in Python as follows.
 
@@ -279,7 +279,7 @@ solution, iteration_statistics = cg.run_single_depot_column_generation(depots,
                                                                        max_iteration=150)  
 {% endhighlight %}
 
-Solution is at $$12$$ vehicles and $$16.4$$ total drive hours (see Figure 5). 
+Solution is at $$12$$ trucks and $$16.4$$ total drive hours (see Figure 5). 
 Algorithm run time is less than 2 minutes. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Column Generation Solution.png) | 
@@ -293,6 +293,13 @@ iterations.
 |:--:| 
 | *Figure 6: Column generation algorithm convergence* |
 
+## PPizza Solution
+
+Figure 7 illustrates solution for **PPizza** with 12 trucks.
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/PPizza Solution.png) | 
+|:--:| 
+| *Figure 7: PPizza solution* |
 
 
 
