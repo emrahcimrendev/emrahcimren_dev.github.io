@@ -295,7 +295,8 @@ iterations.
 
 ## PPizza Solution
 
-Figure 7 illustrates solution for **PPizza** with 12 trucks.
+Figure 7 illustrates solution for **PPizza** with 12 trucks. Each truck leaves depot at 6am and
+returns by 5pm.
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/PPizza Solution.png) | 
 |:--:| 
