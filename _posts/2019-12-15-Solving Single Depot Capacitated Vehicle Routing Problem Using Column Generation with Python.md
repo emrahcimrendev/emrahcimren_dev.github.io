@@ -285,6 +285,12 @@ Solution is at $$12$$ vehicles and $$16.4$$ total drive hours (see Figure 5).
 |:--:| 
 | *Figure 5: Column generation solution* |
 
+Figure 6 shows algorithm convergence. 
+
+| ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Column Generation Convergence.png) | 
+|:--:| 
+| *Figure 6: Column generation algorithm convergence* |
+
 
 ### Analysis
 
