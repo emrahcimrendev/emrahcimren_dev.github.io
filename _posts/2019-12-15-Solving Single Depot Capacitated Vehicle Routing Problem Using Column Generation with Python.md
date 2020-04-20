@@ -303,7 +303,6 @@ returns by 5pm.
 | *Figure 7: PPizza solution* |
 
 
-
 ### References
 Desrochers, M., Lenstra, J.K., Savelsbergh, M.W.P., Soumis, F. (1988). 
 Vehicle routing with time windows: Optimization and approximation. 
