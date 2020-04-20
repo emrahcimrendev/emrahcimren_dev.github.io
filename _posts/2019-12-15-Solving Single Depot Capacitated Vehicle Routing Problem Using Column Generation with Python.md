@@ -42,7 +42,7 @@ done within. Unloading time varies by store depending on location and parking av
 | *Figure 1: PPizza depot and stores* |
 
 Trucks can leave from the depot at 6am and need to return the depot by 5pm. 
-Each truck can be used once and has a limited capacity.
+Each truck can be used once and has a limited capacity of $$60$$ lbs.
 We want to identify the truck operating schedules 
 to be able to deliver
 fresh ingredients to each store with given time windows by minimizing the total cost. 
@@ -193,7 +193,7 @@ Model objective is $$16.8$$ which is total drive hours.
 |:--:| 
 | *Figure 3: Best general model solution* |
 
-
+We now implement column generation methodology.
 
 ### Column Generation
 
@@ -251,10 +251,33 @@ The explicit formulation of the subproblem is given as follows.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_formulation.PNG)
 
-
 ### Algorithm Implementation
 
+We run the column generation in Python as follows.
 
+{% highlight python %}
+import pandas as pd
+from cvrptw_optimization import single_depot_column_generation_pulp as cg
+
+# read input data
+customers = pd.read_pickle(r'data/customers.pkl')
+depots = pd.read_pickle(r'data/depots.pkl')
+transportation_matrix= pd.read_pickle(r'data/transportation_matrix.pkl')
+vehicles = pd.read_pickle(r'data/vehicles.pkl')
+vehicle_capacity = 60
+
+# run column generation
+solution, iteration_statistics = cg.run_single_depot_column_generation(depots,
+                                                                       customers,
+                                                                       transportation_matrix,
+                                                                       vehicles,
+                                                                       vehicle_capacity,
+                                                                       mip_gap=0.001,
+                                                                       solver_time_limit_minutes=10,
+                                                                       enable_solution_messaging=0,
+                                                                       solver_type='PULP_CBC_CMD',
+                                                                       max_iteration=150)  
+{% endhighlight %}
 
 
 
