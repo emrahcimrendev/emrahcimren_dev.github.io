@@ -251,7 +251,7 @@ The explicit formulation of the subproblem is given as follows.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_formulation.PNG)
 
-### Algorithm Implementation
+### Algorithm Implementation and Results
 
 We run the column generation in Python as follows.
 
