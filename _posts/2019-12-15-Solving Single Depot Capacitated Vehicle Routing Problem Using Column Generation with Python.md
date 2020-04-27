@@ -184,7 +184,7 @@ We ran the model for the total number of vehicles, $$|K|$$, from **30** to **11*
 to 480 minutes (8 hours). Maximum model run time is reached for $$K=11$$ and $$K=12$$. 
 
 Figure 2 illustrates routing,
-model objective, and run time minutes for each vehicle. 
+model objective, and run time minutes for each number of available vehicles set. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/General Solution Objectives.png) | 
 |:--:| 
