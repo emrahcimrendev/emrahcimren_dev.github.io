@@ -181,7 +181,8 @@ pip install cimren-cvrptw-optimization
 ```
 
 We ran the model for the total number of vehicles, $$|K|$$, from **30** to **11**. We set the maximum model run time
-to 480 minutes (8 hours). Maximum model run time is reached for $$K=11$$ and $$K=12$$. 
+to 480 minutes (8 hours). There is no solution for $$K=11$$ and $$K=12$$ since 
+maximum model run time is reached. 
 
 Figure 2 illustrates routing,
 model objective, and run time minutes for each number of available vehicles set. 
