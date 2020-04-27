@@ -43,6 +43,7 @@ done within. Unloading time varies by store depending on location and parking av
 
 Trucks can leave from the depot at 6am and need to return the depot by 5pm. 
 Each truck can be used once and has a limited capacity of $$60$$ lbs.
+
 Since delivery cost is a function of number of trucks used in delivery, 
 minimizing the total number of trucks used for delivery minimizes total cost. 
 We want to identify the truck operating schedules 
@@ -55,7 +56,9 @@ fresh ingredients to each store with given time windows by minimizing the total 
 We first formulate the problem as a mixed integer program. Then, we solve the problem 
 for a range of number of available trucks using the formulation. 
 Since CVRPTW is NP-hard, we expect that model run time increases as number of available trucks
-decreases. We also develop column generation based algorithm to solve the problem.
+decreases. 
+
+We also develop column generation based algorithm to solve the problem.
 
 Finally, we compare performance of two solution methodologies; mixed integer program and
 column generation.
