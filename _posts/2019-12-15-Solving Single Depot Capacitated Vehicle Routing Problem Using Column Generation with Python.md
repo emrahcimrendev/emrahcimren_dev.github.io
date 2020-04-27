@@ -296,7 +296,7 @@ Algorithm run time is less than 2 minutes.
 |:--:| 
 | *Figure 5: Column generation solution* |
 
-Figure 6 shows algorithm convergence. Note that Sub problem objective reached $$> -1$$ in $$75$$
+Figure 6 shows algorithm convergence. Note that subproblem objective reached $$> -1$$ in $$75$$
 iterations. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Column Generation Convergence.png) | 
