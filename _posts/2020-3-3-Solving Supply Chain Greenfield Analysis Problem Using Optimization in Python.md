@@ -53,3 +53,8 @@ in such a way that the sum of the distances
 from each customer to the closest facility is minimized.
 
 The following is the mixed integer programming for the K-Median problem.
+
+## Formulating Greenfield Problem as K-Median
+
+Note that we select $$K$$ number of facilities among given
+possible facility locations in the K-Median problem. 
