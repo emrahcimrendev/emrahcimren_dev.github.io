@@ -58,6 +58,10 @@ The following is the mixed integer programming for the K-Median problem.
 
 Note that we select $$K$$ number of facilities among given
 possible facility locations in the K-Median problem. 
+However, greenfield
+problem starts with no set of possible facility locations.
+
+
 
 # Extensions to Brownfield Analysis
 
