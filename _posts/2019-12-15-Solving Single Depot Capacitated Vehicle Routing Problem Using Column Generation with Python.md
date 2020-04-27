@@ -305,8 +305,8 @@ iterations.
 
 ## PPizza Solution
 
-As a result, column generation provides less number of trucks comparing the general mixed
-integer formulation.
+As a result, column generation uses less number of trucks than the general mixed
+integer formulation. 
 
 Figure 7 illustrates solution for **PPizza** with 12 trucks. Each truck leaves depot at 6am and
 returns by 5pm.
