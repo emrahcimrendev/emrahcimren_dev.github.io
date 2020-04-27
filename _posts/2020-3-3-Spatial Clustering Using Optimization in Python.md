@@ -16,7 +16,7 @@ we provide an optimization based spatial clustering algorithm.
 We use this algorithm to solve a Supply chain Greenfield Analysis 
 problem.
 
-![_config.yml]({{ site.baseurl }}/images//Spatial Clustering Using Optimization in Python/distribution_center.jpg)
+![_config.yml]({{ site.baseurl }}/images//Spatial Clustering Using Optimization in Python/GreenFields.jpg)
 
 
 
