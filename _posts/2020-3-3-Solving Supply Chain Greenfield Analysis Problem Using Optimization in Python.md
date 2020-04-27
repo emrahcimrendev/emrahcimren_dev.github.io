@@ -61,3 +61,5 @@ possible facility locations in the K-Median problem.
 
 # Extensions to Brownfield Analysis
 
+
+# Extensions to Spatial Clustering
