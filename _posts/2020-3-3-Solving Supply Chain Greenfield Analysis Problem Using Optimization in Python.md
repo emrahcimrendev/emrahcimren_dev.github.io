@@ -33,7 +33,7 @@ Greenfield analysis answers the following supply chain design questions:
 
 # Algorithm
 
-In the previous post, we propose an unsupervised learning
+In the previous post, we define an unsupervised learning
 based (K-means) algorithm to the greenfield analysis problem. With a given
 number of clusters ($$K$$), this
 algorithm starts with an arbitrary assignment of each cluster
@@ -44,7 +44,7 @@ quality depends on initial assignment of customers to clusters.
 
 We now propose an optimization based algorithm for solving the greenfield
 problem. We first formulate supply chain greenfield analysis 
-problem as the K-Median problem and then solver the mathematical formulation.
+problem as the K-Median problem and then solve the mathematical formulation.
 
 ## K-Median
 
