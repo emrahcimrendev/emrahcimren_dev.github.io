@@ -13,10 +13,10 @@ tags:
 Vehicle routing problem (VRP) is identifying the optimal set of routes for a set of 
 vehicles to travel in order to deliver to a given 
 set of customers.  When vehicles have limited carrying capacity and 
-customers have time windows within which the deliveries must be made, p
-roblem becomes capacitated vehicle routing problem with time windows (CVRPTW). 
-In this post, we will discuss how to tackle CVRPTW using Python and get a fast and 
-robust solution.
+customers have time windows within which the deliveries must be made, 
+problem becomes capacitated vehicle routing problem with time windows (CVRPTW). 
+In this post, we will discuss how to tackle CVRPTW to get a fast and 
+robust solution using column generation.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/truck_main.jpg)
 
@@ -24,7 +24,7 @@ robust solution.
 
 We consider a pizza restaurant chain, **PPizza**, in the Los Angeles, CA area with 34 stores. 
 Each store operates from 10am to 1am everyday. **PPizza** offers three pizza sizes
-(small, medium, large) with various toppings and soft drinks. Pizzas are prepared using fresh
+(small, medium, large) with various toppings and soft drinks. Pizzas are prepared with fresh
 ingredients and baked in store on demand. 
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/pizza.PNG)
@@ -43,18 +43,22 @@ done within. Unloading time varies by store depending on location and parking av
 
 Trucks can leave from the depot at 6am and need to return the depot by 5pm. 
 Each truck can be used once and has a limited capacity of $$60$$ lbs.
+Since delivery cost is a function of number of trucks used in delivery, 
+minimizing the total number of trucks used for delivery minimizes total cost. 
 We want to identify the truck operating schedules 
 to be able to deliver
-fresh ingredients to each store with given time windows by minimizing the total cost. 
+fresh ingredients to each store with given time windows by minimizing the total cost 
+(minimizing the number of trucks used). 
 
 ## Analysis
 
-We first formulate the problem as a mixed integer program. Then, we solve the problem various
-number of available trucks.
+We first formulate the problem as a mixed integer program. Then, we solve the problem 
+for a range of number of available trucks using the formulation. 
+Since CVRPTW is NP-hard, we expect that model run time increases as number of available trucks
+decreases. We also develop column generation based algorithm to solve the problem.
 
-We also develop column generation based algorithm to solve the problem. 
-Rousseau provides a tutorial on column generation and branch-and-price 
-for [vehicle routing problems](https://symposia.cirrelt.ca/system/documents/000/000/254/Rousseau_original.pdf?1464701234).
+Finally, we compare performance of two solution methodologies; mixed integer program and
+column generation.
 
 ### General Formulation
 
@@ -240,6 +244,7 @@ minimizes total transportation cost.
 
 
 #### Subproblem
+
 The subproblem attempts to generate feasible routes with negative reduced costs 
 to be added in the master problem. As the capacity of the vehicles, $$q_k=q$$ 
 $$\forall k\in K$$, is be the same for all vehicles, we solve the problem 
@@ -251,7 +256,7 @@ The explicit formulation of the subproblem is given as follows.
 
 ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/sub_model_formulation.PNG)
 
-### Algorithm Implementation
+### Column Generation Algorithm Implementation
 
 We run the column generation in Python as follows.
 
@@ -294,6 +299,9 @@ iterations.
 | *Figure 6: Column generation algorithm convergence* |
 
 ## PPizza Solution
+
+As a result, column generation provides less number of trucks comparing the general mixed
+integer formulation.
 
 Figure 7 illustrates solution for **PPizza** with 12 trucks. Each truck leaves depot at 6am and
 returns by 5pm.
