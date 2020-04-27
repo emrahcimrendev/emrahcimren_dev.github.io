@@ -1,5 +1,5 @@
 ---
-title: "Spatial Clustering Using Optimization in Python: Facility Location Analysis"
+title: "Spatial Clustering Using Optimization for Supply Chain Greenfield Analysis"
 categories:
   - operations research
 tags:
@@ -9,12 +9,12 @@ tags:
   - python
 --- 
 
-In this post,
+Supply chain Greenfield Analysis helps 
+determine where to locate your warehouses and factories based on
+customer demand. In this post,
 we provide an optimization based spatial clustering algorithm. 
-We use this algorithm to solve a facility location problem which
-is identifying 
-optimal distribution center locations for a given demand network
-to minimize cost.
+We use this algorithm to solve a Supply chain Greenfield Analysis 
+problem.
 
 ![_config.yml]({{ site.baseurl }}/images//Spatial Clustering Using Optimization in Python/distribution_center.jpg)
 
@@ -24,3 +24,7 @@ Spatial data represents the location, size, and shape of an object
 on planet Earth such as a building, lake, mountain or township. 
 Spatial clustering aims to partition spatial data into a series of 
 meaningful subclasses, called spatial clusters. 
+
+Facility location problem is classical optimization problem for 
+determining the sites for factories and warehouses.
+
