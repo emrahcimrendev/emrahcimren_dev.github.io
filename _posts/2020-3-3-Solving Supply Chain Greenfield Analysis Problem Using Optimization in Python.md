@@ -20,6 +20,10 @@ problem.
 
 # Supply Chain Greenfield Analysis
 
+A greenfield analysis is a great way to get started for 
+long term strategic network planning. 
+A greenfield analysis provides the optimal locations 
+for your Distribution network based on customer demand footprint.
 
 # Algorithm
 
