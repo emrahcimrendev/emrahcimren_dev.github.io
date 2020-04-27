@@ -191,7 +191,7 @@ model objective, and run time minutes for each number of available vehicles set.
 |:--:| 
 | *Figure 2: General model solution* |
 
-As we use less number of vehicle, total delivery hours is reduced by about an hour per vehicle
+As we use less number of vehicles, total delivery hours is reduced by about an hour per vehicle
 removed. 
 
 Best solution where $$K=13$$ is shown in Figure 3. Model run time is approximately 6 hours. 
