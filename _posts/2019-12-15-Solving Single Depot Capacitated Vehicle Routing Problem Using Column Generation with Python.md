@@ -288,7 +288,8 @@ solution, iteration_statistics = cg.run_single_depot_column_generation(depots,
                                                                        max_iteration=150)  
 {% endhighlight %}
 
-Solution is at $$12$$ trucks and $$16.4$$ total drive hours (see Figure 5). 
+In the solution, we deliver with $$12$$ trucks  
+driving total $$16.4$$ hours (Figure 5). 
 Algorithm run time is less than 2 minutes. 
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Column Generation Solution.png) | 
