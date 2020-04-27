@@ -25,6 +25,12 @@ long term strategic network planning.
 A greenfield analysis provides the optimal locations 
 for your Distribution network based on customer demand footprint.
 
+Greenfield analysis answers the following supply chain design questions:
+
+- How many distribution centers do we need to reach our service level?
+- Where should distribution centers be geographically located to minimize cost?
+- Which customers will be supplied from each distribution center?
+
 # Algorithm
 
 In the previous post, we propose an unsupervised learning
