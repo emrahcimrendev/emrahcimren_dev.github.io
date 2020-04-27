@@ -52,16 +52,4 @@ Select a given number of facilities from possible points in a graph,
 in such a way that the sum of the distances 
 from each customer to the closest facility is minimized.
 
-
-
-
-
-
-Spatial data represents the location, size, and shape of an object 
-on planet Earth such as a building, lake, mountain or township. 
-Spatial clustering aims to partition spatial data into a series of 
-meaningful subclasses, called spatial clusters. 
-
-Facility location problem is classical optimization problem for 
-determining the sites for factories and warehouses.
-
+The following is the mixed integer programming for the K-Median problem.
