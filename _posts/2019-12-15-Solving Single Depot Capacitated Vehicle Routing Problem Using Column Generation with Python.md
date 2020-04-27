@@ -194,7 +194,7 @@ model objective, and run time minutes for each number of available vehicles set.
 As we use less number of vehicles, total delivery hours is reduced by about an hour per vehicle
 removed. 
 
-Best solution where $$K=13$$ is shown in Figure 3. Model run time is approximately 6 hours. 
+Best solution is obtained when $$K=13$$ (Figure 3). Model run time is approximately 6 hours. 
 Model objective is $$16.8$$ which is total drive hours.
 
 | ![_config.yml]({{ site.baseurl }}/images//2019-12-15-Solving Single Depot Capacitated Vehicle Routing Problem Using Column Generation with Python/Best General Solution.png) | 
