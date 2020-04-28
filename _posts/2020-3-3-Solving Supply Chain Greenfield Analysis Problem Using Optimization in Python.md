@@ -52,7 +52,15 @@ Select a given number of facilities from possible points in a graph,
 in such a way that the sum of the distances 
 from each customer to the closest facility is minimized.
 
-The following is the mixed integer programming for the K-Median problem.
+The following is the mixed integer programming formulation 
+of the K-Median problem.
+
+![_config.yml]({{ site.baseurl }}/images//Solving Supply Chain Greenfield Analysis Problem Using Optimization in Python/kmedian_inputs.PNG)
+
+
+
+![_config.yml]({{ site.baseurl }}/images//Solving Supply Chain Greenfield Analysis Problem Using Optimization in Python/kmedian_model.PNG)
+
 
 ## Formulating Greenfield Problem as K-Median
 
@@ -61,6 +69,8 @@ possible facility locations in the K-Median problem.
 However, greenfield
 problem starts with no set of possible facility locations.
 
+
+## Solving Greenfield Problem: PPizza Network Design
 
 
 # Extensions to Brownfield Analysis
