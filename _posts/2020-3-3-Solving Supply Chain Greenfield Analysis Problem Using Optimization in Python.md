@@ -69,8 +69,17 @@ possible facility locations in the K-Median problem.
 However, greenfield
 problem starts with no set of possible facility locations.
 
+Since we can open up distribution centers at physical addresses
+and each physical address has an associated zipcode, we can define
+each zipcode in the given region 
+as a possible facility location at the greenfield problem. In this case,
+K-median formulation can be used for solving greenfield problem.
 
-## Solving Greenfield Problem: PPizza Network Design
+## Solving a Greenfield Problem
+
+### Obtaining Zipcodes as Candidate Facility Locations with Python
+
+## Solution to the Problem
 
 
 # Extensions to Brownfield Analysis
