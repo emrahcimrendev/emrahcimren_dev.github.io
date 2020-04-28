@@ -77,14 +77,15 @@ K-median formulation can be used for solving greenfield problem.
 
 ## Solving a Greenfield Problem
 
-We consider a network of customers where demand for each customer is satisfied by a distribution center. 
+We consider a network of customers where demand for each customer 
+is satisfied by a distribution center. 
 Figure 1 shows the customer locations and corresponding annual demand. 
 
-| ![_config.yml]({{ site.baseurl }}/images/2019-7-30_customer_demand_points.jpg) | 
+| ![_config.yml]({{ site.baseurl }}/images/Solving Supply Chain Greenfield Analysis Problem Using Optimization in Python/demand_map.png) | 
 |:--:| 
 | *Figure 1: Customer demand map* |
 
-It is assumed that any location can be selected for a distribution center location. 
+
 
 
 ### Obtaining Zipcodes as Candidate Facility Locations with Python
