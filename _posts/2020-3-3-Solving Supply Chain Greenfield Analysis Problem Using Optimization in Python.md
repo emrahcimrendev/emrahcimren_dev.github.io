@@ -85,8 +85,11 @@ Figure 1 shows the customer locations and corresponding annual demand.
 |:--:| 
 | *Figure 1: Customer demand map* |
 
+We answer the following questions as a result of the analysis:
 
-
+- How many distribution centers are required?
+- Where should each distribution center be located?
+- How customers should be allocated to the distribution centers?
 
 ### Obtaining Zipcodes as Candidate Facility Locations with Python
 
