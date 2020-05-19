@@ -15,7 +15,12 @@ Python.
  
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/chocolate_main.jpg)
 
-Consider a supplier of three types of 3.5oz craft chocolate bars; milk, dark, and white.
-Supplier has a manufacturing facility and a warehouse where retailers
+## Portland Chocolate Company
+
+Portland Chocolate Company (PCC) is a craft chocolate 
+supplier offering three types of 3.5oz craft chocolate bars; milk, dark, and white.
+PCC has a manufacturing facility and a warehouse where retailers
 come and pick up their orders.
+
+
 
