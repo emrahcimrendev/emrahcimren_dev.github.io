@@ -32,8 +32,6 @@ transfers to their regional warehouse (see Figure 1).
 We provide descriptive statistics on orders and lead times 
 from historical data from last 200 days.
 
-### Orders and Lead Time
-
 Figure 2 illustrates historical orders (200 days) for
 the two products. Note that retailer does not order everyday. 
 
