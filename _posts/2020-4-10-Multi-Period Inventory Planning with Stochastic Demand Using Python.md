@@ -62,8 +62,8 @@ Similarly, dark chocolate is ordered every week with an order size of 27,318.
 
 Figure 4 illustrates lead time distributions. 
 Lead time for both products is around 19 days. 
-Since warehouse is co-located with the manufacturing plant (transit time is 0 days),
-lead time is associated with the manufacturing process.
+Note that lead time is the time between order place time
+and retailer pick time.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
 |:--:| 
