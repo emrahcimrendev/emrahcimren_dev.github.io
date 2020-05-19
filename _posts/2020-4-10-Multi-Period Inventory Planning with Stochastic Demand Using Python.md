@@ -12,8 +12,10 @@ tags:
 In this post, we consider a supply chain were product demand is stochastic over time. 
 We determine plans for inventory management using Monte Carlo Simulation in
 Python.
-
-Consider a supplier of three types of chocolate bars; milk, dark, and white. 
-
+ 
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/chocolate_main.jpg)
+
+Consider a supplier of three types of 3.5oz craft chocolate bars; milk, dark, and white.
+Supplier has a manufacturing facility and a warehouse where retailers
+come and pick up their orders.
 
