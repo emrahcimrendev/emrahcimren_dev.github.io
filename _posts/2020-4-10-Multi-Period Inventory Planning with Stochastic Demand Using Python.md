@@ -42,8 +42,8 @@ orders last year by the number of working days (see the following table).
 
 | Product | Total Number of Days | Total Number of Days with Nonzero Order | $$p$$ | Average Order Units | 
 |-------|-------|--------|--------|--------|
-| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47837 |
-| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27318 |
+| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 |
+| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 |
 
 Demand Distribution for each Product. 
 
@@ -55,8 +55,21 @@ Figure 3 illustrates demand distribution.
 | *Figure 3: Demand Distribution* |
 
 Milk chocolate is a high volume product 
-that gets ordered every week and the mean order size is 47837. 
-Similarly, dark chocolate is ordered every week with an order size of 27318.
+that gets ordered every week and the mean order size is 47,837. 
+Similarly, dark chocolate is ordered every week with an order size of 27,318.
+
+### Lead Time
+
+| Product | Lead Time Days | 
+|-------|-------|
+| 3.5oz Milk Chocolate | 18.7 |
+| 3.5oz Dark Chocolate | 19.3 | 
+
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
+|:--:| 
+| *Figure 3: Lead Time Distribution* |
+demand_supply_final
 
 ### Onhand Inventory
 
