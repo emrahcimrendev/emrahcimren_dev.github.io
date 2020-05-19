@@ -47,8 +47,8 @@ orders last year by the number of working days (see the following table).
 
 | Product | Total Number of Days | Total Number of Days with Nonzero Order | $$p$$ | Average Order Units | Standard Dev. | CoV |
 |-------|-------|--------|--------|--------|--------|
-| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 | 45,426 | 
-| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 | 15,837 |
+| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 | 45,426 | 0.94 |
+| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 | 15,837 | 0.57 |
 
 There is differences in the demands for milk and dark chocolates. 
 Figure 3 illustrates demand distribution.
