@@ -68,14 +68,13 @@ There is differences in the demand distributions for milk and dark chocolates
 |:--:| 
 | *Figure 3: Demand Distribution* |
 
-TODO: Fit those to distributions.
-
-### Lead Time
-
-Figure 4 illustrates lead time distributions. 
-Lead time for both products is around 19 days. 
-Note that lead time is the time between order place time
+Lead time is the time between order place time
 and retailer pick time.
+Figure 4 illustrates lead time distributions. 
+Lead time for both products is average around 19 days
+and CoV is less than 50%.
+
+We assume that lead time is 19 days for both products.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
 |:--:| 
@@ -86,8 +85,10 @@ and retailer pick time.
 | 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 | 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
 
+## Demand Distribution
 
-### Onhand Inventory
+
+
 
 
 
