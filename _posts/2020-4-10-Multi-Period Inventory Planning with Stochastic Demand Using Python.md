@@ -40,8 +40,8 @@ Let $$p$$ be probability of placing an order on any given day which
 is calculated by dividing the number of 
 orders last year by the number of working days (see the following table).
 
-| Product | Total Number of Days | Total Number of Days with Nonzero Order |
-|-------|-------|--------|
+| Product | Total Number of Days | Total Number of Days with Nonzero Order | p |
+|-------|-------|--------|--------|
 | 3.5oz Milk Chocolate | 200 | 30 | 0.14 |
 | 3.5oz Dark Chocolate | 200 | 24 | 0.15 |
 
