@@ -31,9 +31,14 @@ transfers to their regional warehouse (see Figure 1).
 
 Figure 2 illustrates orders for
 the two products. Note that retailer does not order everyday. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
+|:--:| 
+| *Figure 2: Orders* |
+
 Let $$p$$ be probability of placing an order on any given day which
 is calculated by dividing the number of 
-orders last year by the number of working days.
+orders last year by the number of working days (see the following table).
 
 | Product | Total Number of Days | Total Number of Days with Nonzero Order |
 |-------|-------|--------|
