@@ -83,8 +83,8 @@ and retailer pick time.
 
 | Product | Lead Time Days | Standard Dev. | CoV | 
 |-------|-------|-------|-------|
-| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.48 |
-| 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.37 |
+| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
+| 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
 
 
 ### Onhand Inventory
