@@ -50,16 +50,26 @@ orders last year by the number of working days (see the following table).
 | 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 | 45,426 | 0.94 |
 | 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 | 15,837 | 0.57 |
 
-There is differences in the demands for milk and dark chocolates. 
-Figure 3 illustrates demand distribution.
+Milk chocolate is a high volume product 
+that gets ordered every week and the mean order size is 47,837. 
+Similarly, dark chocolate is ordered every week with an order size of 27,318.
+
+The coefficient of variation (CoV) is the ratio of the standard deviation to the mean. 
+The higher CoV, 
+the greater the level of dispersion around the mean. 
+The lower the value of CoV, the more precise the estimate. 
+In our case, both products have high CoV (greater than 0.5, 50%)
+which can affect the forecast quality.
+
+There is differences in the demand distributions for milk and dark chocolates 
+(see Figure 3).
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
 |:--:| 
 | *Figure 3: Demand Distribution* |
 
-Milk chocolate is a high volume product 
-that gets ordered every week and the mean order size is 47,837. 
-Similarly, dark chocolate is ordered every week with an order size of 27,318.
+
+
 
 TODO: Fit those to distributions.
 
