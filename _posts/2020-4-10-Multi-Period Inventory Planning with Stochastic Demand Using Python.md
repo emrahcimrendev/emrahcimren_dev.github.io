@@ -40,10 +40,23 @@ Let $$p$$ be probability of placing an order on any given day which
 is calculated by dividing the number of 
 orders last year by the number of working days (see the following table).
 
-| Product | Total Number of Days | Total Number of Days with Nonzero Order | p |
-|-------|-------|--------|--------|
-| 3.5oz Milk Chocolate | 200 | 30 | 0.14 |
-| 3.5oz Dark Chocolate | 200 | 24 | 0.15 |
+| Product | Total Number of Days | Total Number of Days with Nonzero Order | $$p$$ | Average Order Units | 
+|-------|-------|--------|--------|--------|
+| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47837 |
+| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27318 |
+
+Demand Distribution for each Product. 
+
+There is differences in the demands for milk and dark chocolates (see Figure 3). 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
+|:--:| 
+| *Figure 3: Demand Distribution* |
+
+For example, milk chocolate is a high volume product 
+that gets bought every week and the mean order size is 649. 
+
+Whereas Product 4 is purchased 24% of the time and its mean order size is around 150. The table below provides a summary of each product that can be calculated purely based on past sales data.
 
 
 
