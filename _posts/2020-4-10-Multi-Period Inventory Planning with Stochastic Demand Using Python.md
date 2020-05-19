@@ -29,7 +29,7 @@ transfers to their regional warehouse (see Figure 1).
 
 ### Orders and Lead Time
 
-Figure 2 illustrates orders for
+Figure 2 illustrates historical orders (200 days) for
 the two products. Note that retailer does not order everyday. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
@@ -47,7 +47,8 @@ orders last year by the number of working days (see the following table).
 
 Demand Distribution for each Product. 
 
-There is differences in the demands for milk and dark chocolates (see Figure 3). 
+There is differences in the demands for milk and dark chocolates. 
+Figure 3 illustrates demand distribution.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
 |:--:| 
@@ -57,7 +58,8 @@ For example, milk chocolate is a high volume product
 that gets ordered every week and the mean order size is 47837. 
 Similarly, dark chocolate is ordered every week with an order size of 27318.
 
-Whereas Product 4 is purchased 24% of the time and its mean order size is around 150. The table below provides a summary of each product that can be calculated purely based on past sales data.
+The table below provides a summary of each product that can be calculated 
+purely based on past sales data.
 
 
 
