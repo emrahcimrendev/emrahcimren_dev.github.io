@@ -18,8 +18,9 @@ Python.
 ## Portland Chocolate Company
 
 Portland Chocolate Company (PCC) is a craft chocolate 
-supplier offering three types of 3.5oz craft chocolate bars; milk, dark, and white.
-PCC has a manufacturing facility and a warehouse where a retailer picks up their orders and
+supplier offering two 3.5oz chocolate bars; milk, and dark.
+PCC has a manufacturing facility and a warehouse where a retailer picks up 
+their orders and
 transfers to their regional warehouse (see Figure 1). 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/supply_chain.PNG) | 
