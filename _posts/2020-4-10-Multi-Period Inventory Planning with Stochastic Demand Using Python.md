@@ -68,9 +68,6 @@ There is differences in the demand distributions for milk and dark chocolates
 |:--:| 
 | *Figure 3: Demand Distribution* |
 
-
-
-
 TODO: Fit those to distributions.
 
 ### Lead Time
