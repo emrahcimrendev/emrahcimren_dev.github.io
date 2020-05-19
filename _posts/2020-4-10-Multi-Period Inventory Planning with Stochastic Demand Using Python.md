@@ -29,8 +29,8 @@ transfers to their regional warehouse (see Figure 1).
 
 ## Historical Data
 
-We provide descriptive statistics on order, lead time, 
-and on hand inventory data from last 200 days.
+We provide descriptive statistics on orders and lead times 
+from historical data from last 200 days.
 
 ### Orders and Lead Time
 
