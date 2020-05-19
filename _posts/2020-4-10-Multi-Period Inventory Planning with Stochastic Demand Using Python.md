@@ -27,6 +27,11 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
+## Historical Data
+
+We provide descriptive statistics on order, lead time, 
+and on hand inventory data from last 200 days.
+
 ### Orders and Lead Time
 
 Figure 2 illustrates historical orders (200 days) for
@@ -40,12 +45,12 @@ Let $$p$$ be probability of placing an order on any given day which
 is calculated by dividing the number of 
 orders last year by the number of working days (see the following table).
 
+TODO: Add standard deviation.
+
 | Product | Total Number of Days | Total Number of Days with Nonzero Order | $$p$$ | Average Order Units | 
 |-------|-------|--------|--------|--------|
 | 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 |
 | 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 |
-
-Demand Distribution for each Product. 
 
 There is differences in the demands for milk and dark chocolates. 
 Figure 3 illustrates demand distribution.
@@ -57,6 +62,8 @@ Figure 3 illustrates demand distribution.
 Milk chocolate is a high volume product 
 that gets ordered every week and the mean order size is 47,837. 
 Similarly, dark chocolate is ordered every week with an order size of 27,318.
+
+TODO: Fit those to distributions.
 
 ### Lead Time
 
