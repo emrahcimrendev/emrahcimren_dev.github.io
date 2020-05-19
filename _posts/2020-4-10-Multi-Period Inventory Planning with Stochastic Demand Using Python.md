@@ -60,16 +60,15 @@ Similarly, dark chocolate is ordered every week with an order size of 27,318.
 
 ### Lead Time
 
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
+|:--:| 
+| *Figure 3: Lead Time Distribution* |
+
 | Product | Lead Time Days | 
 |-------|-------|
 | 3.5oz Milk Chocolate | 18.7 |
 | 3.5oz Dark Chocolate | 19.3 | 
 
-
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
-|:--:| 
-| *Figure 3: Lead Time Distribution* |
-demand_supply_final
 
 ### Onhand Inventory
 
