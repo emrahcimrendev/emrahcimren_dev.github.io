@@ -54,15 +54,9 @@ Figure 3 illustrates demand distribution.
 |:--:| 
 | *Figure 3: Demand Distribution* |
 
-For example, milk chocolate is a high volume product 
+Milk chocolate is a high volume product 
 that gets ordered every week and the mean order size is 47837. 
 Similarly, dark chocolate is ordered every week with an order size of 27318.
-
-The table below provides a summary of each product that can be calculated 
-purely based on past sales data.
-
-
-
 
 ### Onhand Inventory
 
