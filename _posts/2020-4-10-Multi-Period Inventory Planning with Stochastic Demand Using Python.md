@@ -83,7 +83,26 @@ We assume that lead time is 19 days for both products.
 | 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 | 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
 
-## Demand Distribution
+## Monte Carlo Simulation
+
+Monte Carlo simulation involves using random number generators 
+to simulate random effects. We follow the steps below to build
+the Monte Carlo Simulation model.
+
+1. Determine deterministic and stochastic components of the problem.
+
+2. Calculate probability distribution for each stochastic component.
+
+3. Generate random number for each of the stochastic component
+from the corresponding probability distribution.
+
+4. Computer the desired quantity using the generated
+random value of the stochastic components. 
+
+Step5: We repeat step2 and step3 a large number of times to simulated the model which results in a large number of separate and independent values, each representing a possible outcome of the model.
+Step6: After performing all trials, we assemble the result of all trials into the probability distribution of possible outcomes. As a result, the output of the model is a probability distribution of the desired quantity.
+
+
 
 
 
