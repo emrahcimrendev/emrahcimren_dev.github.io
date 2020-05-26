@@ -8,3 +8,5 @@ tags:
 --- 
 
 In this post, 
+
+![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
