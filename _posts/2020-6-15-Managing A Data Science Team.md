@@ -7,6 +7,6 @@ tags:
   - data science
 --- 
 
-In this post, I will share my data science manager experience. 
+In this post, I will share my data science manager experience.  
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
