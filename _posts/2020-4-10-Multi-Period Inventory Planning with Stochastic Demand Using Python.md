@@ -39,14 +39,18 @@ the two products. Note that retailer does not order everyday.
 |:--:| 
 | *Figure 2: Orders* |
 
+| Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
+|-------|-------|--------|--------|
+| 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
+| 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
+
+TODO: Talk about interarrival times
+
 Let $$p$$ be probability of placing an order on any given day which
 is calculated by dividing the number of 
 orders last year by the number of working days (see the following table).
 
-| Product | Total Number of Days | Total Number of Days with Nonzero Order | $$p$$ | Average Order Units | Standard Dev. | CoV |
-|-------|-------|--------|--------|--------|--------|
-| 3.5oz Milk Chocolate | 200 | 30 | 0.15 | 47,837 | 45,426 | 0.94 |
-| 3.5oz Dark Chocolate | 200 | 24 | 0.14 | 27,318 | 15,837 | 0.57 |
+
 
 Milk chocolate is a high volume product 
 that gets ordered every week and the mean order size is 47,837. 
