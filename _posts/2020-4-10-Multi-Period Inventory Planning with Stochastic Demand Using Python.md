@@ -85,14 +85,17 @@ Figure 5 illustrates interarrival times for both products.
 |:--:| 
 | *Figure 5: Interarrival Times* |
 
-| Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
-|-------|-------|-------|-------|
-| 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
-| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
+Figure 6 illustrates interarrival time distribution for both products. 
+Both cholocates are orderes average of every six days.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/intearrival_time_distribution.png) | 
 |:--:| 
 | *Figure 6: Interarrival Time Distribution* |
+
+| Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
+|-------|-------|-------|-------|
+| 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
+| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
 
 
 
