@@ -86,7 +86,7 @@ Figure 5 illustrates interarrival times for both products.
 | *Figure 5: Interarrival Times* |
 
 Figure 6 illustrates interarrival time distribution for both products. 
-Both cholocates are orderes average of every six days.
+Both cholocates are ordered average of every six days.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/intearrival_time_distribution.png) | 
 |:--:| 
