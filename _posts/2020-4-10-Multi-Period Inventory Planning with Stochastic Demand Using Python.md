@@ -87,8 +87,8 @@ Figure 5 illustrates interarrival times for both products.
 
 | Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
 |-------|-------|-------|-------|
-| 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
-| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
+| 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
+| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
 
 
 
