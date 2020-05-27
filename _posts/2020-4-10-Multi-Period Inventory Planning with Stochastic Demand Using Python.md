@@ -44,14 +44,6 @@ the two products. Note that retailer does not order everyday.
 | 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
 | 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
 
-TODO: Talk about interarrival times
-
-Let $$p$$ be probability of placing an order on any given day which
-is calculated by dividing the number of 
-orders last year by the number of working days (see the following table).
-
-
-
 Milk chocolate is a high volume product 
 that gets ordered every week and the mean order size is 47,837. 
 Similarly, dark chocolate is ordered every week with an order size of 27,318.
@@ -86,6 +78,12 @@ We assume that lead time is 19 days for both products.
 |-------|-------|-------|-------|
 | 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 | 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
+
+TODO: Talk about interarrival times
+
+Let $$p$$ be probability of placing an order on any given day which
+is calculated by dividing the number of 
+orders last year by the number of working days (see the following table).
 
 ## Monte Carlo Simulation
 
