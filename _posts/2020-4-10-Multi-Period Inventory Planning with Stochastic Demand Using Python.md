@@ -33,7 +33,7 @@ We provide descriptive statistics on orders and lead times
 from historical data from last 200 days.
 
 Figure 2 illustrates historical orders (200 days) for
-the two products. Note that retailer does not order everyday. 
+the two products. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
 |:--:| 
@@ -41,12 +41,11 @@ the two products. Note that retailer does not order everyday.
 
 | Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
 |-------|-------|--------|--------|
-| 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
 | 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
+| 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
 
-Milk chocolate is a high volume product 
-that gets ordered every week and the mean order size is 47,837. 
-Similarly, dark chocolate is ordered every week with an order size of 27,318.
+Milk chocolate is a high volume product with 47,837 average order size. 
+Similarly, dark chocolate has an average order size of 27,318.
 
 The coefficient of variation (CoV) is the ratio of the standard deviation to the mean. 
 The higher CoV, 
@@ -74,16 +73,24 @@ We assume that lead time is 19 days for both products.
 |:--:| 
 | *Figure 4: Lead Time Distribution* |
 
-| Product | Lead Time Days | Standard Dev. | CoV | 
+| Product | Average Lead Time Days | Lead Time Standard Dev. Days | Lead Time CoV | 
 |-------|-------|-------|-------|
-| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 | 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
+| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 
-TODO: Talk about interarrival times
+The inter arrival time is the time between each arrival of an order and the next. 
+Figure 5 illustrates interarrival times for both products.
 
-Let $$p$$ be probability of placing an order on any given day which
-is calculated by dividing the number of 
-orders last year by the number of working days (see the following table).
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
+|:--:| 
+| *Figure 5: Interarrival Times* |
+
+| Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
+|-------|-------|-------|-------|
+| 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
+| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
+
+
 
 ## Monte Carlo Simulation
 
