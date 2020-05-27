@@ -97,8 +97,6 @@ Both chocolates are ordered average of every six days.
 | 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
 | 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
 
-
-
 ## Monte Carlo Simulation
 
 Monte Carlo simulation involves using random number generators 
@@ -115,13 +113,12 @@ from the corresponding probability distribution.
 4. Computer the desired quantity using the generated
 random value of the stochastic components. 
 
-Step5: We repeat step2 and step3 a large number of times to simulated the model which results in a large number of separate and independent values, each representing a possible outcome of the model.
-Step6: After performing all trials, we assemble the result of all trials into the probability distribution of possible outcomes. As a result, the output of the model is a probability distribution of the desired quantity.
+5. Steps 2 and 3 are repeated a large number of times 
+to simulate the model which results in a large number of 
+separate and independent values, each representing a possible outcome of the model.
 
+6. After performing all trials, we assemble the result of 
+all trials into the probability distribution of possible outcomes. 
 
-
-
-
-
-
-
+7. As a result, the output of the model is a probability distribution 
+of the desired quantity.
