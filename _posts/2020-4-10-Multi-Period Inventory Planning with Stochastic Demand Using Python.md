@@ -27,6 +27,9 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
+PCC's objective is to identify inventory management policy to maximize their
+profit.
+
 ## Historical Data
 
 We provide descriptive statistics on orders and lead times 
@@ -120,5 +123,5 @@ separate and independent values, each representing a possible outcome of the mod
 6. After performing all trials, we assemble the result of 
 all trials into the probability distribution of possible outcomes. 
 
-7. As a result, the output of the model is a probability distribution 
+As a result, the output of the model is a probability distribution 
 of the desired quantity.
