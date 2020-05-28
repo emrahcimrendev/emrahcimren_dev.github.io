@@ -35,7 +35,8 @@ Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
 PCC receives a purchase plan from retailer and prepares a production plan
-by product and week. 
+by product and week. PCC does not hold inventory at the manufacturing
+facility and ships products immediately to its warehouse.
 
 Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
 profit margins are 56% and 68%, respectively.
