@@ -27,7 +27,8 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
-PCC receives orders from retailer. PCC prepares orders and retailer picks them
+After PCC receives orders from retailer, 
+PCC prepares (picks) orders and retailer picks them
 from PCC's warehouse. PCC and retailer has a 99% service level agreement
 which is at least 99 of 100 orders should be satisfied within 7 days. 
 Therefore, PCC carries safety stock to be able to meet retailers service
