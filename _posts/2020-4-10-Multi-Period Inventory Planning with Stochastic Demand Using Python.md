@@ -27,7 +27,20 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
-PCC's objective is to identify inventory management policy to maximize their
+PCC receives orders from retailer. PCC prepares orders and retailer picks them
+from PCC's warehouse. PCC and retailer has a 99% service level agreement
+which is at least 99 of 100 orders should be satisfied within 7 days. 
+Therefore, PCC carries safety stock to be able to meet retailers service
+level requirement. 
+
+PCC receives a purchase plan from retailer and prepares a production plan
+by product and week. 
+
+Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
+profit margins are 56% and 68%, respectively.
+
+PCC's objective is to identify production and inventory management 
+policy to maximize their
 profit.
 
 ## Historical Data
