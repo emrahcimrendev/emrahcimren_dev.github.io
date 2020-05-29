@@ -80,11 +80,11 @@ There is differences in the demand distributions for milk and dark chocolates
 | *Figure 3: Demand Distribution* |
 
 The inter arrival time is the time between each arrival of an order and the next. 
-Figure 5 illustrates interarrival times for both products.
+Figure 4 illustrates interarrival times for both products.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
 |:--:| 
-| *Figure 5: Interarrival Times* |
+| *Figure 4: Interarrival Times* |
 
 Figure 6 illustrates interarrival time distribution for both products. 
 Both chocolates are ordered average of every six days.
