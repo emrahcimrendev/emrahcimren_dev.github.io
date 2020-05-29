@@ -86,12 +86,12 @@ Figure 4 illustrates interarrival times for both products.
 |:--:| 
 | *Figure 4: Interarrival Times* |
 
-Figure 6 illustrates interarrival time distribution for both products. 
+Figure 5 illustrates interarrival time distribution for both products. 
 Both chocolates are ordered average of every six days.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/intearrival_time_distribution.png) | 
 |:--:| 
-| *Figure 6: Interarrival Time Distribution* |
+| *Figure 5: Interarrival Time Distribution* |
 
 | Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
 |-------|-------|-------|-------|
