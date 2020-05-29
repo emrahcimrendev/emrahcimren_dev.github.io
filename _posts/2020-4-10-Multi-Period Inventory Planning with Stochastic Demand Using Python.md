@@ -29,8 +29,8 @@ transfers to their regional warehouse (see Figure 1).
 
 After PCC receives orders from retailer, 
 PCC prepares (picks) orders and retailer picks them
-from PCC's warehouse. PCC and retailer has a 99% service level agreement
-which is at least 99 of 100 orders should be satisfied within 7 days. 
+from PCC's warehouse. PCC and retailer has a 100% service level agreement
+which is an order should be satisfied within 7 days. 
 Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
@@ -78,23 +78,6 @@ There is differences in the demand distributions for milk and dark chocolates
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
 |:--:| 
 | *Figure 3: Demand Distribution* |
-
-Lead time is the time between order place time
-and retailer pick time.
-Figure 4 illustrates lead time distributions. 
-Lead time for both products is average around 19 days
-and CoV is less than 50%.
-
-We assume that lead time is 19 days for both products.
-
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
-|:--:| 
-| *Figure 4: Lead Time Distribution* |
-
-| Product | Average Lead Time Days | Lead Time Standard Dev. Days | Lead Time CoV | 
-|-------|-------|-------|-------|
-| 3.5oz Dark Chocolate | 19.3 | 9.4 | 0.48 |
-| 3.5oz Milk Chocolate | 18.7 | 6.9 | 0.37 |
 
 The inter arrival time is the time between each arrival of an order and the next. 
 Figure 5 illustrates interarrival times for both products.
