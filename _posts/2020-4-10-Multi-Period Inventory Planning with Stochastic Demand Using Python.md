@@ -123,3 +123,9 @@ all trials into the probability distribution of possible outcomes.
 
 As a result, the output of the model is a probability distribution 
 of the desired quantity.
+
+## Simulation Design
+
+We now develop a Monte Carlo simulation model for the inventory management problem.
+We first define model inputs. 
+
