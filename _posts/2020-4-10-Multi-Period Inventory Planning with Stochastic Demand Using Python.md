@@ -27,9 +27,19 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
-Figure 2 illustrates PCCs inventory policy.
 After PCC receives orders from retailer, 
-PCC prepares (picks) orders. When the orders are ready,
+PCC prepares (picks) orders if the inventory level is at
+least as large as the demand. 
+If the order amount exceeds the inventory level, 
+the excess order amount over supply 
+is backlogged and satisfied by future deliveries.
+
+PCC and retailer has a 100% service level agreement
+which is an order should be satisfied within 7 days. 
+Therefore, PCC carries safety stock to be able to meet retailers service
+level requirement. 
+
+When the orders are ready,
 retailer picks them from the PCC's warehouse. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
@@ -43,11 +53,6 @@ orders product from the manufacturing plant. Warehouse receives the
 orders from the manufacturing plant and available inventory 
 reaches to the maximum
 level. 
-
-PCC and retailer has a 100% service level agreement
-which is an order should be satisfied within 7 days. 
-Therefore, PCC carries safety stock to be able to meet retailers service
-level requirement. 
 
 PCC receives a purchase plan from retailer and prepares a production plan
 by product and week. PCC does not hold inventory at the manufacturing
@@ -77,7 +82,9 @@ at time $$t\in T$$ where
 
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
 
-
+When an order is
+placed for the manufacturing plant, 
+the time required for it to arrive called lead time.
 
 
 
