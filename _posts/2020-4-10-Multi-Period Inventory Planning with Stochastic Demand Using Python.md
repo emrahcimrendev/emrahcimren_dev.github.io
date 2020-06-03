@@ -60,6 +60,45 @@ PCC's objective is to identify inventory management
 policy to maximize their
 profit.
 
+## Simulation Design
+
+We now develop a Monte Carlo simulation algorithm 
+for the inventory management problem. 
+
+Let $$P$$ be the set of products and 
+$$T$$ be the set of time periods. 
+
+Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
+$$s_k$$ be the reorder point of product $$k \in P$$, and
+$$S_k$$ be the minimum safety stock level of product $$k\in P$$ (see Figure 2). 
+For all $$k\in P$$, 
+PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
+at time $$t\in T$$ where
+
+![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
+
+
+
+
+
+
+
+
+The following is the algorithm steps. 
+
+1. For each product, determine order arrivals based on arrival distribution.
+
+2. For each arrival, determine order quantity.
+
+3. If there is available inventory, 
+the replenish orders based on the incoming order sequence.
+
+4. Monitor safety stock and re-order at the reordering point
+if on hand inventory reaches at the reorder point.
+
+We assume that there is manufacturing capacity for each product and inventory
+hold at the warehouse is limited.
+
 ## Historical Data
 
 We provide descriptive statistics on orders and lead times 
@@ -139,46 +178,6 @@ all trials into the probability distribution of possible outcomes.
 As a result, the output of the model is a probability distribution 
 of the desired quantity.
 
-## Simulation Design
-
-We now develop a Monte Carlo simulation algorithm 
-for the inventory management problem. Recall Figure 2. 
-
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
-
-Let $$P$$ be the set of products and 
-$$T$$ be the set of time periods. 
-
-Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
-$$s_k$$ be the reorder point of product $$k \in P$$, and
-$$S_k$$ be the minimum safety stock level of product $$k\in P$$. 
-For all $$k\in P$$, 
-PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
-at time $$t\in T$$ where
-
-![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
-
-
-
-
-
-
-
-
-The following is the algorithm steps. 
-
-1. For each product, determine order arrivals based on arrival distribution.
-
-2. For each arrival, determine order quantity.
-
-3. If there is available inventory, 
-the replenish orders based on the incoming order sequence.
-
-4. Monitor safety stock and re-order at the reordering point
-if on hand inventory reaches at the reorder point.
-
-We assume that there is manufacturing capacity for each product and inventory
-hold at the warehouse is limited.
 
 
 
