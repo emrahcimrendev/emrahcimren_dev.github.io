@@ -19,28 +19,53 @@ Python.
 
 Portland Chocolate Company (PCC) is a craft chocolate 
 supplier offering two 3.5oz chocolate bars; milk, and dark.
-PCC has a manufacturing facility and a warehouse where a retailer picks up 
-their orders and
-transfers to their regional warehouse (see Figure 1). 
+PCC has a manufacturing facility and a warehouse (see Figure 1).
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/supply_chain.PNG) | 
 |:--:| 
 | *Figure 1: Supply chain* |
 
+
+
+Let $$P$$ be the set of products, 3.5oz dark chocolate bar and 
+3.5oz milk chocolate bars. Also, let $$T$$ be the set of time periods, days. 
+
+Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
+$$s_k$$ be the reorder point of product $$k \in P$$, and
+$$S_k$$ be the minimum safety stock level of product $$k\in P$$ (see Figure 2). 
+For all $$k\in P$$, 
+PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
+at time $$t\in T$$ where
+
+![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
+
+
+
+
+ 
 After PCC receives orders from retailer, 
-PCC prepares (picks) orders if the inventory level is at
-least as large as the demand. 
-If the order amount exceeds the inventory level, 
-the excess order amount over supply 
-is backlogged and satisfied by future deliveries.
+first PCC prepares (picks) orders and 
+then,
+retailer picks them from the PCC's warehouse. 
+
+PCC receives a purchase plan from retailer and prepares a production plan
+by product and week. PCC does not hold inventory at the manufacturing
+facility and ships products immediately to its warehouse.
 
 PCC and retailer has a 100% service level agreement
 which is an order should be satisfied within 7 days. 
 Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
-When the orders are ready,
-retailer picks them from the PCC's warehouse. 
+
+ if the inventory level is at
+least as large as the demand. 
+If the order amount exceeds the inventory level, 
+the excess order amount over supply 
+is backlogged and satisfied by future deliveries.
+
+
+
 
 
 
@@ -52,9 +77,7 @@ orders from the manufacturing plant and available inventory
 reaches to the maximum
 level. 
 
-PCC receives a purchase plan from retailer and prepares a production plan
-by product and week. PCC does not hold inventory at the manufacturing
-facility and ships products immediately to its warehouse.
+
 
 Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
 profit margins are 56% and 68%, respectively.
@@ -63,21 +86,9 @@ PCC's objective is to identify inventory management
 policy to maximize their
 profit.
 
-## Problem Description
 
 We now define the inventory management problem.
 
-Let $$P$$ be the set of products and 
-$$T$$ be the set of time periods. 
-
-Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
-$$s_k$$ be the reorder point of product $$k \in P$$, and
-$$S_k$$ be the minimum safety stock level of product $$k\in P$$ (see Figure 2). 
-For all $$k\in P$$, 
-PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
-at time $$t\in T$$ where
-
-![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
 
 When an order is
 placed for the manufacturing plant, 
