@@ -27,7 +27,7 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
-Figure 2 illustrates current inventory cycle at PCC's warehouse.
+Figure 2 illustrates PCCs inventory policy.
 After PCC receives orders from retailer, 
 PCC prepares (picks) orders. When the orders are ready,
 retailer picks them from the PCC's warehouse. 
@@ -141,7 +141,30 @@ of the desired quantity.
 
 ## Simulation Design
 
-We now develop a Monte Carlo simulation algorithm for the inventory management problem.
+We now develop a Monte Carlo simulation algorithm 
+for the inventory management problem.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
+|:--:| 
+| *Figure 2: Inventory policy* |
+
+Recall Figure 2. Let $$P$$ be the set of products and 
+$$T$$ be set of time periods. 
+Let $$I_{tk}$$ be be the inventory level of product $$k$$ at time $t$, 
+$$s_k$$ be the reorder point of product $$k$$, and
+$$S_k$$ be the minimum safety stock level of product $$k$$. 
+For all $$k\in P$$, 
+PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
+at time $$t$$ where
+
+
+
+
+
+
+
+
+
 The following is the algorithm steps. 
 
 1. For each product, determine order arrivals based on arrival distribution.
