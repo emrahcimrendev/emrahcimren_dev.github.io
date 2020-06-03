@@ -42,9 +42,7 @@ level requirement.
 When the orders are ready,
 retailer picks them from the PCC's warehouse. 
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
-|:--:| 
-| *Figure 2: Inventory policy* |
+
 
 Inventory at the warehouse decreases as orders are picked by 
 the retailer. 
@@ -65,10 +63,9 @@ PCC's objective is to identify inventory management
 policy to maximize their
 profit.
 
-## Simulation Design
+## Problem Description
 
-We now develop a Monte Carlo simulation algorithm 
-for the inventory management problem. 
+We now define the inventory management problem.
 
 Let $$P$$ be the set of products and 
 $$T$$ be the set of time periods. 
@@ -86,9 +83,11 @@ When an order is
 placed for the manufacturing plant, 
 the time required for it to arrive called lead time.
 
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
+|:--:| 
+| *Figure 2: Inventory policy* |
 
-
-
+## Simulation Design
 
 
 The following is the algorithm steps. 
