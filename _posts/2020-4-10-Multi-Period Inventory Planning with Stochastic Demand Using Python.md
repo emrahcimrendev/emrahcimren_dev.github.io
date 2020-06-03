@@ -65,12 +65,12 @@ profit.
 We provide descriptive statistics on orders and lead times 
 from historical data from last 200 days.
 
-Figure 2 illustrates historical orders (200 days) for
+Figure 3 illustrates historical orders (200 days) for
 the two products. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
 |:--:| 
-| *Figure 2: Orders* |
+| *Figure 3: Orders* |
 
 | Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
 |-------|-------|--------|--------|
@@ -88,25 +88,25 @@ In our case, both products have high CoV (greater than 0.5, 50%)
 which can affect the forecast quality.
 
 There is differences in the demand distributions for milk and dark chocolates 
-(see Figure 3).
+(see Figure 4).
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
 |:--:| 
-| *Figure 3: Demand Distribution* |
+| *Figure 4: Demand Distribution* |
 
 The inter arrival time is the time between each arrival of an order and the next. 
-Figure 4 illustrates interarrival times for both products.
+Figure 5 illustrates interarrival times for both products.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
 |:--:| 
-| *Figure 4: Interarrival Times* |
+| *Figure 5: Interarrival Times* |
 
-Figure 5 illustrates interarrival time distribution for both products. 
+Figure 6 illustrates interarrival time distribution for both products. 
 Both chocolates are ordered average of every six days.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/intearrival_time_distribution.png) | 
 |:--:| 
-| *Figure 5: Interarrival Time Distribution* |
+| *Figure 6: Interarrival Time Distribution* |
 
 | Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
 |-------|-------|-------|-------|
