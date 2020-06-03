@@ -142,12 +142,13 @@ of the desired quantity.
 ## Simulation Design
 
 We now develop a Monte Carlo simulation algorithm 
-for the inventory management problem.
+for the inventory management problem. Recall Figure 2. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 
-Recall Figure 2. Let $$P$$ be the set of products and 
-$$T$$ be set of time periods. 
+Let $$P$$ be the set of products and 
+$$T$$ be the set of time periods. 
+
 Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
 $$s_k$$ be the reorder point of product $$k \in P$$, and
 $$S_k$$ be the minimum safety stock level of product $$k\in P$$. 
