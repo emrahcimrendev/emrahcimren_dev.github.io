@@ -148,8 +148,21 @@ The following is the algorithm steps.
 
 2. For each arrival, determine order quantity.
 
-3. Replenish orders from inventory at the warehouse if inventory is available. 
-If there
-is no enough inventory available, then create a manufacturing request  
+3. If there is available inventory, 
+the replenish orders based on the incoming order sequence.
+
+4. Monitor safety stock and re-order at the reordering point
+if on hand inventory reaches at the reorder point.
+
+We assume that there is manufacturing capacity for each product and inventory
+hold at the warehouse is limited.
+
+
+
+### 
+
+
+
+
 
 
