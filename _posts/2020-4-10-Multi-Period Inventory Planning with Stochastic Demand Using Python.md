@@ -34,6 +34,12 @@ which is an order should be satisfied within 7 days.
 Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
+Figure 2 illustrates current inventory policy at PCC's. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
+|:--:| 
+| *Figure 2: Inventory policy* |
+
 PCC receives a purchase plan from retailer and prepares a production plan
 by product and week. PCC does not hold inventory at the manufacturing
 facility and ships products immediately to its warehouse.
