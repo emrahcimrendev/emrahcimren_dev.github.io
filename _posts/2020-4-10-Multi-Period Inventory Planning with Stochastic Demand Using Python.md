@@ -145,8 +145,6 @@ We now develop a Monte Carlo simulation algorithm
 for the inventory management problem.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
-|:--:| 
-| *Figure 2: Inventory policy* |
 
 Recall Figure 2. Let $$P$$ be the set of products and 
 $$T$$ be set of time periods. 
