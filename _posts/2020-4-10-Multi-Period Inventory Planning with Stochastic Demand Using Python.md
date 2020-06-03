@@ -27,18 +27,27 @@ transfers to their regional warehouse (see Figure 1).
 |:--:| 
 | *Figure 1: Supply chain* |
 
+Figure 2 illustrates current inventory cycle at PCC's warehouse.
 After PCC receives orders from retailer, 
-PCC prepares (picks) orders and retailer picks them
-from PCC's warehouse. PCC and retailer has a 100% service level agreement
-which is an order should be satisfied within 7 days. 
-Therefore, PCC carries safety stock to be able to meet retailers service
-level requirement. 
-
-Figure 2 illustrates current inventory policy at PCC's. 
+PCC prepares (picks) orders. When the orders are ready,
+retailer picks them from the PCC's warehouse. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 |:--:| 
 | *Figure 2: Inventory policy* |
+
+Inventory at the warehouse decreases as orders are picked by 
+the retailer. 
+When inventory reach at a level (called reorder point), PCC
+orders product from the manufacturing plant. Warehouse receives the 
+orders from the manufacturing plant and available inventory 
+reaches to the maximum
+level. 
+
+PCC and retailer has a 100% service level agreement
+which is an order should be satisfied within 7 days. 
+Therefore, PCC carries safety stock to be able to meet retailers service
+level requirement. 
 
 PCC receives a purchase plan from retailer and prepares a production plan
 by product and week. PCC does not hold inventory at the manufacturing
@@ -47,7 +56,7 @@ facility and ships products immediately to its warehouse.
 Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
 profit margins are 56% and 68%, respectively.
 
-PCC's objective is to identify production and inventory management 
+PCC's objective is to identify inventory management 
 policy to maximize their
 profit.
 
