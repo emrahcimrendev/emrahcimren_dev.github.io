@@ -126,6 +126,15 @@ of the desired quantity.
 
 ## Simulation Design
 
-We now develop a Monte Carlo simulation model for the inventory management problem.
-We first define model inputs. 
+We now develop a Monte Carlo simulation algorithm for the inventory management problem.
+The following is the algorithm steps. 
+
+1. For each product, determine order arrivals based on arrival distribution.
+
+2. For each arrival, determine order quantity.
+
+3. Replenish orders from inventory at the warehouse if inventory is available. 
+If there
+is no enough inventory available, then create a manufacturing request  
+
 
