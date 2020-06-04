@@ -40,12 +40,10 @@ which is an order should be satisfied within 7 days.
 Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
-If PCC inventory falls to a particular level,
-then this triggers an action to replenish that particular inventory stock. 
-
-
-It is a minimum amount of an item which a firm holds in stock, 
-such that, when stock falls to this amount, the item must be reordered
+When PCC inventory falls to a particular level, 
+this triggers an action to replenish that particular inventory. 
+In this case, PCC creates a manufacturing order
+from the manufacturing plant for replenishment.
 
 PCC's objective is to identify inventory management 
 policy to maximize their
