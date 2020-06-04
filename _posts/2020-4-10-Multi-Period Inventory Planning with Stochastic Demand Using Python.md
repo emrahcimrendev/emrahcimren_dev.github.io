@@ -46,7 +46,9 @@ profit.
 
 ## Problem Formulation
 
-
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
+|:--:| 
+| *Figure 2: Inventory policy* |
 
 Let $$P$$ be the set of products, 3.5oz dark chocolate bar and 
 3.5oz milk chocolate bars. Also, let $$T$$ be the set of time periods, days. 
@@ -100,9 +102,7 @@ When an order is
 placed for the manufacturing plant, 
 the time required for it to arrive called lead time.
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
-|:--:| 
-| *Figure 2: Inventory policy* |
+
 
 ## Simulation Design
 
