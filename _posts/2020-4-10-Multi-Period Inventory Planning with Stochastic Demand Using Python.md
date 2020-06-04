@@ -19,11 +19,32 @@ Python.
 
 Portland Chocolate Company (PCC) is a craft chocolate 
 supplier offering two 3.5oz chocolate bars; milk, and dark.
-PCC has a manufacturing facility and a warehouse (see Figure 1).
+PCC has a manufacturing facility and a warehouse in Portland, OR (see Figure 1).
+PCC works with a retailer who sells PCC's chocolates in their stores in US.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/supply_chain.PNG) | 
 |:--:| 
 | *Figure 1: Supply chain* |
+
+After PCC receives orders from retailer, 
+first PCC prepares orders and 
+then,
+retailer picks them from the PCC's warehouse. 
+
+PCC receives a purchase plan from retailer and prepares a production plan
+by product and week. PCC does not hold inventory at the manufacturing
+facility and ships products immediately to its warehouse.
+
+PCC and retailer has a 100% service level agreement
+which is an order should be satisfied within 7 days. 
+Therefore, PCC carries safety stock to be able to meet retailers service
+level requirement. 
+
+PCC's objective is to identify inventory management 
+policy to maximize their
+profit.
+
+## Problem Formulation
 
 
 
@@ -43,19 +64,8 @@ at time $$t\in T$$ where
 
 
  
-After PCC receives orders from retailer, 
-first PCC prepares (picks) orders and 
-then,
-retailer picks them from the PCC's warehouse. 
 
-PCC receives a purchase plan from retailer and prepares a production plan
-by product and week. PCC does not hold inventory at the manufacturing
-facility and ships products immediately to its warehouse.
 
-PCC and retailer has a 100% service level agreement
-which is an order should be satisfied within 7 days. 
-Therefore, PCC carries safety stock to be able to meet retailers service
-level requirement. 
 
 
  if the inventory level is at
@@ -81,10 +91,6 @@ level.
 
 Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
 profit margins are 56% and 68%, respectively.
-
-PCC's objective is to identify inventory management 
-policy to maximize their
-profit.
 
 
 We now define the inventory management problem.
