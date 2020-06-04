@@ -40,18 +40,29 @@ which is an order should be satisfied within 7 days.
 Therefore, PCC carries safety stock to be able to meet retailers service
 level requirement. 
 
+If PCC inventory falls to a particular level,
+then this triggers an action to replenish that particular inventory stock. 
+
+
+It is a minimum amount of an item which a firm holds in stock, 
+such that, when stock falls to this amount, the item must be reordered
+
 PCC's objective is to identify inventory management 
 policy to maximize their
 profit.
 
 ## Problem Formulation
 
+We now define the inventory management problem. 
+Let $$P$$ be the set of products, 3.5oz dark chocolate bar and 
+3.5oz milk chocolate bars. Also, let $$T$$ be the set of time periods in days. 
+
+
+
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 |:--:| 
 | *Figure 2: Inventory policy* |
 
-Let $$P$$ be the set of products, 3.5oz dark chocolate bar and 
-3.5oz milk chocolate bars. Also, let $$T$$ be the set of time periods, days. 
 
 Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
 $$s_k$$ be the reorder point of product $$k \in P$$, and
@@ -94,8 +105,6 @@ level.
 Both milk and dark chocolates are sold to retailer at $2.25 per unit and their
 profit margins are 56% and 68%, respectively.
 
-
-We now define the inventory management problem.
 
 
 When an order is
