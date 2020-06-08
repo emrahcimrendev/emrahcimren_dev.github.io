@@ -11,7 +11,7 @@ tags:
 
 <style type="text/css">
   p {
-    .width-half_logo {width: 10%}
+    .width-half_logo {width: 80%}
   }
 </style>
 
