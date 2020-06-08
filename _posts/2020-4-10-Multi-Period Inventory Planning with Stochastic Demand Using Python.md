@@ -96,7 +96,7 @@ We have four types of events in the simulation as in the following table.
 
 | **Event Description** | **Event Type**|
 |-------|-------|
-| 434.46 | 1 | 
+| Arrival of an order to the PCC's warehouse from the plant | 1 | 
 | 12.38% | 2 | 
 | 87.62% | 3 |
 |  | 4 |
