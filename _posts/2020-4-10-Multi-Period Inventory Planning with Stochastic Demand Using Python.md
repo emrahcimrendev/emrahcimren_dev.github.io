@@ -114,7 +114,13 @@ by the replenishment amount from the manufacturing plant.
 
 ### Retailer Order Event
 
+A flowchart for the retailer order event is provided in Figure 4. 
 
+A fl owchart for the demand event is given in Fig. 1.31, and processes the
+changes necessary to represent a demand’s occurrence. First, the demand size is
+generated, and the inventory is decremented by this amount. Finally, the time of the
+next demand is scheduled into the event list. Note that this is the place where the
+inventory level might become negative.
 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/retailer_order_event.PNG) | 
