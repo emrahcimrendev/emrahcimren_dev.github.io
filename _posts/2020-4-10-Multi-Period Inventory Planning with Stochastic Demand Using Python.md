@@ -94,11 +94,12 @@ Similarly, PCC incurs a backlog cost of $$b$$ per item per time period in backlo
 
 We have four types of events in the simulation as in the following table.
 
-| | FTL Baseline | LTL Baseline|
-|-------|-------|--------|
-| **MAE** | 434.46 | 352.96 | 
-| **MAPE** | 12.38% | 66.9% | 
-| **Accuracy** | 87.62% | 33.1% |
+| **Event Description** | **Event Type**|
+|-------|-------|
+| 434.46 | 1 | 
+| 12.38% | 2 | 
+| 87.62% | 3 |
+|  | 4 |
 
 
 
