@@ -94,12 +94,12 @@ Similarly, PCC incurs a backlog cost of $$b$$ per item per time period in backlo
 
 We have four types of events in the simulation as in the following table.
 
-| **Event Description** | **Event Type**|
-|-------|-------|
-| Arrival of an order to the PCC's warehouse from the plant | 1 | 
-| Order for a product from the retailer | 2 | 
-| End of simulation after $$|T|$$ days | 3 |
-| Inventory evaluation (possible ordering from the plant) atthe beginning of each day | 4 |
+| **Event Name** | **Event Description** | **Event Type**|
+|-------|-------|-------|
+| Replenishment | Arrival of an order to the PCC's warehouse from the plant | 1 | 
+| Retailer order | The retailer order from PCC | 2 | 
+| End | End of simulation | 3 |
+| Inventory evaluation | Inventory evaluation (possible ordering from the plant) atthe beginning of each day | 4 |
 
 
 
