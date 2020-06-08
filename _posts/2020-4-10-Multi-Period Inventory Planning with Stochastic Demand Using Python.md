@@ -45,6 +45,8 @@ this triggers an action to replenish that particular inventory.
 In this case, PCC creates a manufacturing order
 from the manufacturing plant for replenishment.
 
+At the beginning of each day, PCC reviews the inventory level and
+decides how many items to order from the manufacturing plant.
 PCC's objective is to identify inventory management 
 policy to maximize their
 profit.
@@ -73,7 +75,7 @@ This policy is called $$(s, S)$$ policy.
 | *Figure 2: Inventory policy* | **TODO UPDATE INDICES**
 
 Let $$D_{kt}$$ be the retailer order amount of product $$k\in P$$ at time $$t\in T$$.
-If $$D_{kt}\le I_{kt}$$,then it is satisfied immediately.
+If $$D_{kt}\le I_{kt}$$, then it is satisfied immediately.
 If $$D_{kt} > I_{kt}$$, then the excess of order amount over supply ($$D_{kt}-I_{kt}$$) is backlogged and satisfied by future deliveries. 
 In this case, the new inventory level is equal to the old inventory level minus the order amount, resulting in a negative inventory level. 
 
