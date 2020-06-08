@@ -127,6 +127,19 @@ inventory level might become negative.
 
 ### Inventory Evaluation Event
 
+Inventory evaluation event happend at the beginning of each time period
+illustrated in Figure 5.
+
+If the inventory level I(t) at the time of the
+evaluation is at least s, then no order is placed, and nothing is done except to
+schedule the next evaluation into the event list. On the other hand, if I(t) , s, we
+want to place an order for S 2 I(t) items. This is done by storing the amount of the
+order [S 2 I(t)] until the order arrives, and scheduling its arrival time. In this case as
+well, we want to schedule the next inventory-evaluation event.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_evaluation_event.PNG) | 
+|:--:| 
+| *Figure 5: Inventory evaluation event* |
 
  
  
