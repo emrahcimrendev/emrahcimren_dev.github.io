@@ -106,7 +106,7 @@ We now describe the logic for event types 1, 2, and 4, which actually involve st
 ### Replenishment Event
 
 Figure 3 illustrates the replenishment event which increases the on hand inventory
-by the replenishment amount.
+by the replenishment amount from the manufacturing plant.
 
 <style type="text/css">
   p {
