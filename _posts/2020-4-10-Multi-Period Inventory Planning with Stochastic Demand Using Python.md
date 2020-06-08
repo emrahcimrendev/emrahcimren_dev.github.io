@@ -53,11 +53,11 @@ profit.
 
 We now define the inventory management problem formulation. 
 Let $$P$$ be the set of products and $$T$$ be the set of time periods in days.
-Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
+Let $$I_{kt}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
 $$s_k$$ be the reorder point of product $$k \in P$$, and
 $$S_k$$ be the minimum safety stock level of product $$k\in P$$ (see Figure 2). 
 For all $$k\in P$$, 
-PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
+PCC orders $$Z_{kt}$$ units of product $$k$$ from the manufacturing plant
 at time $$t\in T$$ where
 
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
