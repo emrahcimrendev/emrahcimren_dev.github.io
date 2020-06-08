@@ -82,10 +82,11 @@ In this case, the new inventory level is equal to the old inventory level minus 
 When an PCC order arrives from the manufacturing plant, 
 it is first used to eliminate as much of the backlog (if any) as possible; the remainder of the order (if any) is added to the inventory.
 
-For each PCC's order, $$K$$ amount of set up cost incurrs. Also, there exists $$c_{k}$$ unit cost
+For each PCC's order, $$K$$ amount of set up cost incurs. Also, there exists $$c_{k}$$ unit cost
 for $$k\in K$$ when PCC orders from the manufacturing plant.
 
-
+PCC incurs a holding cost of $$h$$ per item per time period held in (positive) inventory. 
+The holding cost includes such costs as warehouse rental, insurance, taxes, and maintenance, as well as the opportunity cost of having capital tied up in inventory rather than invested elsewhere. 
 
 
 
@@ -95,11 +96,6 @@ for $$k\in K$$ when PCC orders from the manufacturing plant.
 
 
 
- if the inventory level is at
-least as large as the demand. 
-If the order amount exceeds the inventory level, 
-the excess order amount over supply 
-is backlogged and satisfied by future deliveries.
 
 
 
