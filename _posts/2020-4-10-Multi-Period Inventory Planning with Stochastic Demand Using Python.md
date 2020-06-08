@@ -105,6 +105,19 @@ We now describe the logic for event types 1, 2, and 4, which actually involve st
 
 ### Replenishment Event
 
+Figure 3 illustrates the replenishment event which is 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_evaluation_event.PNG) | 
+|:--:| 
+| *Figure 3: Replenishment event* |
+
+The order-arrival event is fl owcharted in Fig. 1.30, and must make the changes
+necessary when an order (which was previously placed) arrives from the supplier.
+The inventory level is increased by the amount of the order, and the order-arrival
+event must be eliminated from consideration. (See Prob. 1.12 for consideration of
+the issue of whether there could be more than one order outstanding at a time for
+this model with these parameters.)
+
 ### Retailer Order Event
 
 ### Inventory Evaluation Event
