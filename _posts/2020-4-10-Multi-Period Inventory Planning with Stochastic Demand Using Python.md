@@ -9,6 +9,12 @@ tags:
   - python
 --- 
 
+<style type="text/css">
+  p {
+    .width-half_logo {width: 10%}
+  }
+</style>
+
 In this post, we consider a supply chain were product demand is stochastic over time. 
 We determine plans for inventory management using Monte Carlo Simulation in
 Python.
@@ -108,7 +114,7 @@ We now describe the logic for event types 1, 2, and 4, which actually involve st
 Figure 3 illustrates the replenishment event which increases the on hand inventory
 by the replenishment amount.
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/replenishment_event.PNG) | 
+| ![](/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/replenishment_event.PNG){: .align-right .width-half_logo}| 
 |:--:| 
 | *Figure 3: Replenishment event* |
 
