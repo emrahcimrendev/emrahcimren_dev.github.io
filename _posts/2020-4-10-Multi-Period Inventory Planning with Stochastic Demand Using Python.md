@@ -72,7 +72,7 @@ This policy is called $$(s, S)$$ policy.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 |:--:| 
-| *Figure 2: Inventory policy* | **TODO UPDATE INDICES**
+| *Figure 2: Inventory policy* |
 
 Let $$D_{kt}$$ be the retailer order amount of product $$k\in P$$ at time $$t\in T$$.
 If $$D_{kt}\le I_{kt}$$, then it is satisfied immediately.
@@ -110,9 +110,6 @@ We now describe the logic for event types 1, 2, and 4, which actually involve st
 ### Inventory Evaluation Event
 
 
- 
- 
- 
  
  
  
