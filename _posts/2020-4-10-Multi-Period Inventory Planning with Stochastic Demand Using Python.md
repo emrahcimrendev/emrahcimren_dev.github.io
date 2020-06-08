@@ -70,7 +70,15 @@ This policy is called $$(s, S)$$ policy.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 |:--:| 
-| *Figure 2: Inventory policy* |
+| *Figure 2: Inventory policy* | **TODO UPDATE INDICES**
+
+Let $$D_{kt}$$ be the retailer order amount of product $$k\in P$$ at time $$t\in T$$.
+If $$D_{kt}\le I_{kt}$$,then it is satisfied immediately.
+If $$D_{kt} > I_{kt}$$, then the excess of order amount over supply ($$D_{kt}-I_{kt}$$) is backlogged and satisfied by future deliveries. 
+In this case, the new inventory level is equal to the old inventory level minus the demand size, resulting in a negative inventory level. 
+
+When an PCC order arrives from the manufacturing plant, 
+it is first used to eliminate as much of the backlog (if any) as possible; the remainder of the order (if any) is added to the inventory.
 
 
 
