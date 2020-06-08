@@ -62,6 +62,12 @@ at time $$t\in T$$ where
 
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
 
+When PCC places an order from the manufacturing plant, 
+the time required for it to arrive is called the manufacturing lead time.
+Let $$\tau_{kt}$$ be the lead time for the PCC order $$Z_{kt}$$.
+
+This policy is called $$(s, S)$$ policy.
+
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
 |:--:| 
 | *Figure 2: Inventory policy* |
