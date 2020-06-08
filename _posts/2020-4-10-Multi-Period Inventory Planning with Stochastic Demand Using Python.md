@@ -97,10 +97,9 @@ We have four types of events in the simulation as in the following table.
 | **Event Description** | **Event Type**|
 |-------|-------|
 | Arrival of an order to the PCC's warehouse from the plant | 1 | 
-| 12.38% | 2 | 
-| 87.62% | 3 |
-|  | 4 |
-
+| Order for a product from the retailer | 2 | 
+| End of simulation after $$|T|$$ days | 3 |
+| Inventory evaluation (possible ordering from the plant) atthe beginning of each day | 4 |
 
 
 
