@@ -90,6 +90,9 @@ The holding cost includes such costs as warehouse rental, insurance, taxes, and 
 
 Similarly, PCC incurs a backlog cost of $$b$$ per item per time period in backlog; this accounts for the cost of extra record keeping when a backlog exists, as well as loss of customers’ goodwill.
 
+## Simulation Design
+
+We have four types of events in the simulation as in Table 1. 
 
 
 
@@ -122,11 +125,7 @@ profit margins are 56% and 68%, respectively.
 
 When an order is
 placed for the manufacturing plant, 
-the time required for it to arrive called lead time.
-
-
-
-## Simulation Design
+the time required for it to arrive called lead 
 
 
 The following is the algorithm steps. 
