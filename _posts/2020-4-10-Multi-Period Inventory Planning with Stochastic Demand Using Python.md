@@ -51,16 +51,8 @@ profit.
 
 ## Problem Formulation
 
-We now define the inventory management problem. 
-Let $$P$$ be the set of products, 3.5oz dark chocolate bar and 
-3.5oz milk chocolate bars. Also, let $$T$$ be the set of time periods in days. 
-
-
-
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
-|:--:| 
-| *Figure 2: Inventory policy* |
-
+We now define the inventory management problem formulation. 
+Let $$P$$ be the set of products and $$T$$ be the set of time periods in days.
 
 Let $$I_{tk}$$ be be the inventory level of product $$k \in P$$ at time $t\in T$, 
 $$s_k$$ be the reorder point of product $$k \in P$$, and
@@ -70,6 +62,13 @@ PCC orders $$Z_{tk}$$ units of product $$k$$ from the manufacturing plant
 at time $$t\in T$$ where
 
 ![_config.yml]({{ site.baseurl }}/images//Multi-Period Inventory Planning with Stochastic Demand Using Python/ordering_equation.PNG)
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_policy.PNG) | 
+|:--:| 
+| *Figure 2: Inventory policy* |
+
+
+
 
 
 
