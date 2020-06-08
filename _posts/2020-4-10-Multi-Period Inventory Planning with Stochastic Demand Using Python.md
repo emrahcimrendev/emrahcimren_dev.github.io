@@ -82,6 +82,8 @@ In this case, the new inventory level is equal to the old inventory level minus 
 When an PCC order arrives from the manufacturing plant, 
 it is first used to eliminate as much of the backlog (if any) as possible; the remainder of the order (if any) is added to the inventory.
 
+For each PCC's order, $$K$$ amount of set up cost incurrs. Also, there exists $$c_{k}$$ unit cost
+for $$k\in K$$ when PCC orders from the manufacturing plant.
 
 
 
