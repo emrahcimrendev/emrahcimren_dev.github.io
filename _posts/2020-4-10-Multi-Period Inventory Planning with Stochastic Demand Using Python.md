@@ -103,7 +103,7 @@ We have four types of events in the simulation as in the following table.
 
 We now describe the logic for event types 1, 2, and 4, which actually involve state changes.
 
- 
+
  
  
  
