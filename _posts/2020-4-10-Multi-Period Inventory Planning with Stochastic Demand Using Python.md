@@ -114,6 +114,8 @@ by the replenishment amount.
   }
 </style>
 
+ ![](/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/replenishment_event.PNG){: .align-right .width-half_logo}
+
 | ![](/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/replenishment_event.PNG){: .align-right .width-half_logo}| 
 |:--:| 
 | *Figure 3: Replenishment event* |
