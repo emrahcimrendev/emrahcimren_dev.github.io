@@ -88,6 +88,9 @@ for $$k\in K$$ when PCC orders from the manufacturing plant.
 PCC incurs a holding cost of $$h$$ per item per time period held in (positive) inventory. 
 The holding cost includes such costs as warehouse rental, insurance, taxes, and maintenance, as well as the opportunity cost of having capital tied up in inventory rather than invested elsewhere. 
 
+Similarly, PCC incurs a backlog cost of $$b$$ per item per time period in backlog; this accounts for the cost of extra record keeping when a backlog exists, as well as loss of customers’ goodwill.
+
+
 
 
 
