@@ -64,7 +64,7 @@ at time $$t\in T$$ where
 
 When PCC places an order from the manufacturing plant, 
 the time required for it to arrive is called the manufacturing lead time.
-Let $$\tau_{kt}$$ be the lead time for the PCC order $$Z_{kt}$$.
+Let $$\tau_{kt}$$ be the manfacturing lead time for the PCC order $$Z_{kt}$$.
 
 This policy is called $$(s, S)$$ policy.
 
