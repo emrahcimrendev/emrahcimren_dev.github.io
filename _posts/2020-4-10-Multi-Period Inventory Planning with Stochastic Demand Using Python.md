@@ -169,16 +169,23 @@ We now build the simulation model.
 ## Probability Distributions
 
 Order arrival time, order quantity, and manufacturing lead times are stochastic. 
-In this section, we first discuss the statistical theory on calculating 
-probability distributions. Then, we calculate probability
+In this section, we calculate probability
 distributions for order arrivals, order quantity, and 
 manufacturing lead times.
 
+We analyze PCC's historical data for 200 days. We first analyze
+order arrivals. 
+The inter arrival time is the time between each arrival of an order and the next. 
+Figure 6 illustrates interarrival times for both dark and milk chocolate bars.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
+|:--:| 
+| *Figure 6: Interarrival Times* |
 
 
 
 
-Analyze PCC's historical data to 
+
 
 We provide descriptive statistics on orders and lead times 
 from historical data from last 200 days.
@@ -267,12 +274,7 @@ There is differences in the demand distributions for milk and dark chocolates
 |:--:| 
 | *Figure 4: Demand Distribution* |
 
-The inter arrival time is the time between each arrival of an order and the next. 
-Figure 5 illustrates interarrival times for both products.
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
-|:--:| 
-| *Figure 5: Interarrival Times* |
 
 Figure 6 illustrates interarrival time distribution for both products. 
 Both chocolates are ordered average of every six days.
