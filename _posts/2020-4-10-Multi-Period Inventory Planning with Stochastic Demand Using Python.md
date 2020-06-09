@@ -164,9 +164,17 @@ separate and independent values, each representing a possible outcome of the mod
 6. After performing all trials, we assemble the result of 
 all trials into the probability distribution of possible outcomes
 
+## Kolmogorov-Smirnov Goodness-of-Fit Test
+
+Second step in Monte Carli simulation involves 
+calculating probability distribution for each stochastic component in
+the problem.
+
+
+
 We now build the simulation model.
 
-## Probability Distributions
+## Calculating Probability Distributions
 
 Order arrival time, order quantity, and manufacturing lead times are stochastic. 
 In this section, we calculate probability
