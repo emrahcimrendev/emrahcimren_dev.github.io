@@ -140,9 +140,48 @@ Finally, we schedule the next inventory evaluation event.
 |:--:| 
 | *Figure 5: Inventory evaluation event* |
 
- 
- 
- 
+## Monte Carlo Simulation
+
+We use Monte Carlo simulation framework for the inventory simulation. 
+Monte Carlo simulation involves using random number generators 
+to simulate random effects. We follow the steps below to build
+the Monte Carlo Simulation model.
+
+1. Determine deterministic and stochastic components of the problem.
+
+2. Calculate probability distribution for each stochastic component.
+
+3. Generate random number for each of the stochastic component
+from the corresponding probability distribution.
+
+4. Computer the desired quantity using the generated
+random value of the stochastic components. 
+
+5. Steps 2 and 3 are repeated a large number of times 
+to simulate the model which results in a large number of 
+separate and independent values, each representing a possible outcome of the model.
+
+6. After performing all trials, we assemble the result of 
+all trials into the probability distribution of possible outcomes
+
+We now build the simulation model.
+
+## Probability Distributions
+
+Order arrival time, order quantity, and manufacturing lead times are stochastic. 
+In this section, we first discuss the statistical theory on calculating 
+probability distributions. Then, we calculate probability
+distributions for order arrivals, order quantity, and 
+manufacturing lead times.
+
+
+
+
+
+Analyze PCC's historical data to 
+
+We provide descriptive statistics on orders and lead times 
+from historical data from last 200 days.
  
  
  
@@ -245,30 +284,7 @@ Both chocolates are ordered average of every six days.
 | Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
 |-------|-------|-------|-------|
 | 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
-| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
-
-## Monte Carlo Simulation
-
-Monte Carlo simulation involves using random number generators 
-to simulate random effects. We follow the steps below to build
-the Monte Carlo Simulation model.
-
-1. Determine deterministic and stochastic components of the problem.
-
-2. Calculate probability distribution for each stochastic component.
-
-3. Generate random number for each of the stochastic component
-from the corresponding probability distribution.
-
-4. Computer the desired quantity using the generated
-random value of the stochastic components. 
-
-5. Steps 2 and 3 are repeated a large number of times 
-to simulate the model which results in a large number of 
-separate and independent values, each representing a possible outcome of the model.
-
-6. After performing all trials, we assemble the result of 
-all trials into the probability distribution of possible outcomes. 
+| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 
 
 As a result, the output of the model is a probability distribution 
 of the desired quantity.
