@@ -188,12 +188,22 @@ We also analyze interarrival time distribution for both products (see Figure 7).
 |:--:| 
 | *Figure 7: Interarrival Time Distribution* |
 
+The coefficient of variation (CoV) is the ratio of the standard deviation to the mean. 
+The higher CoV, 
+the greater the level of dispersion around the mean. 
+The lower the value of CoV, the more precise the estimate. 
 
+The following table illustrates descriptive statistics for 
+interarrival times. Dark chocolate is ordered every 6.8 
+days and milk chocolate is ordered every 6.3 
+days in average.
 
 | Product | Average Interarrival Time Days | Interarrival Time Standard Dev. Days | Interarrival Time CoV | 
 |-------|-------|-------|-------|
 | 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
-| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 
+| 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
+
+
 
 
 
@@ -271,10 +281,7 @@ the two products.
 Milk chocolate is a high volume product with 47,837 average order size. 
 Similarly, dark chocolate has an average order size of 27,318.
 
-The coefficient of variation (CoV) is the ratio of the standard deviation to the mean. 
-The higher CoV, 
-the greater the level of dispersion around the mean. 
-The lower the value of CoV, the more precise the estimate. 
+
 In our case, both products have high CoV (greater than 0.5, 50%)
 which can affect the forecast quality.
 
