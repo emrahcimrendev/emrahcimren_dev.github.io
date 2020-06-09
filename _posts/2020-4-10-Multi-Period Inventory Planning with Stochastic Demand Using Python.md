@@ -132,11 +132,9 @@ illustrated in Figure 5.
 If the inventory level $$I_{kt}$$ at the time $$t$$ is at least $$s_k$$, 
 then no order is placed, and nothing is done except to
 schedule the next evaluation into the event list. 
-On the other hand, if $$I_{kt}\le $s_k$$, then we
+On the other hand, if $$I_{kt}\le s_k$$, then we
 place an order for $$Z_{kt}=S_k-I_{kt}$$ items. 
-In this case, storing the amount of the
-order [S 2 I(t)] until the order arrives, and scheduling its arrival time. In this case as
-well, we want to schedule the next inventory-evaluation event.
+Finally, we schedule the next inventory evaluation event.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/inventory_evaluation_event.PNG) | 
 |:--:| 
