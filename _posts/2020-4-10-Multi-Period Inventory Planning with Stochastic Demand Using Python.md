@@ -180,6 +180,17 @@ It only applies to continuous distributions.
 It tends to be more sensitive near the center of the distribution than at the tails.
 Perhaps the most serious limitation is that the distribution must be fully specified.
 
+The K-S test is defined by
+
+$$H_0$$: The data follow a specified distribution,
+
+$$H_1$$: The data do not follow the specified distribution.
+
+The K-S test statistic is defined as
+
+$$$D=\max_{1\le N}$$$
+
+
 We now build the simulation model.
 
 ## Calculating Probability Distributions
