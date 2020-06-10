@@ -190,7 +190,7 @@ Let $$\alpha$$ be the level of significance. If $$p-value < \alpha$$,
 then it is very probable that the two distributions are different, 
 reject the null hypothesis.
 
-
+We use $$kstest$$ in $$scipy$$ to test 
 
 
 ## Calculating Probability Distributions
