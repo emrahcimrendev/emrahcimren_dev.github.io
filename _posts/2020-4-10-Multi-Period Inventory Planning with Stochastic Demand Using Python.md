@@ -169,8 +169,16 @@ all trials into the probability distribution of possible outcomes
 Second step in Monte Carli simulation involves 
 calculating probability distribution for each stochastic component in
 the problem.
+The Kolmogorov-Smirnov (K-S) test is used to decide 
+if a sample comes from a population with a specific distribution.
 
+An attractive feature of this test is that the distribution of the K-S test statistic itself does not depend on the underlying cumulative distribution function being tested. 
+Another advantage is that it is an exact test. 
 
+In addition to these advantages, the K-S test has several important limitations. 
+It only applies to continuous distributions.
+It tends to be more sensitive near the center of the distribution than at the tails.
+Perhaps the most serious limitation is that the distribution must be fully specified.
 
 We now build the simulation model.
 
