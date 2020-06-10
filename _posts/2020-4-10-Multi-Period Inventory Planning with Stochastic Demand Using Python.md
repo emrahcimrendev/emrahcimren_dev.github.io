@@ -166,7 +166,7 @@ all trials into the probability distribution of possible outcomes
 
 ## Kolmogorov-Smirnov Goodness-of-Fit Test
 
-Second step in Monte Carli simulation involves 
+Second step in Monte Carlo simulation is
 calculating probability distribution for each stochastic component in
 the problem.
 The Kolmogorov-Smirnov (K-S) test is used to decide 
@@ -188,7 +188,7 @@ $$H_1$$: The data do not follow the specified distribution.
 
 The K-S test statistic is defined as
 
-$$$D=\max_{1\le N}$$$
+$$$D=\max_{1\le N}\Large( \Large)$$$
 
 
 We now build the simulation model.
