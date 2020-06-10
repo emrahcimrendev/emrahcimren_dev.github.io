@@ -214,8 +214,6 @@ In this section, we calculate probability
 distributions for order arrivals, order quantity, and 
 manufacturing lead times.
 
-### Interarrival Time Distribution
-
 We analyze PCC's historical data for 200 days. 
 Figure 6 illustrates historical orders arrivals with quantity for
 the two products. 
@@ -223,6 +221,8 @@ the two products.
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
 |:--:| 
 | *Figure 6: Orders* |
+
+### Interarrival Time Distribution
 
 The interarrival time is the time between each arrival of an order and the next. 
 Figure 7 illustrates interarrival times for both dark and milk chocolate bars.
