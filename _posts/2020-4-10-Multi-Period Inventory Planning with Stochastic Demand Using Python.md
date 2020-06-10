@@ -192,8 +192,12 @@ $$D=\max_{1\le i \le N}\left(F(Y_i)-\frac{i-1}{N}, \frac{i}{N}-F(Y_i)\right)$$
 
 where $$F$$ is the theoretical cumulative distribution of the distribution being tested.
 
+At a significance level $$\alpha$$, 
+the hypothesis regarding the distributional form is rejected 
+if the test statistic, $$D$$, is greater than the critical 
+value obtained from a table. 
 
-We now build the simulation model.
+
 
 ## Calculating Probability Distributions
 
