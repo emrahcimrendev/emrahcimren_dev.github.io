@@ -214,6 +214,8 @@ In this section, we calculate probability
 distributions for order arrivals, order quantity, and 
 manufacturing lead times.
 
+### Interarrival Time Distribution
+
 We analyze PCC's historical data for 200 days. 
 Figure 6 illustrates historical orders arrivals with quantity for
 the two products. 
@@ -222,20 +224,18 @@ the two products.
 |:--:| 
 | *Figure 6: Orders* |
 
-
-We first analyze order arrivals. 
-The inter arrival time is the time between each arrival of an order and the next. 
-Figure 6 illustrates interarrival times for both dark and milk chocolate bars.
+The interarrival time is the time between each arrival of an order and the next. 
+Figure 7 illustrates interarrival times for both dark and milk chocolate bars.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/interarrival_times.png) | 
 |:--:| 
-| *Figure 6: Interarrival Times* |
+| *Figure 7: Interarrival Times* |
 
-We also analyze interarrival time distribution for both products (see Figure 7). 
+Figure 8 illustrates interarrival time distribution for both products. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/intearrival_time_distribution.png) | 
 |:--:| 
-| *Figure 7: Interarrival Time Distribution* |
+| *Figure 8: Interarrival Time Distribution* |
 
 The coefficient of variation (CoV) is the ratio of the standard deviation to the mean. 
 The higher CoV, 
