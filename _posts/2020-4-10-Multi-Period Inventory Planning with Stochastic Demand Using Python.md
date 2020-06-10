@@ -180,22 +180,14 @@ It only applies to continuous distributions.
 It tends to be more sensitive near the center of the distribution than at the tails.
 Perhaps the most serious limitation is that the distribution must be fully specified.
 
-The K-S test is defined by
+The K-S test performs a test of the distribution 
+$$F(x)$$ of an observed random variable against a given distribution $$G(x)$$. 
 
-$$H_0$$: The data follow a specified distribution,
+Under the null hypothesis, the two distributions are identical, $$F(x)=G(x)$$. 
+The alternative hypothesis can be either ‘two-sided’, ‘less’ or ‘greater’. 
 
-$$H_1$$: The data do not follow the specified distribution.
+Let $$\alpha$$ be the level of significance. If $$p-value < \alpha$$, then it is very probable that the two distributions are different, reject null hypothesis.
 
-The K-S test statistic is defined as
-
-$$D=\max_{1\le i \le N}\left(F(Y_i)-\frac{i-1}{N}, \frac{i}{N}-F(Y_i)\right)$$
-
-where $$F$$ is the theoretical cumulative distribution of the distribution being tested.
-
-At a significance level $$\alpha$$, 
-the hypothesis regarding the distributional form is rejected 
-if the test statistic, $$D$$, is greater than the critical 
-value obtained from a table. 
 
 
 
