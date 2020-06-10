@@ -191,8 +191,8 @@ then it is very probable that the two distributions are different
 and reject the null hypothesis.
 
 We use the following Python code to run the K-S test
-where distribution_data is the data to be tested and
-
+where distribution_data is the data to be tested to see if
+it is identical to the distribution provided by distribution_name.
 
 {% highlight python %}
 import scipy.stats as st
