@@ -214,8 +214,16 @@ In this section, we calculate probability
 distributions for order arrivals, order quantity, and 
 manufacturing lead times.
 
-We analyze PCC's historical data for 200 days. We first analyze
-order arrivals. 
+We analyze PCC's historical data for 200 days. 
+Figure 6 illustrates historical orders arrivals with quantity for
+the two products. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
+|:--:| 
+| *Figure 6: Orders* |
+
+
+We first analyze order arrivals. 
 The inter arrival time is the time between each arrival of an order and the next. 
 Figure 6 illustrates interarrival times for both dark and milk chocolate bars.
 
@@ -307,12 +315,7 @@ hold at the warehouse is limited.
 We provide descriptive statistics on orders and lead times 
 from historical data from last 200 days.
 
-Figure 3 illustrates historical orders (200 days) for
-the two products. 
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Orders Dash.png) | 
-|:--:| 
-| *Figure 3: Orders* |
 
 | Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
 |-------|-------|--------|--------|
