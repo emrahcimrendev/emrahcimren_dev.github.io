@@ -190,8 +190,12 @@ Let $$\alpha$$ be the level of significance. If $$p-value < \alpha$$,
 then it is very probable that the two distributions are different, 
 reject the null hypothesis.
 
-We use $$kstest$$ in $$scipy$$ to test 
+We use the following Python code to run the K-S test.
 
+{% highlight python %}
+from scipy.stats import kstest
+D, p_value = kstest(distribution_data, distribution_name)
+{% endhighlight %}
 
 ## Calculating Probability Distributions
 
