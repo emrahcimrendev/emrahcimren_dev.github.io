@@ -187,8 +187,8 @@ Under the null hypothesis, the two distributions are identical, $$F(x)=G(x)$$.
 The alternative hypothesis can be either ‘two-sided’, ‘less’ or ‘greater’. 
 
 Let $$\alpha$$ be the level of significance. If $$p-value < \alpha$$, 
-then it is very probable that the two distributions are different, 
-reject the null hypothesis.
+then it is very probable that the two distributions are different
+and reject the null hypothesis.
 
 We use the following Python code to run the K-S test
 where distribution_data is the dist
