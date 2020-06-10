@@ -198,8 +198,8 @@ import scipy.stats as st
 D, p_value = st.kstest(distribution_data, distribution_name)
 {% endhighlight %}
 
-After we identify type of distribution, the following Python
-code provide parameters for the distribution.
+After we identify the type of distribution, we use the following Python
+code to calculate distribution parameters.
 
 {% highlight python %}
 import scipy.stats as st
