@@ -191,7 +191,8 @@ then it is very probable that the two distributions are different
 and reject the null hypothesis.
 
 We use the following Python code to run the K-S test
-where distribution_data is the dist
+where distribution_data is the data to be tested and
+
 
 {% highlight python %}
 import scipy.stats as st
@@ -202,8 +203,8 @@ After we identify the type of distribution, we use the following Python
 code to calculate distribution parameters.
 
 {% highlight python %}
-import scipy.stats as st
-D, p_value = st.kstest(distribution_data, distribution_name)
+distribution = getattr(st, distribution_name)
+parameters = distribution.fit(distribution_data)
 {% endhighlight %}
 
 ## Calculating Probability Distributions
