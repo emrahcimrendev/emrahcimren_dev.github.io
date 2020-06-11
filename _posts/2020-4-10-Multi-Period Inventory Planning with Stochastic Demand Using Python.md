@@ -335,7 +335,7 @@ interarrival times.
 {% highlight python %}
 products = interarrivals['Product'].unique()
 distribution_data_by_product = interarrivals.copy()
-best_distribution_by_product, pvalues_by_product = fit_simulation_data(products, 
+best_distribution_by_prKoduct, pvalues_by_product = fit_simulation_data(products, 
                                                                        distribution_names, 
                                                                        distribution_data_by_product,
                                                                       'Interarival Times in Days') 
@@ -346,6 +346,9 @@ Figure 9 illustrates pvalues for the distributions we test with the fit_simulati
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Interarival Times in Days PValues.png) | 
 |:--:| 
 | *Figure 9: Interarrival time distribution fitting* |
+
+Inverse Gaussian distribution fits the best to both product interarrival times. 
+Figure 
 
 ### Order Amount
 
