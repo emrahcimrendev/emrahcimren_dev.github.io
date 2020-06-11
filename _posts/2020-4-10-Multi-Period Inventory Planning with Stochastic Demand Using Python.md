@@ -209,7 +209,8 @@ from scipy.stats import *
 def fit_distribution_using_ks(distribution_names, 
                               distribution_data):
     
-    """Function to check if data fits to the given distributions
+    """
+    Function to check if data fits to the given distributions
 
     Args:
         distribution_names (str): List of distribution names.
@@ -225,28 +226,26 @@ def fit_distribution_using_ks(distribution_names,
         
         #print('Fitting {}'.format(distribution_name))
         
-        exec('args = {}.fit(distribution_data)'.format(distribution_name), globals())
-        exec('fitted_data = {}.rvs(*args, size=100000)'.format(distribution_name), globals())
-        exec('pdf_fitted_data = {}.pdf(lnspc, *args)'.format(distribution_name), globals())
-        
+        args=eval('{}.fit(distribution_data)'.format(distribution_name))
+        fitted_data=eval('{}.rvs(*args, size=100000)'.format(distribution_name))
+
         D, p_value = ks_2samp(distribution_data, fitted_data)
             
         distribution[distribution_name] = {
             'name': distribution_name,
             'p_value': p_value,
             'args': args,
-            'fitted data with args': fitted_data,
-            'pdf': pdf_fitted_data
+            'fitted data with args': fitted_data
         } 
         
-        pvalues[distribution_name] = all_distributions[distribution_name]['p_value']
+        pvalues[distribution_name] = p_value
     
-    pvalues = dict(sorted(pvalues.items(), key=lambda x: x[1], reverse=True))
-    distribution_with_max_p_value = next(iter(pvalues))
+    pvalues_sorted = dict(sorted(pvalues.items(), key=lambda x: x[1], reverse=True))
+    distribution_with_max_p_value = next(iter(pvalues_sorted))
     
     print('Best distribution {}'.format(distribution_with_max_p_value))
     
-    return distribution[distribution_with_max_p_value], distribution, pvalues
+    return distribution[distribution_with_max_p_value], distribution, pvalues_sorted
 {% endhighlight %}
 
 ## Calculating Probability Distributions
