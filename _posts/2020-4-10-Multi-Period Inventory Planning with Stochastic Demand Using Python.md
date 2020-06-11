@@ -332,12 +332,14 @@ days in average.
 The following Python code calculates the distribution fitting for
 interarrival times. 
 
+{% highlight python %}
 products = interarrivals['Product'].unique()
 distribution_data_by_product = interarrivals.copy()
 best_distribution_by_product, pvalues_by_product = fit_simulation_data(products, 
                                                                        distribution_names, 
                                                                        distribution_data_by_product,
                                                                       'Interarival Times in Days') 
+{% endhighlight %}
 
 
 ### Order Amount
