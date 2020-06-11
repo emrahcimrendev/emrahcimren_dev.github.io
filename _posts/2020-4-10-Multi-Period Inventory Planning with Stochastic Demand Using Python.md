@@ -248,6 +248,42 @@ def fit_distribution_using_ks(distribution_names,
     return distribution[distribution_with_max_p_value], distribution, pvalues_sorted
 {% endhighlight %}
 
+We apply fit_distribution_using_ks for all products and data types using the following
+Python function.
+
+{% highlight python %}
+def fit_simulation_data(products, distribution_names, distribution_data_by_product, column_name):
+    """
+    Function to fit simulation data
+
+    Args:
+        products (str): List of products.
+        distribution_names (str): List of distribution names.
+        distribution_data_by_product (float): Data set to be fitted.
+        column_name (str): Column name to be fitted.
+
+    Returns:
+        best distribution, p values
+    """
+
+    best_distribution_by_product = {}
+    pvalues_by_product = {}
+
+    for product in products:
+
+        print('Fitting for {}'.format(product))
+
+        distribution_data = distribution_data_by_product[distribution_data_by_product['Product']==product][column_name].to_list()
+        best_distribution, all_distributions, pvalues = fit_distribution_using_ks(distribution_names, distribution_data)
+        best_distribution_by_product[product] = best_distribution
+
+        best_distribution_name = best_distribution_by_product[product]['name']
+         
+        pvalues_by_product[product] = pvalues
+        
+    return best_distribution_by_product, pvalues_by_product
+{% endhighlight %}
+
 ## Calculating Probability Distributions
 
 Order arrival time, order quantity, and manufacturing lead times are stochastic. 
@@ -293,7 +329,10 @@ days in average.
 | 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
 | 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
 
-We run 
+The following Python code calculates the distribution fitting for
+interarrival times. 
+
+ 
 
 ### Order Amount
 
