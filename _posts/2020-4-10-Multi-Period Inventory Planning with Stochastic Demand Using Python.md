@@ -370,8 +370,20 @@ Similarly, dark chocolate has an average order size of 27,318.
 
 | Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
 |-------|-------|--------|--------|
-| 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
 | 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
+| 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
+
+The following Python code calculates best distribution fit for the
+order amount. 
+
+{% highlight python %}
+products = interarrivals['Product'].unique()
+distribution_data_by_product = orders[orders['Order Units']>0]
+orders_best_distribution_by_product, orders_pvalues_by_product = fit_simulation_data(products, 
+                                                                                     distribution_names, 
+                                                                                     distribution_data_by_product,
+                                                                                     'Order Units')
+{% endhighlight %}
 
 
 
