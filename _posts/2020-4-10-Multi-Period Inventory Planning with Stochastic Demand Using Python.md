@@ -343,7 +343,6 @@ best_distribution_by_product, pvalues_by_product = fit_simulation_data(products,
 
 Figure 9 illustrates pvalues for the distributions we test with the fit_simulation_data function.
 
-
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Interarival Times in Days PValues.png) | 
 |:--:| 
 | *Figure 9: Interarrival time distribution fitting* |
