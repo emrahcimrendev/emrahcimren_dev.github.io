@@ -220,21 +220,16 @@ def fit_distribution_using_ks(distribution_names,
     """
     
     distribution = {}
-    max_p_value = 0
-    distribution_with_max_p_value = ''
+    pvalues = {}
     for distribution_name in distribution_names:
         
-        print('Fitting {}'.format(distribution_name))
+        #print('Fitting {}'.format(distribution_name))
         
         exec('args = {}.fit(distribution_data)'.format(distribution_name), globals())
         exec('fitted_data = {}.rvs(*args, size=100000)'.format(distribution_name), globals())
         exec('pdf_fitted_data = {}.pdf(lnspc, *args)'.format(distribution_name), globals())
         
         D, p_value = ks_2samp(distribution_data, fitted_data)
-        
-        if p_value >= max_p_value:
-            distribution_with_max_p_value = distribution_name
-            max_p_value = p_value
             
         distribution[distribution_name] = {
             'name': distribution_name,
@@ -243,10 +238,15 @@ def fit_distribution_using_ks(distribution_names,
             'fitted data with args': fitted_data,
             'pdf': pdf_fitted_data
         } 
+        
+        pvalues[distribution_name] = all_distributions[distribution_name]['p_value']
+    
+    pvalues = dict(sorted(pvalues.items(), key=lambda x: x[1], reverse=True))
+    distribution_with_max_p_value = next(iter(pvalues))
     
     print('Best distribution {}'.format(distribution_with_max_p_value))
     
-    return distribution[distribution_with_max_p_value], distribution
+    return distribution[distribution_with_max_p_value], distribution, pvalues
 {% endhighlight %}
 
 ## Calculating Probability Distributions
