@@ -347,7 +347,7 @@ Figure 9 illustrates pvalues for the distributions we test with the fit_simulati
 |:--:| 
 | *Figure 9: Interarrival time distribution fitting* |
 
-Inverse Gaussian distribution fits the best to both product interarrival times. 
+Inverse Gaussian distribution fits the best to both products. 
 Figure 
 
 ### Order Amount
