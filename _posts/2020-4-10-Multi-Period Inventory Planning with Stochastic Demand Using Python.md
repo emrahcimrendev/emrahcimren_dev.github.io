@@ -190,21 +190,58 @@ Let $$\alpha$$ be the level of significance. If $$p-value < \alpha$$,
 then it is very probable that the two distributions are different
 and reject the null hypothesis.
 
-We use the following Python code to run the K-S test
-where distribution_data is the data to be tested to see if
-it is identical to the distribution provided by distribution_name.
+We use the following Python function to run the K-S test
+for all given distribution names as follows. 
 
 {% highlight python %}
-import scipy.stats as st
-D, p_value = st.kstest(distribution_data, distribution_name)
+distribution_names = ['weibull_min', 'norm', 'weibull_max', 'beta', 
+                      'invgauss', 'uniform', 'gamma', 'expon', 
+                      'lognorm', 'pearson3', 'triang']
 {% endhighlight %}
 
-After we identify the type of distribution, we use the following Python
-code to calculate distribution parameters.
+In the function, distribution_data is the data to be tested to see if
+it is identical to the distribution provided by distribution names.
+Function outputs the best distribution.
 
 {% highlight python %}
-distribution = getattr(st, distribution_name)
-parameters = distribution.fit(distribution_data)
+from scipy.stats import *
+
+def fit_distribution_using_ks(distribution_names, distribution_data):
+    
+    """Function to check if data fits to the given distributions
+
+    Args:
+        distribution_names (str): List of distribution names.
+        distribution_data (float): Data set to be fitted
+
+    Returns:
+        best distribution, all distributions
+    """
+    
+    distribution = {}
+    max_p_value = 0
+    distribution_with_max_p_value = ''
+    for distribution_name in distribution_names:
+        
+        print('Fitting {}'.format(distribution_name))
+        exec('args = {}.fit(distribution_data)'.format(distribution_name), globals())
+        exec('fitted_data = {}.rvs(*args, size=len(distribution_data))'.format(distribution_name), globals())
+        D, p_value = ks_2samp(distribution_data, fitted_data)
+        
+        if p_value >= max_p_value:
+            distribution_with_max_p_value = distribution_name
+            max_p_value = p_value
+            
+        distribution[distribution_name] = {
+            'name': distribution_name,
+            'p_value': p_value,
+            'args': args,
+            'fitted data with args': fitted_data
+        } 
+    
+    print('Best distribution {}'.format(distribution_with_max_p_value))
+    
+    return distribution[distribution_with_max_p_value], distribution
 {% endhighlight %}
 
 ## Calculating Probability Distributions
@@ -252,6 +289,14 @@ days in average.
 | 3.5oz Dark Chocolate | 6.8 | 4.4| 0.64 |
 | 3.5oz Milk Chocolate | 6.3 | 4.5|	0.70 |
 
+We run 
+
+### Order Amount
+
+
+
+
+### Lead Time
 
 
 
