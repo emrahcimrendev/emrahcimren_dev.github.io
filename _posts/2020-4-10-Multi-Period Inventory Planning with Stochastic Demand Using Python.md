@@ -355,9 +355,23 @@ is used to model interarrival times.
 |:--:| 
 | *Figure 10: Inverse gaussian density function for interarrival times* |
 
-
 ### Order Amount
 
+Order amount distribution is shown in Figure 11. 
+There is differences in the demand distributions for milk and dark chocolates.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
+|:--:| 
+| *Figure 11: Demand Distribution* 
+
+The following table shows descriptive statistics for order amount. 
+Milk chocolate is a high volume product with 47,837 average order size. 
+Similarly, dark chocolate has an average order size of 27,318.
+
+| Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
+|-------|-------|--------|--------|
+| 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
+| 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
 
 
 
@@ -427,24 +441,13 @@ from historical data from last 200 days.
 
 
 
-| Product | Total Number of Days | Average Order Units | Order Units Standard Dev. | Order Units CoV |
-|-------|-------|--------|--------|
-| 3.5oz Dark Chocolate | 200 | 27,318 | 15,837 | 0.57 |
-| 3.5oz Milk Chocolate | 200 | 47,837 | 45,426 | 0.94 |
 
-Milk chocolate is a high volume product with 47,837 average order size. 
-Similarly, dark chocolate has an average order size of 27,318.
 
 
 In our case, both products have high CoV (greater than 0.5, 50%)
 which can affect the forecast quality.
 
-There is differences in the demand distributions for milk and dark chocolates 
-(see Figure 4).
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/demand_distribution.png) | 
-|:--:| 
-| *Figure 4: Demand Distribution* 
 
 As a result, the output of the model is a probability distribution 
 of the desired quantity.
