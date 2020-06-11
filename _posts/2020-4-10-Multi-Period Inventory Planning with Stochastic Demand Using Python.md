@@ -347,8 +347,14 @@ Figure 9 illustrates pvalues for the distributions we test with the fit_simulati
 |:--:| 
 | *Figure 9: Interarrival time distribution fitting* |
 
-Inverse Gaussian distribution fits the best to both products. 
-Figure 
+Inverse Gaussian distribution fits best to both products. 
+Figure 10 shows inverse gaussian density function which
+is used to model interarrival times. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Interarival Times in Days Density Plot.png) | 
+|:--:| 
+| *Figure 10: Inverse gaussian density function for interarrival times* |
+
 
 ### Order Amount
 
