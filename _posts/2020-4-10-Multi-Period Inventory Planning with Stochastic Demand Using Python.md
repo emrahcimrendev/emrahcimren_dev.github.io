@@ -206,13 +206,14 @@ Function outputs the best distribution.
 {% highlight python %}
 from scipy.stats import *
 
-def fit_distribution_using_ks(distribution_names, distribution_data):
+def fit_distribution_using_ks(distribution_names, 
+                              distribution_data):
     
     """Function to check if data fits to the given distributions
 
     Args:
         distribution_names (str): List of distribution names.
-        distribution_data (float): Data set to be fitted
+        distribution_data (float): Data set to be fitted.
 
     Returns:
         best distribution, all distributions
@@ -224,8 +225,11 @@ def fit_distribution_using_ks(distribution_names, distribution_data):
     for distribution_name in distribution_names:
         
         print('Fitting {}'.format(distribution_name))
+        
         exec('args = {}.fit(distribution_data)'.format(distribution_name), globals())
-        exec('fitted_data = {}.rvs(*args, size=len(distribution_data))'.format(distribution_name), globals())
+        exec('fitted_data = {}.rvs(*args, size=100000)'.format(distribution_name), globals())
+        exec('pdf_fitted_data = {}.pdf(lnspc, *args)'.format(distribution_name), globals())
+        
         D, p_value = ks_2samp(distribution_data, fitted_data)
         
         if p_value >= max_p_value:
@@ -236,7 +240,8 @@ def fit_distribution_using_ks(distribution_names, distribution_data):
             'name': distribution_name,
             'p_value': p_value,
             'args': args,
-            'fitted data with args': fitted_data
+            'fitted data with args': fitted_data,
+            'pdf': pdf_fitted_data
         } 
     
     print('Best distribution {}'.format(distribution_with_max_p_value))
