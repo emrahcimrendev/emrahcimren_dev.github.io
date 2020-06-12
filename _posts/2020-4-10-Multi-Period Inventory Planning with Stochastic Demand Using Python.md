@@ -377,7 +377,7 @@ The following Python code calculates best distribution fit for the
 order amount. 
 
 {% highlight python %}
-products = interarrivals['Product'].unique()
+products = orders['Product'].unique()
 distribution_data_by_product = orders[orders['Order Units']>0]
 orders_best_distribution_by_product, orders_pvalues_by_product = fit_simulation_data(products, 
                                                                                      distribution_names, 
@@ -398,37 +398,60 @@ Exponential and gamma distributions fit best for products as shown in Figure 13.
 |:--:| 
 | *Figure 13: Best distributions for order amount* |
 
-### Lead Time
+### Lead Times
+
+Lead time is the time between order is placed
+from the warehouse until it is replenished by
+the manufacturing plant. 
+Figure 14 illustrates lead time distributions. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/lead_time_distribution.png) | 
+|:--:| 
+| *Figure 14: Lead time distributions* 
+
+The following table shows descriptive statistics for the lead time. 
+Average lead time for both products is 19.3 days.
+
+| Product | Average Lead Time Days | Std Lead Time Days | Lead Time CoV
+|-------|-------|--------|--------|
+| 3.5oz Milk Chocolate | 19.3 |	9.4 | 0.49 |
+| 3.5oz Dark Chocolate | 19.3 | 6.1 | 0.31 |
+
+We use the following Python code to find the best distribution fits
+the lead time data.
+
+{% highlight python %}
+products = orders['Product'].unique()
+distribution_data_by_product = orders[orders['Lead Time Days']>0]
+lead_time_best_distribution_by_product, lead_time_pvalues_by_product = fit_simulation_data(products, 
+                                                                                           distribution_names, 
+                                                                                           distribution_data_by_product,
+                                                                                           'Lead Time Days')
+{% endhighlight %}
+
+We fit the lead time data for various distributions and Figure 15 illustrates
+pvalues for those tests.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Lead Time Days PValues.png) | 
+|:--:| 
+| *Figure 15: Lead time distribution fitting* |
+
+Weibull min and Beta distributions fit the lead time data best. 
+Figure 16 illustrates density functions of those distributions.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Interarival Times in Days Density Plot.png) | 
+|:--:| 
+| *Figure 16: Lead time best distributions density functions* |
+
+## Inverse Functions
 
 
 
 
 
-We provide descriptive statistics on orders and lead times 
-from historical data from last 200 days.
- 
- 
- 
- 
- 
- 
+### Preparing Distributions for The Simulation Model
 
 
-
-
-
-
-
-
-
-
-Inventory at the warehouse decreases as orders are picked by 
-the retailer. 
-When inventory reach at a level (called reorder point), PCC
-orders product from the manufacturing plant. Warehouse receives the 
-orders from the manufacturing plant and available inventory 
-reaches to the maximum
-level. 
 
 
 
