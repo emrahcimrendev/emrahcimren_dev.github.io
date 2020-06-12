@@ -439,7 +439,7 @@ pvalues for those tests.
 Weibull min and Beta distributions fit the lead time data best. 
 Figure 16 illustrates density functions of those distributions.
 
-| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Interarival Times in Days Density Plot.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Lead Time Days Density Plot.png) | 
 |:--:| 
 | *Figure 16: Lead time best distributions density functions* |
 
