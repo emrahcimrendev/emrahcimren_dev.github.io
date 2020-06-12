@@ -390,8 +390,13 @@ Figure 12 illustrates pvalues from these tests.
 
 | ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Order Units PValues.png) | 
 |:--:| 
-| *Figure 9: Order amount distribution fitting* |
+| *Figure 12: Order amount distribution fitting* |
 
+Exponential and gamma distributions fit best for products as shown in Figure 13. 
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Order Units Density Plot.png) | 
+|:--:| 
+| *Figure 13: Best distributions for order amount* |
 
 ### Lead Time
 
