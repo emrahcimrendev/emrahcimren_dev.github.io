@@ -385,6 +385,12 @@ orders_best_distribution_by_product, orders_pvalues_by_product = fit_simulation_
                                                                                      'Order Units')
 {% endhighlight %}
 
+We test the following distributions to see if it fits to order amount. 
+Figure 12 illustrates pvalues from these tests.
+
+| ![_config.yml]({{ site.baseurl }}/images/Multi-Period Inventory Planning with Stochastic Demand Using Python/Order Units PValues.png) | 
+|:--:| 
+| *Figure 9: Order amount distribution fitting* |
 
 
 ### Lead Time
