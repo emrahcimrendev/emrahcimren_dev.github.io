@@ -455,12 +455,12 @@ Inverse transform generates sample numbers at random from any probability distri
 Let $$F(X\le x)$$ be a probability fuction with
 cumulative density function (CDF) $$F(x)$$ where
 inverse of $$F$$ exists such that $$F^{-1}(x)$$.
-Let $$U$$ be a uniform variable. The following
-is the inverse transform algorithm.
+Let $$U$$ be a uniform variable. 
 
-1. Given the CDF $$F(x)$$, if density given, then first integrate to get CDF.
-
-2. Set $$F(X)=U$$ and solve for $$X$$ interms of $$U$$. Then, $$X=F^{-1}(U)$$.
+Inverse transform is calculated as follows. 
+Given the CDF, $$F(x)$$, 
+we set $$F(X)=U$$ and solve for $$X$$ in terms of $$U$$. 
+Then, $$X=F^{-1}(U)$$.
 
 
 
