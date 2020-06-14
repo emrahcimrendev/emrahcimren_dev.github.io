@@ -443,13 +443,27 @@ Figure 16 illustrates density functions of those distributions.
 |:--:| 
 | *Figure 16: Lead time best distributions density functions* |
 
-## Inverse Functions
+## Inverse Transform
 
 Steps three and four in Monte Carlo simulation require 
 generating random number for each of the stochastic component from the corresponding probability distribution and 
 computing the desired quantity using the generated random value of the stochastic components.
 
 In simulation, pseudorandom numbers serve as the foundation for generating samples from probability distribution. 
+Inverse transform generates sample numbers at random from any probability distribution given its cumulative distribution function. 
+
+Let $$F(X\le x)$$ be a probability fuction with
+cumulative density function (CDF) $$F(x)$$ where
+inverse of $$F$$ exists such that $$F^{-1}(x)$$.
+Let $$U$$ be a uniform variable. The following
+is the inverse transform algorithm.
+
+1. Given the CDF $$F(x)$$, if density given, then first integrate to get CDF.
+
+2. Set $$F(X)=U$$ and solve for $$X$$ interms of $$U$$. Then, $$X=F^{-1}(U)$$.
+
+
+
 
 ### Preparing Distributions for The Simulation Model
 
