@@ -449,7 +449,7 @@ Steps three and four in Monte Carlo simulation require
 generating random number for each of the stochastic component from the corresponding probability distribution and 
 computing the desired quantity using the generated random value of the stochastic components.
 
-
+In simulation, pseudorandom numbers serve as the foundation for generating samples from probability distribution. 
 
 ### Preparing Distributions for The Simulation Model
 
