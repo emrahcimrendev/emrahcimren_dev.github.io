@@ -154,7 +154,7 @@ the Monte Carlo Simulation model.
 3. Generate random number for each of the stochastic component
 from the corresponding probability distribution.
 
-4. Computer the desired quantity using the generated
+4. Compute the desired quantity using the generated
 random value of the stochastic components. 
 
 5. Steps 2 and 3 are repeated a large number of times 
@@ -445,7 +445,9 @@ Figure 16 illustrates density functions of those distributions.
 
 ## Inverse Functions
 
-
+Steps three and four in Monte Carlo simulation require 
+generating random number for each of the stochastic component from the corresponding probability distribution and 
+computing the desired quantity using the generated random value of the stochastic components.
 
 
 
