@@ -43,17 +43,19 @@ comprehensive analytical what-if modeling products.
 **Mission:** Develop analytical products to drive the business to ideal state by reducing 
 total landed cost to benefit enterprise margins/profits and satisfying customers.
 
-**Values:**
+**Values:** We embrace the following values.
 
+- Continually satisfy your customer: Our highest priority is to satisfy the customer through the early and continuous delivery of analytical products.
+- Embrace change: We welcome evolving customer needs and embrace them to generate competitive advantage.
+- It’s a team sport , reduce heroism. As the pace and breadth of need for analytic insights ever increases, we believe analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
+- Close interactions: Customers, analytic teams, and operations must work together very close throughout the project.
+- Self-organize: The best analytic insight, algorithms, architectures, requirements, and designs emerge from self- organizing teams.
 
-
-Continually satisfy your customer. Our highest priority is to satisfy the customer through the early and continuous delivery of valuable analytic insights from a couple of minutes to weeks.
 • Value working analytics. We believe the primary measure of data analytics performance is the degree to which insightful analytics are delivered, incorporating accurate data, atop robust frameworks and systems.
-• Embrace change. We welcome evolving customer needs, and in fact, we embrace them to generate competitive advantage. We believe that the most efficient, effective, and agile method of communication with customers is face-to-face conversation.
-• It’s a team sport. Analytic teams will always have a variety of roles, skills, favorite tools, and titles.
-• Daily interactions. Customers, analytic teams, and operations must work together daily throughout the project.
-• Self-organize. We believe that the best analytic insight, algorithms, architectures, requirements, and designs emerge from self- organizing teams.
-• Reduce heroism. As the pace and breadth of need for analytic insights ever increases, we believe analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
+• 
+• 
+• 
+• 
 • Reflect. Analytic teams should fine-tune their operational performance by self-reflecting, at regular intervals, on feedback provided by their customers, themselves, and operational statistics.
 • Analytics is code. Analytic teams use a variety of individual tools to access, integrate, model, and visualize data. Fundamentally, each of these tools generates code and configuration which describes the actions taken upon data to deliver insight.
 
