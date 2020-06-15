@@ -23,7 +23,7 @@ I will explain them as follows.
 Vision and mission serve as a guide for creating objectives and goals in the team, 
 thus providing a road-map that is to be followed by everyone.
 
-![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
+![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/9B51CF95-F079-405B-8819-DEDA37578B29.jpeg)
 
 A vision statement is used to describe the future state of the team. 
 It is a long-term goal provides direction for the team. 
