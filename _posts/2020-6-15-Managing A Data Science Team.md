@@ -15,6 +15,9 @@ strategic decisions.
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
 
+I find the following priciples and guidelines very useful help my team's success. 
+I will explain them as follows. 
+
 ## 1. Mission and Values
 
 ## 2. Roles and Responsibilities
@@ -26,6 +29,7 @@ strategic decisions.
 ### 3.1. Standard Set of Languages on The Team
 
 ### 3.2. Coding Practices
+
 - Architecture
 - Style
 - Docstrings
