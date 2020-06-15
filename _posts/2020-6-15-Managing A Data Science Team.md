@@ -25,6 +25,14 @@ strategic decisions.
 
 ### 3.1. Standard Set of Languages on The Team
 
+### 3.2. Coding Practices
+- Architecture
+- Style
+- Docstrings
+- Testing
+- CI/CD
+
+
 ### 3.2. Version Control
 
 ### 3.3. Peer Reviews
