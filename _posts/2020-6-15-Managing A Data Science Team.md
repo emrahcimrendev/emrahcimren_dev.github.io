@@ -19,7 +19,7 @@ strategic decisions.
 
 ## 2. Roles and Responsibilities
 
-## 2. Plan and Execute
+## 2. Project Management
 
 ## 3. Team Standards
 
@@ -29,9 +29,9 @@ strategic decisions.
 - Architecture
 - Style
 - Docstrings
+- Development environment
 - Testing
 - CI/CD
-
 
 ### 3.2. Version Control
 
