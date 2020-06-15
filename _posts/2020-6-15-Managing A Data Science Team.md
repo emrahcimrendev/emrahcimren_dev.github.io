@@ -37,29 +37,38 @@ It is related to the vision statement in that it outlines the primary goals that
 
 The values statement defines what the team believes in and how people in the team are expected to behave.
 
-**Vision:** Empower business to make their own decisions by providing
+### Vision
+
+Empower business to make their own decisions by providing
 comprehensive analytical what-if modeling products.
 
-**Mission:** Develop analytical products to drive the business to ideal state by reducing 
+### Mission
+
+Develop analytical products to drive the business to ideal state by reducing 
 total landed cost to benefit enterprise margins/profits and satisfying customers.
 
-**Values:** We embrace the following values.
+### Values
 
-- Continually satisfy your customer: Our highest priority is to satisfy the customer through the early and continuous delivery of analytical products.
-- Embrace change: We welcome evolving customer needs and embrace them to generate competitive advantage.
-- It’s a team sport , reduce heroism. As the pace and breadth of need for analytic insights ever increases, we believe analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
-- Close interactions: Customers, analytic teams, and operations must work together very close throughout the project.
-- Self-organize: The best analytic insight, algorithms, architectures, requirements, and designs emerge from self- organizing teams.
+We embrace the following values.
+
+- **Continually satisfy your customer:** Our highest priority is to satisfy the customer through the early and continuous delivery of analytical products.
+- **Embrace change:** We welcome evolving customer needs and embrace them to generate competitive advantage.
+- **It’s a team sport, reduce heroism:** Analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
+- **Close interactions:** Customers, analytic teams, and operations must work together very close throughout the project.
+- **Self-organize:** The best analytic insight, algorithms, architectures, requirements, and designs emerge from self-organizing teams.
+- **Reflect:** Analytic teams should fine-tune their operational performance by self-reflecting, at regular intervals, on feedback provided by their customers, themselves, and operational statistics.
+- **Analytics is code:** Analytic teams use a variety of individual tools to access, integrate, model, and visualize data. Fundamentally, each of these tools generates code and configuration which describes the actions taken upon data to deliver insight.
+- **Orchestrate;** The beginning-to-end orchestration of data, tools, code, environments, and the analytic teams work is a key driver of analytic success.
 
 • Value working analytics. We believe the primary measure of data analytics performance is the degree to which insightful analytics are delivered, incorporating accurate data, atop robust frameworks and systems.
 • 
 • 
 • 
 • 
-• Reflect. Analytic teams should fine-tune their operational performance by self-reflecting, at regular intervals, on feedback provided by their customers, themselves, and operational statistics.
-• Analytics is code. Analytic teams use a variety of individual tools to access, integrate, model, and visualize data. Fundamentally, each of these tools generates code and configuration which describes the actions taken upon data to deliver insight.
+• 
+• 
 
-Orchestrate. The beginning-to-end orchestration of data, tools, code, environments, and the analytic teams work is a key driver of analytic success.
+
 Make it reproducible. Reproducible results are required, and therefore, we version everything: data, low-level hardware and software configurations, and the code and configuration specific to each tool in the toolchain.
 Disposable environments. We believe it is important to minimize the cost for analytic team members to experiment by giving them easy to create, isolated, safe, and disposable technical environments that reflect their production environment.
 Simplicity. We believe that continuous attention to technical excellence and good design enhances agility; likewise simplicity – the art of maximizing the amount of work not done – is essential.
