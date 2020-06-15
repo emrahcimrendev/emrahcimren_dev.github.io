@@ -17,6 +17,8 @@ strategic decisions.
 
 ## 1. Mission and Values
 
+## 2. Roles and Responsibilities
+
 ## 2. Plan and Execute
 
 ## 3. Team Standards
