@@ -45,6 +45,25 @@ total landed cost to benefit enterprise margins/profits and satisfying customers
 
 
 
+Continually satisfy your customer. Our highest priority is to satisfy the customer through the early and continuous delivery of valuable analytic insights from a couple of minutes to weeks.
+• Value working analytics. We believe the primary measure of data analytics performance is the degree to which insightful analytics are delivered, incorporating accurate data, atop robust frameworks and systems.
+• Embrace change. We welcome evolving customer needs, and in fact, we embrace them to generate competitive advantage. We believe that the most efficient, effective, and agile method of communication with customers is face-to-face conversation.
+• It’s a team sport. Analytic teams will always have a variety of roles, skills, favorite tools, and titles.
+• Daily interactions. Customers, analytic teams, and operations must work together daily throughout the project.
+• Self-organize. We believe that the best analytic insight, algorithms, architectures, requirements, and designs emerge from self- organizing teams.
+• Reduce heroism. As the pace and breadth of need for analytic insights ever increases, we believe analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
+• Reflect. Analytic teams should fine-tune their operational performance by self-reflecting, at regular intervals, on feedback provided by their customers, themselves, and operational statistics.
+• Analytics is code. Analytic teams use a variety of individual tools to access, integrate, model, and visualize data. Fundamentally, each of these tools generates code and configuration which describes the actions taken upon data to deliver insight.
+
+Orchestrate. The beginning-to-end orchestration of data, tools, code, environments, and the analytic teams work is a key driver of analytic success.
+Make it reproducible. Reproducible results are required, and therefore, we version everything: data, low-level hardware and software configurations, and the code and configuration specific to each tool in the toolchain.
+Disposable environments. We believe it is important to minimize the cost for analytic team members to experiment by giving them easy to create, isolated, safe, and disposable technical environments that reflect their production environment.
+Simplicity. We believe that continuous attention to technical excellence and good design enhances agility; likewise simplicity – the art of maximizing the amount of work not done – is essential.
+Analytics is manufacturing. Analytic pipelines are analogous to Lean manufacturing lines. We believe a fundamental concept of DataOps is a focus on process thinking aimed at achieving continuous efficiencies in the manufacture of analytic insight.
+Quality is paramount. Analytic pipelines should be built with a foundation capable of automated detection of abnormalities (jidoka) and security issues in code, configuration, and data and should provide continuous feedback to operators for error avoidance (poka yoke).
+Monitor quality and performance. Our goal is to have performance, security, and quality measures that are monitored continuously to detect unexpected variation and generate operational statistics.
+Reuse. We believe a foundational aspect of analytic insight manufacturing efficiency is to avoid the repetition of previous work by the individual or team.
+Improve cycle times. We should strive to minimize the time and effort to turn a customer need into an analytic idea, create it in development, release it as a repeatable production process, and finally refactor and reuse that product.
 
 ## 2. Roles and Responsibilities
 
