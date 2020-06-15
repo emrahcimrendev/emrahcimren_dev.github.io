@@ -28,6 +28,12 @@ It is a long-term goal provides direction for the team.
 It also communicates the purpose of the team to the individuals 
 and broader organization and provides them with the inspiration to achieve that purpose.
 
+A mission statement describes the current state of a team 
+and its primary goals or objectives. 
+It provides detailed information about what the team does, how it does it, and who it does it for. 
+It is related to the vision statement in that it outlines the primary goals that will help to achieve the future the team desires.
+
+
 
 
 ## 2. Roles and Responsibilities
