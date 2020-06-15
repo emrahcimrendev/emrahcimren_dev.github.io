@@ -18,7 +18,7 @@ strategic decisions.
 I find the following priciples and guidelines very useful help my team's success. 
 I will explain them as follows. 
 
-## 1. Vision, Mission, and Values
+## 1. Define Vision, Mission, and Values
 
 Vision and mission serve as a guide for creating objectives and goals in the team, 
 thus providing a road-map that is to be followed by everyone.
@@ -69,11 +69,11 @@ Monitor quality and performance. Our goal is to have performance, security, and 
 Reuse. We believe a foundational aspect of analytic insight manufacturing efficiency is to avoid the repetition of previous work by the individual or team.
 Improve cycle times. We should strive to minimize the time and effort to turn a customer need into an analytic idea, create it in development, release it as a repeatable production process, and finally refactor and reuse that product.
 
-## 2. Roles and Responsibilities
+## 2. Define Roles and Responsibilities
 
-## 3. Project Management
+## 3. Plan and Manage Projects
 
-## 3. Team Standards
+## 3. Set and Follow Team Standards
 
 ### 3.1. Standard Set of Languages on The Team
 
@@ -94,7 +94,7 @@ Improve cycle times. We should strive to minimize the time and effort to turn a 
 
 ### 3.5. Model Deployment
 
-## 4. Leadership and People Management
+## 4. Follow Leadership and People Management Principles
 
 ### 4.1. Indvidual's Goals and Develoment
 ### 4.2. Tracking Progress
