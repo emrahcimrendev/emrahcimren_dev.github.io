@@ -31,5 +31,7 @@ strategic decisions.
 
 ### 3.4. Data Infrastructure
 
+### 3.5. Model Deployment
+
 ## 4. Indvidual's Goals and Progress
 
