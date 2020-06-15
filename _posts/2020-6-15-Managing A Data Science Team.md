@@ -21,15 +21,13 @@ strategic decisions.
 
 ## 3. Team Standards
 
-### 3.1 Sandard Set of Languages on The Team
+### 3.1. Sandard Set of Languages on The Team
 
-### 3.2 Version Control
+### 3.2. Version Control
 
-### 3.3 Peer Reviews
+### 3.3. Peer Reviews
 
-### 3.4 Data Infrastructure
+### 3.4. Data Infrastructure
 
-
-
-## Indvidual's Goals and Progress
+## 4. Indvidual's Goals and Progress
 
