@@ -21,7 +21,7 @@ strategic decisions.
 
 ## 3. Team Standards
 
-### 3.1. Sandard Set of Languages on The Team
+### 3.1. Standard Set of Languages on The Team
 
 ### 3.2. Version Control
 
