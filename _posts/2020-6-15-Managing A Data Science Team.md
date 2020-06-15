@@ -43,3 +43,7 @@ strategic decisions.
 
 ## 4. Indvidual's Goals and Progress
 
+## 6. Hire Talent
+
+- Interviews
+
