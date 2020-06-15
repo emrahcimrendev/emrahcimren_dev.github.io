@@ -17,10 +17,9 @@ strategic decisions.
 
 ## Mission and Values
 
-## Plan, Plan, Plan
-
-## Indvidual's Goals and Progress
+## Plan and Execute
 
 ## Team Standards
 
+## Indvidual's Goals and Progress
 
