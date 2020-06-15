@@ -43,7 +43,8 @@ strategic decisions.
 
 ## 4. Leadership and People Management
 
-### 4.1. Indvidual's Goals and Progress
+### 4.1. Indvidual's Goals and Develoment
+### 4.2. Tracking Progress
 
 ## 6. Hire Talent
 
