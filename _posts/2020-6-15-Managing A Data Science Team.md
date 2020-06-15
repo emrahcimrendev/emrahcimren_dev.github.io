@@ -17,3 +17,12 @@ is to deliver required results/analysis on time.
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
 
+## Mission and Values
+
+## Plan, Plan, Plan
+
+## Indvidual's Goals and Progress
+
+## Team Standards
+
+
