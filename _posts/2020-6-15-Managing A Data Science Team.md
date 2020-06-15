@@ -18,11 +18,21 @@ strategic decisions.
 I find the following priciples and guidelines very useful help my team's success. 
 I will explain them as follows. 
 
-## 1. Mission and Values
+## 1. Vision, Mission, and Values
+
+Vision and mission serve as a guide for creating objectives and goals in the team, 
+thus providing a road-map that is to be followed by everyone.
+
+A vision statement is used to describe the future state of the team. 
+It is a long-term goal provides direction for the team. 
+It also communicates the purpose of the team to the individuals 
+and broader organization and provides them with the inspiration to achieve that purpose.
+
+
 
 ## 2. Roles and Responsibilities
 
-## 2. Project Management
+## 3. Project Management
 
 ## 3. Team Standards
 
