@@ -36,7 +36,7 @@ It is related to the vision statement in that it outlines the primary goals that
 **Vision:** Empower business to make their own decisions by providing
 comprehensive analytical what-if modeling tools.
 
-**Mission:** 
+**Mission:** Develop analytical tools to drive business 
 
 **Values:**
 
