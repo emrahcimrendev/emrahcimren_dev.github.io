@@ -38,7 +38,8 @@ It is related to the vision statement in that it outlines the primary goals that
 **Vision:** Empower business to make their own decisions by providing
 comprehensive analytical what-if modeling products.
 
-**Mission:** Develop analytical products to drive the business to ideal state.
+**Mission:** Develop analytical products to drive the business to ideal state by reducing 
+total landed cost to benefit enterprise margins/profits and satisfying customers.
 
 **Values:**
 
