@@ -34,9 +34,9 @@ It provides detailed information about what the team does, how it does it, and w
 It is related to the vision statement in that it outlines the primary goals that will help to achieve the future the team desires.
 
 **Vision:** Empower business to make their own decisions by providing
-comprehensive analytical what-if modeling tools.
+comprehensive analytical what-if modeling products.
 
-**Mission:** Develop analytical tools to drive business 
+**Mission:** Develop analytical products to drive the business to ideal state.
 
 **Values:**
 
