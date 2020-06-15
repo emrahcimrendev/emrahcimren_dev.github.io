@@ -15,11 +15,21 @@ strategic decisions.
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
 
-## Mission and Values
+## 1. Mission and Values
 
-## Plan and Execute
+## 2. Plan and Execute
 
-## Team Standards
+## 3. Team Standards
+
+### 3.1 Sandard Set of Languages on The Team
+
+### 3.2 Version Control
+
+### 3.3 Peer Reviews
+
+### 3.4 Data Infrastructure
+
+
 
 ## Indvidual's Goals and Progress
 
