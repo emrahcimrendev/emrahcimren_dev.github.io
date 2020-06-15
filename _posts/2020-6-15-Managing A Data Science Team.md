@@ -7,9 +7,12 @@ tags:
   - data science
 --- 
 
-In this post, I will share my data science manager experience. My team's objective
-was to develop and execute analytical models to support operational and
-strategic decisions. Since time window was pretty tight,
-we followed guiding principles for on time delivery. 
+In this post, I will share my data science management experience. 
+I manage an analytics team which 
+develops, implements, and executes 
+analytical models to support operational and
+strategic decisions. The teams's main goal
+is to deliver required inputs on time. 
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
+
