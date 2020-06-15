@@ -41,7 +41,9 @@ strategic decisions.
 
 ### 3.5. Model Deployment
 
-## 4. Indvidual's Goals and Progress
+## 4. Leadership and People Management
+
+### 4.1. Indvidual's Goals and Progress
 
 ## 6. Hire Talent
 
