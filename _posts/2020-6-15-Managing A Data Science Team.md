@@ -162,7 +162,12 @@ They know how to behave, what they need to accomplish,
 and how to reach the group’s goals.
 People work together better when they understand their roles.
 
+I use the following matrix 
+to define roles and responsibilities. 
 
+| | **Data Analyst** | **Business Manager** | **Data Scientist**| **Team Manager** |
+|-------|-------|-------|-------|-------|
+|-------|-------|-------|-------|-------|
 
 ## 3. Plan and Manage Projects
 
