@@ -59,6 +59,11 @@ the early and continuous delivery of analytical products.
 We listen customer needs and 
 embrace them to generate competitive advantage.
 
+- **Value working analytics:** 
+We believe the primary measure of data analytics performance 
+is the degree to which insightful analytics are delivered, 
+incorporating accurate data, atop robust frameworks and systems.
+
 - **Team sport:** 
 Analytic teams should strive to reduce heroism and create sustainable 
 and scalable data analytic teams and processes.
@@ -99,12 +104,28 @@ We believe it is important to minimize the cost for analytic team members
 to experiment by giving them easy to create, isolated, safe, and disposable 
 technical environments that reflect their production environment.
 
-- **Analytics is manufacturing:** Analytic pipelines are analogous to Lean manufacturing lines. We believe a fundamental concept of DataOps is a focus on process thinking aimed at achieving continuous efficiencies in the manufacture of analytic insight.
-- **Quality is paramount:** Analytic pipelines should be built with a foundation capable of automated detection of abnormalities (jidoka) and security issues in code, configuration, and data and should provide continuous feedback to operators for error avoidance (poka yoke).
-- **Monitor quality and performance:** Our goal is to have performance, security, and quality measures that are monitored continuously to detect unexpected variation and generate operational statistics.
-- **Improve cycle times:** We should strive to minimize the time and effort to turn a customer need into an analytic idea, create it in development, release it as a repeatable production process, and finally refactor and reuse that product.
-- **Value working analytics:** We believe the primary measure of data analytics performance is the degree to which insightful analytics are delivered, incorporating accurate data, atop robust frameworks and systems.
+- **Analytics is manufacturing:** 
+Analytic pipelines are analogous to Lean manufacturing lines. 
+We believe a fundamental concept of DataOps is a focus on process thinking 
+aimed at achieving continuous efficiencies in the manufacture of analytic insight.
 
+- **Quality is paramount:** 
+Analytic pipelines should be built with a foundation capable of automated 
+detection of abnormalities (jidoka) and security issues in code, configuration, 
+and data and should provide continuous feedback to operators for error avoidance.
+
+- **Monitor quality and performance:** 
+Our goal is to have performance, security, and quality measures that 
+are monitored continuously to detect unexpected variation and generate 
+operational statistics.
+
+- **Improve cycle times:** 
+We should strive to minimize the time and effort to turn a customer need 
+into an analytic idea, create it in development, release it as a repeatable 
+production process, and finally refactor and reuse that product.
+
+
+### Description of Product
 
 ## 2. Define Roles and Responsibilities
 
