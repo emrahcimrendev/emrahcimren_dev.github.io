@@ -169,7 +169,7 @@ to define roles and responsibilities.
 |-------|-------|-------|-------|-------|
 | **Customer** | | | | |
 | **Influence** | | | | |
-| **Role** | | | | |
+| **Role** | <ul><li>item1</li><li>item2</li></ul> | | | |
 
 ## 3. Plan and Manage Projects
 
