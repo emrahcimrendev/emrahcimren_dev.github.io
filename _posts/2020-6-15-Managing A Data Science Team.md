@@ -170,6 +170,14 @@ to define roles and responsibilities.
 | **Customer** | | | | |
 | **Influence** | | | | |
 | **Role** | <br>* xx <br>* xx | | | |
+| **Scope** | | | | |
+| **Cross functional impact** | | | | |
+| **Domain knowledge** | | | | |
+| **Technical skills** | | | | |
+| **Tools** | | | | |
+| **Programming** | | | | |
+| **Teaching and interviews** | | | | |
+
 
 ## 3. Plan and Manage Projects
 
