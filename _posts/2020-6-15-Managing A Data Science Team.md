@@ -124,16 +124,16 @@ We should strive to minimize the time and effort to turn a customer need
 into an analytic idea, create it in development, release it as a repeatable 
 production process, and finally refactor and reuse that product.
 
-### Description of Products
+### Description of Products and Services
 
-Four types of products can be developed by a data science team. 
+Four types of products/services can be developed by a data science team. 
 
-| **Product** | **Description** | **Effort**|
-|-------|-------|-------|
-| White glove data | Develop data products to understand data and gain insights  | Data engineering | 
-| White glove model | Develop models to make predictions | Data engineering and model development | 
-| Analysis | Utilize white data and model products to make recommendations | Analysis and recommendations | 
-| Advisory | Be a thought partner and give directions based on experience | Recommendation |
+| **Product** | Type | **Description** | **Effort**|
+|-------|-------|-------|-------|
+| White glove data | Product | Develop data products to understand data and gain insights  | Data engineering | 
+| White glove model | Product | Develop models to make predictions | Data engineering and model development | 
+| Analysis | Service |Utilize white data and model products to make recommendations | Analysis and recommendations | 
+| Advisory | Service |Be a thought partner and give directions based on experience | Recommendation |
 
 White glove can be data or model products. 
 Figure 1 illustrates steps to build a white glove product.
@@ -145,6 +145,15 @@ in the form of API's, code libraries, or web dashboards.
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/white_glove_product.png) | 
 |:--:| 
 | *Figure 1: White glove products* |
+
+In the Analysis, white glove products are used to
+answer business questions and make recommendations.
+
+Team can also provide an Advisory service where
+they become a thought partner and give directions
+based on an experience. This service does not require
+any new development or utilization
+of a product.
 
 
 ## 2. Define Roles and Responsibilities
