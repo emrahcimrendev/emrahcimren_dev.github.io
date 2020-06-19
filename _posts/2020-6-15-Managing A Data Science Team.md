@@ -135,8 +135,12 @@ Four types of products can be developed by a data science team.
 | Analysis | Utilize white data and model products to make recommendations | Analysis and recommendations | 
 | Advisory | Be a thought partner and give directions based on experience | Recommendation |
 
-White glove can be data or model products. Data products is used to understand
-data and gain insights. Model products 
+White glove can be data or model products. 
+Figure 1 illustrates steps to build a white glove product.
+Data products is used to understand data and gain insights. 
+Model products are build on the top of the data products
+and are used to make predictions. Products can be delievered
+in the form of API's, code libraries, or web dashboards.
 
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/white_glove_product.png) | 
 |:--:| 
