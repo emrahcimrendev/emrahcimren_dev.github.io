@@ -154,8 +154,15 @@ based on an experience. This service does not require
 any new development or utilization
 of a product.
 
-
 ## 2. Define Roles and Responsibilities
+
+When you set clear roles and responsibilities, 
+everyone knows what’s expected of them within the group. 
+They know how to behave, what they need to accomplish, 
+and how to reach the group’s goals.
+People work together better when they understand their roles.
+
+
 
 ## 3. Plan and Manage Projects
 
