@@ -130,10 +130,10 @@ Four types of products can be developed by a data science team.
 
 | **Product** | **Description** | **Effort**|
 |-------|-------|-------|
-| White glove products | Arrival of an order to the PCC's warehouse from the plant | 1 | 
-| Retailer order | The retailer order from PCC | 2 | 
-| End | End of simulation | 3 |
-| Inventory evaluation | Inventory evaluation (possible ordering from the plant) at the beginning of each day | 4 |
+| White glove data | Developing data products to understand data and gain insights  | 1 | 
+| White glove model | Developing models products to make predictions | 1 | 
+| Analysis | The retailer order from PCC | 2 | 
+| Advisory | Inventory evaluation (possible ordering from the plant) at the beginning of each day | 4 |
 
 
 
