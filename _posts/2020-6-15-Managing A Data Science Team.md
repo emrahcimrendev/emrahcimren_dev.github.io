@@ -15,8 +15,7 @@ strategic decisions.
 
 ![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/management.png)
 
-I find the following priciples and guidelines very useful help my team's success. 
-I will explain them as follows. 
+I find the following principles and guidelines very useful for my team's success.  
 
 ## 1. Define Vision, Mission, and Values
 
