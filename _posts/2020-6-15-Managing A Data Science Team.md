@@ -181,6 +181,12 @@ to define roles and responsibilities.
 
 ## 3. Plan and Manage Projects
 
+- Team goals
+- Quarterly plan
+- Project plans
+- Sprint plans
+- User story plans
+
 ## 3. Set and Follow Team Standards
 
 ### 3.1. Standard Set of Languages on The Team
