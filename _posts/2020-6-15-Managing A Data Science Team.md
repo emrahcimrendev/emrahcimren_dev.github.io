@@ -167,7 +167,6 @@ to define roles and responsibilities.
 
 | | **Data Analyst** | **Business Manager** | **Data Scientist**| **Team Manager** |
 |-------|-------|-------|-------|-------|
-|-------|-------|-------|-------|-------|
 
 ## 3. Plan and Manage Projects
 
