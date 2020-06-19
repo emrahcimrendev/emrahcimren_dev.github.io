@@ -51,8 +51,13 @@ total landed cost to benefit enterprise margins/profits and satisfying customers
 
 We embrace the following values.
 
-- **Continually satisfy your customer:** Our highest priority is to satisfy the customer through the early and continuous delivery of analytical products.
-- **Embrace change:** We welcome evolving customer needs and embrace them to generate competitive advantage.
+- **Continually satisfy your customer:** 
+Our highest priority is to satisfy the customer through 
+the early and continuous delivery of analytical products.
+
+- **Embrace change:** We welcome evolving customer needs and 
+embrace them to generate competitive advantage.
+
 - **It’s a team sport, reduce heroism:** Analytic teams should strive to reduce heroism and create sustainable and scalable data analytic teams and processes.
 - **Close interactions:** Customers, analytic teams, and operations must work together very close throughout the project.
 - **Self-organize:** The best analytic insight, algorithms, architectures, requirements, and designs emerge from self-organizing teams.
