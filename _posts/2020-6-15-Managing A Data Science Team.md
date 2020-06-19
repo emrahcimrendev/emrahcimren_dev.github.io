@@ -196,10 +196,19 @@ to define roles and responsibilities.
 
 ## 4. Follow Leadership and People Management Principles
 
-### 4.1. Indvidual's Goals and Develoment
+### 4.1. Individual's Goals and Development
+- Set goals
+- Development plan
+
 ### 4.2. Tracking Progress
 
-## 6. Hire Talent
-
+## 5. Hire Talent
 - Interviews
+
+## 6. Retain Talent
+- Team skill development (learning journeys)
+- Promotions
+
+
+
 
