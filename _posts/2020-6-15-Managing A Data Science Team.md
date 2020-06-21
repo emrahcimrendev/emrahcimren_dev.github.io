@@ -185,7 +185,7 @@ what changes and hurdles to anticipate,
 and how to utilize human resources and opportunities 
 to reach the expected outcome. 
 
-![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/team.jpeg)
+![_config.yml]({{ site.baseurl }}/images//Managing A Data Science Team/team.jpg)
 
 A goal is where your team wants to be in a certain time. 
 A plan is a description of how you are going to get there.  
