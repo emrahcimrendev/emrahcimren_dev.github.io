@@ -176,7 +176,31 @@ for each job level in the team.
 |:--:| 
 | *Figure 2: Roles and responsibilities matrix* |
 
-## 3. Plan and Manage Projects
+## 3. Plan and Execute Projects
+
+Planning in management is about what steps you need to take to reach the goal, 
+what changes and hurdles to anticipate, 
+and how to utilize human resources and opportunities 
+to reach the expected outcome. 
+
+A goal is where your team wants to be in a certain time. 
+A plan is a description of how you are going to get there.  
+We follow agile methodology to execute plans.
+
+The following are steps of the planning process.
+
+### 3.1. Set Annual Team Goals
+
+### 3.2. Develop Quarterly Plan
+
+### 3.3. Develop Project Plans for Each Project in the Quarterly Plan
+
+### 3.4. Execute Plans using Agile Methodology
+
+#### What is Agile Method?
+
+#### How to Execute Plans?
+
 
 - Annual team goals
 - Quarterly plan
@@ -184,11 +208,8 @@ for each job level in the team.
 - Sprint plans
 - User stories
 
-Planning in management is about what steps you need to take to reach the goal, what changes and hurdles to anticipate, and how to utilize human resources and opportunities to reach the expected outcome. Thus, planning involves a careful analysis of the current resources and market trends and the prediction of emerging markets and future demand.   
 
-In simple terms, a goal is where your company wants to be in a certain time and a plan is a description of how you are going to get there.  
 
-Planning is considered a basic function of management. It means that a plan is necessary for any other managerial function, be it organising, directing, staffing, or controlling:
 
 Planning dictates how to effectively organise business, that is to determine the necessary activities, assign them to proper personnel, delegate authority, provide tools and raw material, etc.  
 Having a plan facilitates directing as it makes instructions, guidance, and motivation grounded in a brand strategy
