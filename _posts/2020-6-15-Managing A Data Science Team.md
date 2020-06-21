@@ -169,6 +169,7 @@ to define roles and responsibilities.
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_01.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_02.png) |
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_03.png) |
+| ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_04.png) |
 |:--:| 
 | *Figure 2: Roles and responsibilities matrix* |
 
