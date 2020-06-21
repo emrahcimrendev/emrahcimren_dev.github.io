@@ -162,8 +162,11 @@ They know how to behave, what they need to accomplish,
 and how to reach the group’s goals.
 People work together better when they understand their roles.
 
-I use the following matrix in Figure 2
+I use a matrix 
 to define roles and responsibilities. 
+Figure 2 illustrates an example. 
+This matrix defines expectations 
+for each job level in the team. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_00.png) | 
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_01.png) | 
@@ -175,17 +178,30 @@ to define roles and responsibilities.
 
 ## 3. Plan and Manage Projects
 
-- Team goals
+- Annual team goals
 - Quarterly plan
 - Project plans
 - Sprint plans
-- User story plans
+- User stories
 
-## 3. Set and Follow Team Standards
+Planning in management is about what steps you need to take to reach the goal, what changes and hurdles to anticipate, and how to utilize human resources and opportunities to reach the expected outcome. Thus, planning involves a careful analysis of the current resources and market trends and the prediction of emerging markets and future demand.   
 
-### 3.1. Standard Set of Languages on The Team
+In simple terms, a goal is where your company wants to be in a certain time and a plan is a description of how you are going to get there.  
 
-### 3.2. Coding Practices
+Planning is considered a basic function of management. It means that a plan is necessary for any other managerial function, be it organising, directing, staffing, or controlling:
+
+Planning dictates how to effectively organise business, that is to determine the necessary activities, assign them to proper personnel, delegate authority, provide tools and raw material, etc.  
+Having a plan facilitates directing as it makes instructions, guidance, and motivation grounded in a brand strategy
+Planning informs staffing, as it shows what work-force a company will need 
+Establishment of standards and measurement of actual performance – controlling – is done against the expectations that planning sets   
+
+### 3.1. Agile Structure
+
+## 4. Set and Follow Team Standards
+
+### 4.1. Standard Set of Languages on The Team
+
+### 4.2. Coding Practices
 
 - Architecture
 - Style
@@ -194,15 +210,15 @@ to define roles and responsibilities.
 - Testing
 - CI/CD
 
-### 3.2. Version Control
+### 4.3. Version Control
 
-### 3.3. Peer Reviews
+### 4.4. Peer Reviews
 
-### 3.4. Data Infrastructure
+### 4.5. Data Infrastructure
 
-### 3.5. Model Deployment
+### 4.6. Model Deployment
 
-## 4. Follow Leadership and People Management Principles
+## 5. Follow Leadership and People Management Principles
 
 ### 4.1. Individual's Goals and Development
 - Set goals
