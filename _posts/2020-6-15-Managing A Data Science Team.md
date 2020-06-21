@@ -205,6 +205,8 @@ The following are steps of the planning process.
 
 ### How to Execute Plans?
 
+### 3.5. After Action Review
+
 
 - Annual team goals
 - Quarterly plan
