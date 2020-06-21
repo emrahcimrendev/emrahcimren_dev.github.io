@@ -162,22 +162,13 @@ They know how to behave, what they need to accomplish,
 and how to reach the group’s goals.
 People work together better when they understand their roles.
 
-I use the following matrix 
+I use the following matrix (Figure)
 to define roles and responsibilities. 
 
-| | **Data Analyst** | **Business Manager** | **Data Scientist**| **Team Manager** |
-|-------|-------|-------|-------|-------|
-| **Role** | * Execute projects by working with the other team members <br>* Provide support for major initiatives by collecting and cleansing data <br>* Develop basic models <br>* Build dashboards | * Execute projects independently <br>* Identify new projects for the team | <br>* Develop and maintain business relationships to drive decision making | * Execute projects independently <br>* Identify new projects for the team | <br>* Develop and maintain end-to-end data science projects |
-| **Customer** | | | | |
-| **Influence** | | | | |
-| **Scope** | | | | |
-| **Cross functional impact** | | | | |
-| **Domain knowledge** | | | | |
-| **Technical skills** | | | | |
-| **Tools** | | | | |
-| **Programming** | | | | |
-| **Teaching and interviews** | | | | |
-
+| ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_01.png) | 
+| ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_01.png) | 
+|:--:| 
+| *Figure 2: Roles and responsibilities matrix* |
 
 ## 3. Plan and Manage Projects
 
