@@ -162,7 +162,7 @@ They know how to behave, what they need to accomplish,
 and how to reach the group’s goals.
 People work together better when they understand their roles.
 
-I use the following matrix (Figure)
+I use the following matrix in Figure 2
 to define roles and responsibilities. 
 
 | ![_config.yml]({{ site.baseurl }}/images/Managing A Data Science Team/roles_matrix_00.png) | 
