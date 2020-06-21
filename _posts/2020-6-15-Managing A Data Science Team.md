@@ -197,9 +197,9 @@ The following are steps of the planning process.
 
 ### 3.4. Execute Plans using Agile Methodology
 
-#### What is Agile Method?
+### What is Agile Methodology?
 
-#### How to Execute Plans?
+### How to Execute Plans?
 
 
 - Annual team goals
