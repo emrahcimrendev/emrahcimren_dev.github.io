@@ -167,9 +167,9 @@ to define roles and responsibilities.
 
 | | **Data Analyst** | **Business Manager** | **Data Scientist**| **Team Manager** |
 |-------|-------|-------|-------|-------|
+| **Role** | <br>* Execute projects by working with the other team members <br>* Provide support for major initiatives by collecting and cleansing data <br>* Develop basic models | | | |
 | **Customer** | | | | |
 | **Influence** | | | | |
-| **Role** | <br>* xx <br>* xx | | | |
 | **Scope** | | | | |
 | **Cross functional impact** | | | | |
 | **Domain knowledge** | | | | |
