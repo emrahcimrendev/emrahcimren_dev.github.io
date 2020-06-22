@@ -199,6 +199,8 @@ The following are steps of the planning process.
 
 ### 3.3. Develop Project Plans for Each Project in the Quarterly Plan
 
+### Typical Data Science Project Steps
+
 ### 3.4. Execute Plans using Agile Methodology
 
 ### What is Agile Methodology?
