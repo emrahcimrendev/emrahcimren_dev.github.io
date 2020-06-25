@@ -201,6 +201,8 @@ The following are steps of the planning process.
 
 ### Typical Data Science Project Steps
 
+### Business Intake Process
+
 ### 3.4. Execute Plans using Agile Methodology
 
 ### What is Agile Methodology?
